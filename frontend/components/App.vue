@@ -27,7 +27,6 @@ export default {
 
 <style lang="less" scoped>
 #page-container{
-	background-color: #242424;
 	min-width:100vw;
 	min-height: 100vh;
 }
