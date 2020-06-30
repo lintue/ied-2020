@@ -30,6 +30,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "staticFiles": {
-    "staticPath": "./frontend"
+    "staticPath": "./frontend/static"
   }
 }
