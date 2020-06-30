@@ -1,6 +1,9 @@
 <template>
 	<div id="main-content">
-		<chaos-item image=""></chaos-item>
+		<chaos-item
+			image=""
+			v-on:chaosDown="chaosDown"
+		></chaos-item>
 	</div>
 </template>
 
@@ -11,6 +14,11 @@ export default{
 	name: "Content",
 	components: {
 		"chaos-item": ChaosItem
+	},
+	methods: {
+		chaosDown: function(el){
+			this.$emit("chaosDown", el);
+		}
 	}
 };
 </script>

@@ -3,7 +3,9 @@
 		<app-header></app-header>
 		<app-switch></app-switch>
 
-		<app-content></app-content>
+		<app-content
+			v-on:chaosDown="chaosDown"
+		></app-content>
 	</main>
 </template>
 
@@ -19,8 +21,14 @@ export default {
 		"app-switch": Switch,
 		"app-content": Content
 	},
+	data: function(){
+		return {
+		};
+	},
 	methods: {
-
+		chaosDown: function(el){
+			this.$root.$data.chaosElement = el;
+		}
 	}
 };
 </script>
