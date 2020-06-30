@@ -1,12 +1,17 @@
 <template>
 	<div id="main-content">
-
+		<chaos-item image=""></chaos-item>
 	</div>
 </template>
 
 <script>
+import ChaosItem from "./ContentChaosItem.vue";
+
 export default{
-	name: "Content"
+	name: "Content",
+	components: {
+		"chaos-item": ChaosItem
+	}
 };
 </script>
 
