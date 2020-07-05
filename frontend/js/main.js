@@ -56,54 +56,56 @@ const app = new Vue({
 	mounted: function(){
 		this.$nextTick(() => {
 			document.addEventListener("mousedown", (e) => {
-				const bodyBox = document.body.getBoundingClientRect();
-
 				this.$store.commit("setMouseDownPos", {
-					x: e.screenX - bodyBox.left,
-					y: e.screenY - bodyBox.top
+					x: e.screenX + document.body.scrollLeft,
+					y: e.screenY + document.body.scrollTop
 				});
+
+				pMouseX = e.screenX;
+				pMouseY = e.screenY;
 			});
 
 			document.addEventListener("mousemove", (e) => {
-				const bodyBox = document.body.getBoundingClientRect();
 				const el = this.$store.state.chaosElement;
 
-				const mouseX = e.screenX - bodyBox.left;
-				const mouseY = e.screenY - bodyBox.top;
+				const mouseX = e.screenX;
+				const mouseY = e.screenY;
 
 				if(el && pMouseX !== null && pMouseY !== null){
 					const deltaX = mouseX - pMouseX;
 					const deltaY = mouseY - pMouseY;
 
 					const boundingBox = el.getBoundingClientRect();
-					const newX = boundingBox.x + deltaX;
-					const newY = boundingBox.y + deltaY;
+					const newX = boundingBox.x + deltaX + window.scrollX;
+					const newY = boundingBox.y + deltaY + window.scrollY;
 
 					el.style.left = `${newX}px`;
 					el.style.top = `${newY}px`;
-				}
 
-				pMouseX = mouseX;
-				pMouseY = mouseY;
+					pMouseX = mouseX;
+					pMouseY = mouseY;
+				}
 			});
 
 			document.addEventListener("mouseup", (e) => {
 				const el = this.$store.state.chaosElement;
-				const boundingBox = el.getBoundingClientRect();
+				if(el){
+					const boundingBox = el.getBoundingClientRect();
 
-				if(boundingBox.right > this.$el.clientWidth){
-					el.style.left = `${this.$el.clientWidth - boundingBox.width}px`;
-				}else if(boundingBox.left < 0){
-					el.style.left = "0px";
+					if(boundingBox.right > this.$el.clientWidth){
+						el.style.left = `${this.$el.clientWidth - boundingBox.width}px`;
+					}else if(boundingBox.left < 0){
+						el.style.left = "0px";
+					}
+
+					if(boundingBox.bottom > this.$el.clientHeight - document.querySelector("#page-header").clientHeight){
+						el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
+					}else if(boundingBox.top < 0){
+						el.style.top = "0px";
+					}
+
+					this.$store.commit("setChaosElement", null);
 				}
-
-				if(boundingBox.bottom > this.$el.clientHeight){
-					el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
-				}else if(boundingBox.top < 0){
-					el.style.top = "0px";
-				}
-
-				this.$store.commit("setChaosElement", null);
 			});
 		});
 	}
