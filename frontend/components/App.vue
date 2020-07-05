@@ -2,10 +2,16 @@
 	<main id="page-container"
 		:class="mode"
 	>
-		<app-header></app-header>
-		<app-switch></app-switch>
+		<app-header
+			:mode="mode"
+		></app-header>
+		<app-switch class="app-switch"
+			:mode="mode"
+			v-on:switchMode="switchMode"
+		></app-switch>
 
 		<app-content
+			:mode="mode"
 			v-on:chaosDown="chaosDown"
 		></app-content>
 	</main>
@@ -32,6 +38,9 @@ export default {
 	methods: {
 		chaosDown: function(el){
 			this.$emit("chaosDown", el);
+		},
+		switchMode: function(){
+			this.$emit("switchMode");
 		}
 	}
 };
@@ -41,7 +50,20 @@ export default {
 #page-container{
 	min-width:100vw;
 	min-height: 100vh;
-	background-color: #242424;
 	overflow-x: hidden;
+
+	&.chaos{
+		background-color: #242424;
+	}
+
+	&.order{
+		background-color: white;
+	}
+}
+
+.app-switch{
+	position: fixed;
+	right: 40px;
+	top: 40px;
 }
 </style>

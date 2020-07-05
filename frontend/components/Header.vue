@@ -20,7 +20,12 @@
 
 <script>
 export default {
-	name: "Header"
+	name: "Header",
+	props: {
+		mode: {
+			type: String
+		}
+	}
 };
 </script>
 

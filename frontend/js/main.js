@@ -49,6 +49,9 @@ const app = new Vue({
 			on: {
 				chaosDown: function(el){
 					store.commit("setChaosElement", el);
+				},
+				switchMode: function(){
+					store.commit("toggleMode");
 				}
 			},
 		});
