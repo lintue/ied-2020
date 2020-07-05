@@ -1,6 +1,6 @@
 <template>
 	<div class="chaos-item"
-		v-on:mousedown.prevent="itemDown"
+		v-on:mousedown.prevent.stop="itemDown"
 	>
 	</div>
 </template>

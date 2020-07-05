@@ -4,10 +4,15 @@ import App from "../components/App.vue";
 const app = new Vue({
 	el: "#page-container",
 	render: function(createElement){
-		return createElement(App);
+		return createElement(App, {
+			props: {
+				mode: this.$data.mode
+			}
+		});
 	},
 	data: {
-		chaosElement: null
+		chaosElement: null,
+		mode: "chaos" // or "order"
 	}
 });
 

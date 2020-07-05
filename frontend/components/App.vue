@@ -1,5 +1,7 @@
 <template>
-	<main id="page-container">
+	<main id="page-container"
+		:class="mode"
+	>
 		<app-header></app-header>
 		<app-switch></app-switch>
 
@@ -21,13 +23,17 @@ export default {
 		"app-switch": Switch,
 		"app-content": Content
 	},
-	data: function(){
-		return {
-		};
+	props: {
+		mode: {
+			type: String,
+			required: true
+		}
 	},
 	methods: {
 		chaosDown: function(el){
-			this.$root.$data.chaosElement = el;
+			if(this.mode === "chaos"){
+				this.$root.$data.chaosElement = el;
+			}
 		}
 	}
 };
@@ -37,5 +43,6 @@ export default {
 #page-container{
 	min-width:100vw;
 	min-height: 100vh;
+	background-color: #242424;
 }
 </style>

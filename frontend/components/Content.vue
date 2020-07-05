@@ -1,19 +1,19 @@
 <template>
 	<div id="main-content">
-		<chaos-item
+		<app-item
 			image=""
 			v-on:chaosDown="chaosDown"
-		></chaos-item>
+		></app-item>
 	</div>
 </template>
 
 <script>
-import ChaosItem from "./ContentChaosItem.vue";
+import AppItem from "./ContentItem.vue";
 
 export default{
 	name: "Content",
 	components: {
-		"chaos-item": ChaosItem
+		"app-item": AppItem
 	},
 	methods: {
 		chaosDown: function(el){
