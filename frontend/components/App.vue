@@ -31,9 +31,7 @@ export default {
 	},
 	methods: {
 		chaosDown: function(el){
-			if(this.mode === "chaos"){
-				this.$root.$data.chaosElement = el;
-			}
+			this.$emit("chaosDown", el);
 		}
 	}
 };
@@ -44,5 +42,6 @@ export default {
 	min-width:100vw;
 	min-height: 100vh;
 	background-color: #242424;
+	overflow-x: hidden;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
 	<div class="chaos-item"
-		v-on:mousedown.prevent.stop="itemDown"
+		v-on:mousedown.prevent="itemDown"
+		v-on:click="itemClick"
 	>
 	</div>
 </template>
@@ -21,6 +22,15 @@ export default{
 	methods: {
 		itemDown: function(e){
 			this.$emit("chaosDown", this.$el);
+		},
+		itemClick: function(e){
+			const downPos = this.$store.state.mouseDownPos;
+
+			if(Math.hypot((downPos.x - e.screenX), (downPos.y - e.screenY)) <
+				this.$store.state.moveThreshold)
+			{
+				console.log("click");
+			}
 		}
 	}
 };
