@@ -13,6 +13,10 @@ export default{
 		media: {
 			type: String,
 			required: true
+		},
+		mode: {
+			type: String,
+			required: true
 		}
 	},
 	methods: {
@@ -27,29 +31,39 @@ export default{
 			{
 				console.log("click");
 			}
+		},
+		changeElPosition: function(){
+			if(this.mode === "chaos"){
+				const box = this.$parent.$el.getBoundingClientRect();
+				const bounds = {
+					width: box.width,
+					height: box.height,
+					x: box.x + window.scrollX,
+					y: box.y + window.scrollY
+				};
+				let x = Math.floor(Math.random() * bounds.width) + bounds.x;
+				let y = Math.floor(Math.random() * bounds.height) + bounds.y;
+
+				if(x + this.$el.clientWidth > bounds.x + bounds.width){
+					x = bounds.x + bounds.width - this.$el.clientWidth;
+				}
+				if(y + this.$el.clientHeight > bounds.y + bounds.height){
+					y = bounds.y + bounds.height - this.$el.clientHeight;
+				}
+
+				this.$el.style.left = `${x}px`;
+				this.$el.style.top = `${y}px`;
+			}
+		}
+	},
+	watch: {
+		mode: function(){
+			this.changeElPosition();
 		}
 	},
 	mounted: function(){
 		this.$nextTick(function () {
-			const box = this.$parent.$el.getBoundingClientRect();
-			const bounds = {
-				width: box.width,
-				height: box.height,
-				x: box.x + window.scrollX,
-				y: box.y + window.scrollY
-			};
-			let x = Math.floor(Math.random() * bounds.width) + bounds.x;
-			let y = Math.floor(Math.random() * bounds.height) + bounds.y;
-
-			if(x + this.$el.clientWidth > bounds.x + bounds.width){
-				x = bounds.x + bounds.width - this.$el.clientWidth;
-			}
-			if(y + this.$el.clientHeight > bounds.y + bounds.height){
-				y = bounds.y + bounds.height - this.$el.clientHeight;
-			}
-
-			this.$el.style.left = `${x}px`;
-			this.$el.style.top = `${y}px`;
+			this.changeElPosition();
 		});
 	}
 };

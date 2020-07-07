@@ -6,6 +6,7 @@
 			v-for="entry in entries"
 
 			:media="entry.media"
+			:mode="mode"
 
 			v-on:chaosDown="chaosDown"
 		></app-item>
