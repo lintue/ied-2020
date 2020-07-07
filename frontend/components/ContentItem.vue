@@ -43,5 +43,6 @@ export default{
 	min-width: 100px;
 	min-height: 100px;
 	display: block;
+	z-index: 1;
 }
 </style>
