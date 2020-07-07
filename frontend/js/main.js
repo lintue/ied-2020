@@ -15,7 +15,16 @@ const store = new Vuex.Store({
 		mouseDownPos: {
 			x: null,
 			y: null
-		}
+		},
+		entries: [
+			{
+				title: "Something Along These Lines",
+				description: "A room-sized installation that aims to induce the feeling of bewilderment at not understanding a language, with specific focus on the use of idioms or phrases that are language/culture specific.",
+				media: "something.jpg",
+				student: "Kenneth Lim",
+				category: "project"
+			}
+		]
 	},
 	mutations: {
 		toggleMode: function(state){
@@ -44,7 +53,8 @@ const app = new Vue({
 	render: function(createElement){
 		return createElement(App, {
 			props: {
-				mode: store.state.mode
+				mode: store.state.mode,
+				entries: store.state.entries
 			},
 			on: {
 				chaosDown: function(el){

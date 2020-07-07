@@ -15,9 +15,6 @@ export default{
 			required: true
 		}
 	},
-	data: {
-
-	},
 	methods: {
 		switchMode: function(e){
 			this.$emit("switchMode");

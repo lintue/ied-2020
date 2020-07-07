@@ -12,8 +12,11 @@
 
 		<app-content
 			:mode="mode"
+			:entries="entries"
 			v-on:chaosDown="chaosDown"
 		></app-content>
+
+		<item-container></item-container>
 	</main>
 </template>
 
@@ -21,18 +24,24 @@
 import Header from "./Header.vue";
 import Switch from "./Switch.vue";
 import Content from "./Content.vue";
+import ItemContainer from "./Item.vue";
 
 export default {
 	name: "App",
 	components: {
 		"app-header": Header,
 		"app-switch": Switch,
-		"app-content": Content
+		"app-content": Content,
+		"item-container": ItemContainer
 	},
 	props: {
 		mode: {
 			type: String,
 			required: true
+		},
+		entries: {
+			type: Array,
+			default: []
 		}
 	},
 	methods: {
