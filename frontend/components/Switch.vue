@@ -32,6 +32,6 @@ export default{
 		width: 10vw;
 		height: auto;
 	}
-	z-index: 1;
+	z-index: 2;
 }
 </style>
