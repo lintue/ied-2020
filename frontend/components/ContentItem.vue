@@ -1,5 +1,6 @@
 <template>
-	<div class="chaos-item"
+	<div class="item"
+		:class="mode"
 		v-on:mousedown.prevent="itemDown"
 		v-on:click="itemClick"
 	>
@@ -34,10 +35,11 @@ export default{
 		},
 		changeElPosition: function(){
 			if(this.mode === "chaos"){
+				console.log(this.$parent);
 				const box = this.$parent.$el.getBoundingClientRect();
 				const bounds = {
 					width: box.width,
-					height: box.height,
+					height: box.height - 50,
 					x: box.x + window.scrollX,
 					y: box.y + window.scrollY
 				};
@@ -53,6 +55,9 @@ export default{
 
 				this.$el.style.left = `${x}px`;
 				this.$el.style.top = `${y}px`;
+			}else{
+				this.$el.style.left = "revert";
+				this.$el.style.top = "revert";
 			}
 		}
 	},
@@ -69,14 +74,24 @@ export default{
 };
 </script>
 
-<style lang="less">
-.chaos-item{
-	position: absolute;
-	background: white;
+<style lang="less" scoped>
+.item{
 	min-width: 100px;
 	min-height: 100px;
-	display: block;
+	display: inline-block;
 	z-index: 1;
 	cursor: pointer;
+}
+
+.chaos{
+	position: absolute;
+	background: grey;
+}
+
+.order{
+	position: relative;
+	left: initial;
+	top: initial;
+	background: grey;
 }
 </style>

@@ -2,14 +2,16 @@
 	<div id="main-content"
 		:class="mode"
 	>
-		<app-item
-			v-for="entry in entries"
+		<section id="items">
+			<app-item
+				v-for="entry in entries"
 
-			:media="entry.media"
-			:mode="mode"
+				:media="entry.media"
+				:mode="mode"
 
-			v-on:chaosDown="chaosDown"
-		></app-item>
+				v-on:chaosDown="chaosDown"
+			></app-item>
+		</section>
 
 		<div id="grid"
 			:class="mode"
@@ -45,14 +47,20 @@ export default{
 
 <style lang="less" scoped>
 #main-content{
+	#items{
+		position: absolute;
+	}
 }
 
 #grid{
 	min-width: 100vw;
 	min-height: 100vh;
-	border: 1px solid white;
 	position: relative;
 	overflow: hidden;
+
+	&.chaos{
+		border: 1px solid white;
+	}
 
 	&.chaos:before{
 		content: "";
@@ -77,6 +85,8 @@ export default{
 		background-size: cover;
 		min-width: 100%;
 		min-height: 100%;
+		top: 0;
+		left: 0;
 	}
 }
 
