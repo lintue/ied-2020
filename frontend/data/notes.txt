@@ -1,6 +1,6 @@
 TO DO:
 
-- Book in works.json
+- Book in works.json (finish author/title + change media link + push)
 - Project + long-form description in works.json
 
 - Download all media
@@ -8,6 +8,8 @@ TO DO:
 - Mogrify/photoshop macro thumbnails
 - Identify GIFs and change ext in .json
 - Add thumbnails to .json
+
+- Linnea RCA2020 link (all should be checked anyway).
 
 
 
@@ -17,6 +19,9 @@ Filenames: ./<studentFirstName>-<categoryId>.<ext>
 
 Category keys:
 
+description (long-form)
+research (question)
+book (/article/inspiration)
 main (featured)
 making (of)
 office (corona)
@@ -58,7 +63,7 @@ Linnear
 Needs attention:
 
 Arman description (The file is the logo of my game and the link is the trailer for it)
-
+Two Yi's - use firstName-lastName-id
 
 
 List of students:
