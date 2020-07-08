@@ -1,5 +1,8 @@
 TO DO:
 
+- Book in works.json
+- Project + long-form description in works.json
+
 - Download all media
 - Resize media
 - Mogrify/photoshop macro thumbnails
