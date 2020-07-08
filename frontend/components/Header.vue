@@ -1,20 +1,20 @@
 <template>
 	<header id="page-header">
-		<h1 id="title"><span class="yellow">I</span><span class="blue">E</span><span class="red">D</span> 2020</h1>
+		<div id="info">
+			<h2 id="about-title">ABOUT</h2>
+			<h1 id="title"><span class="yellow">I</span><span class="blue">E</span><span class="red">D</span> 2020</h1>
 
-		<div id="course-title-container">
-			<p id="course-title"><span class="yellow">Information</span> <span class="blue">Experience</span> <span class="red">Design</span></p>
-			<p>Royal College of Art</p>
-			<p>London</p>
+			<div id="course-description">
+				<p>
+					<span class="bold">IED2020</span> is a research site concluding the two year <span class="bold yellow">Information</span> <span class="bold blue">Experience</span> <span class="bold red">Design</span> masters degree at the <span class="bold">Royal College of Art</span> in London. The course looks beyond binary concepts through theory and practice, where we imagined speculative and real-world art and design solutions within a studio space amongst students of different disciplines, from philosophers and musicians to strategists and writers. When we were struck with the covid-19 pandemic, our creative spaces moved into our homes. This virtual space celebrates all of our thinking and research, and is where our projects come together again where we physically may not be able to in the near future.
+				</p>
+			</div>
 		</div>
 
-		<nav id="navigation">
-			<ul>
-				<li>about</li>
-				<li>instagram</li>
-				<li>RCA2020</li>
-			</ul>
-		</nav>
+		<div id="socials">
+			<a href="#instagram">INSTAGRAM &nearr;</a>
+			<a href="#rca2020">RCA SHOW 2020 &nearr;</a>
+		</div>
 	</header>
 </template>
 
@@ -31,13 +31,15 @@ export default {
 
 <style lang="less" scoped>
 #page-header{
+	position: absolute;
+	top: 0;
+	left: 0;
 	color: white;
-	font-family: "IBM Plex Mono", monospace;
-	font-weight: 200;
-	display: flex;
-	padding: 2rem;
-	align-items: flex-start;
-	max-width: 90vw;
+	border: 1px solid white;
+	max-height: 100vh;
+	overflow-y: scroll;
+	background: #242424;
+	z-index: 1000;
 
 	.yellow{
 		color: #fde94b;
@@ -51,51 +53,47 @@ export default {
 		color: #e5301b;
 	}
 
-	#title{
-		margin: 0 2rem;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 900;
-		font-style: italic;
-		font-size: 6rem;
+	.bold{
+		font-weight: bold;
 	}
 
-	#course-title-container{
-		height: 6rem;
-		padding: 1rem;
-		margin: 0 1.5rem;
+	#info{
+		padding: 2rem;
 
-		p{
+		#about-title{
+			font-family: "Montserrat", sans-serif;
+			font-weight: 800;
+			font-style: italic;
 			margin: 0;
-			margin-bottom: 0.25rem;
 		}
 
-		#course-title{
-			font-weight: 400;
+		#title{
+			font-family: "Montserrat", sans-serif;
+			font-weight: 900;
+			font-style: italic;
+			font-size: 6rem;
+		}
+
+		#course-description{
+			font-size: 1.6rem;
+			line-height: 1.4em;
 		}
 	}
 
-	#navigation{
-		margin: 0 1.5rem;
-		padding: 0 1rem;
+	#socials{
+		border-top: 1px solid white;
+		font-family: "Montserrat", sans-serif;
+		padding: 1rem 2rem;
 
-		ul{
-			list-style: none;
-			padding: 0;
+		a{
+			text-decoration: none;
+			color: white;
+			margin: 0 2rem;
+			font-weight: 800;
+			font-size: 1.6rem;
 
-			li{
-				padding: 0.7rem 0;
-				margin: 0 1rem;
-				border-bottom: 1px solid white;
-				width: 9rem;
-
-				&:first-of-type{
-					padding-top: 0;
-				}
-
-				&:last-of-type{
-					padding-bottom: 0;
-					border-bottom: none;
-				}
+			&:first-child{
+				margin-left: 0;
 			}
 		}
 	}

@@ -47,6 +47,8 @@ export default{
 
 <style lang="less" scoped>
 #main-content{
+	z-index: 0;
+
 	#items{
 		position: absolute;
 	}
