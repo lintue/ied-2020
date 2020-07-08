@@ -20,8 +20,8 @@ const store = new Vuex.Store({
 			{
 				title: "Something Along These Lines",
 				description: "A room-sized installation that aims to induce the feeling of bewilderment at not understanding a language, with specific focus on the use of idioms or phrases that are language/culture specific.",
-				media: "something.jpg",
-				student: "Kenneth Lim",
+				media: "something.png",
+				name: "Kenneth Lim",
 				category: "project"
 			}
 		]

@@ -1,6 +1,6 @@
 <template>
 	<article id="item-container"
-		:class="title ? '' : 'hidden'"
+		:class="[entry.title ? '' : 'hidden', justify]"
 		v-on:click.prevent.stop="closeItem"
 	>
 
@@ -9,22 +9,33 @@
 		>
 			<section id="title-bar">
 				<div id="file-name">Project.img</div>
-				<div id="close-item-btn">
+				<div id="close-item-btn"
+					v-on:click="closeItem"
+				>
 					<span class="material-icons">
 						close
 					</span>
 				</div>
 			</section>
-			<section id="media"></section>
+			<section id="media">
+				<img
+					:src="mediaPath"
+					v-on:load="mediaLoaded"
+				>
+			</section>
 			<section id="description">
-				<section id="name">
-					Zohar Dvir
+				<section id="name"
+					v-if="entry.name"
+				>
+					{{ entry.name }}
 				</section>
 				<h2 id="project-title">
-					Image Title
+					{{ entry.title }}
 				</h2>
-				<p id="description-text">
-					Lorem ipsum laboris duis voluptate ut dolore incididunt amet duis sint eu tempor ut occaecat anim voluptate aliquip excepteur ullamco velit enim esse sint ea ullamco et incididunt ea dolor incididunt in est eu sit ut fugiat et aliquip qui sit.
+				<p id="description-text"
+					v-if="entry.description"
+				>
+					{{ entry.description }}
 				</p>
 			</section>
 		</div>
@@ -36,16 +47,30 @@
 export default{
 	name: "ItemContainer",
 	props: {
-		title: {
-			type: String
-		},
-		media: {
-			type: String
+		entry: {
+			type: [Object, null]
+		}
+	},
+	data: function(){
+		return {
+			justify: "justify-center"
+		};
+	},
+	computed: {
+		mediaPath: function(){
+			return `./media/${this.entry.media}`;
 		}
 	},
 	methods: {
 		closeItem: function(){
 			this.$emit("closeItem");
+		},
+		mediaLoaded: function(){
+			if(this.$el.querySelector("#item-content").clientHeight > window.innerHeight){
+				this.justify = "justify-start";
+			}else{
+				this.justify = "justify-center";
+			}
 		}
 	}
 };
@@ -53,7 +78,8 @@ export default{
 
 <style lang="less" scoped>
 #item-container{
-	display: block;
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -68,15 +94,22 @@ export default{
 		display: none;
 	}
 
+	&.justify-center{
+		justify-content: center;
+	}
+
+	&.justify-start{
+		justify-content: flex-start;
+	}
+
 	#item-content{
 		max-width: 1000px;
 		width: 70%;
 		border: 1px solid white;
 		background: #242424;
 		position: absolute;
-		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translateX(-50%);
 
 		#title-bar{
 			text-align: center;
@@ -86,6 +119,7 @@ export default{
 			#file-name{
 				padding: 0.5rem;
 				display: inline-block;
+				font-weight: 500;
 			}
 
 			#close-item-btn{
@@ -99,7 +133,10 @@ export default{
 		}
 
 		#media{
-
+			img{
+				max-width: 1000px;
+				width: ~"calc(70vw - 2px)";
+			}
 		}
 
 		#description{

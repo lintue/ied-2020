@@ -18,7 +18,8 @@
 		></app-content>
 
 		<item-container
-			:title="showingItem"
+			v-if="showingItem"
+			:entry="showingItem"
 			v-on:closeItem="closeItem"
 		></item-container>
 	</main>
@@ -50,7 +51,7 @@ export default {
 	},
 	data: function(){
 		return {
-			showingItem: ""
+			showingItem: null
 		};
 	},
 	methods: {
@@ -61,10 +62,13 @@ export default {
 			this.$emit("switchMode");
 		},
 		showItem: function(title){
-			this.showingItem = title;
+			const entry = _.find(this.entries, (entry) => {
+				return entry.title === title;
+			});
+			this.showingItem = entry;
 		},
 		closeItem: function(){
-			this.showingItem = "";
+			this.showingItem = null;
 		}
 	}
 };
