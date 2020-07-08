@@ -1,5 +1,7 @@
 <template>
-	<header id="page-header">
+	<header id="page-header"
+		:class="collapsed ? 'collapsed' : ''"
+	>
 		<div id="info">
 			<h2 id="about-title">ABOUT</h2>
 			<h1 id="title"><span class="yellow">I</span><span class="blue">E</span><span class="red">D</span> 2020</h1>
@@ -12,8 +14,32 @@
 		</div>
 
 		<div id="socials">
-			<a href="#instagram">INSTAGRAM &nearr;</a>
-			<a href="#rca2020">RCA SHOW 2020 &nearr;</a>
+			<a href="#instagram"
+				v-if="!collapsed"
+			>INSTAGRAM &nearr;</a>
+			<a href="#rca2020"
+				v-if="!collapsed"
+			>RCA SHOW 2020 &nearr;</a>
+
+			<a href="#rca2020"
+				v-if="collapsed"
+			>ABOUT</a>
+
+			<a href="#" id="header-collapse"
+				v-on:click.prevent="toggleHeader"
+			>
+				<span class="material-icons icon"
+					v-if="collapsed"
+				>
+					keyboard_arrow_down
+				</span>
+
+				<span class="material-icons icon"
+					v-else
+				>
+					keyboard_arrow_up
+				</span>
+			</a>
 		</div>
 	</header>
 </template>
@@ -25,11 +51,25 @@ export default {
 		mode: {
 			type: String
 		}
+	},
+	data: function(){
+		return {
+			collapsed: true
+		};
+	},
+	methods: {
+		toggleHeader: function(){
+			console.log("here");
+			this.collapsed = !this.collapsed;
+		}
 	}
 };
 </script>
 
 <style lang="less" scoped>
+@large-font: 12vh;
+@medium-font: 3.4vh;
+
 #page-header{
 	position: absolute;
 	top: 0;
@@ -37,9 +77,14 @@ export default {
 	color: white;
 	border: 1px solid white;
 	max-height: 100vh;
-	overflow-y: scroll;
 	background: #242424;
 	z-index: 1000;
+	transform: translateY(0vh);
+	transition: transform 0.5s ease;
+
+	&.collapsed{
+		transform: translateY(-70.1vh);
+	}
 
 	.yellow{
 		color: #fde94b;
@@ -58,7 +103,9 @@ export default {
 	}
 
 	#info{
-		padding: 2rem;
+		padding: 3.25vh 2rem;
+		height: 70vh;
+		display: block;
 
 		#about-title{
 			font-family: "Montserrat", sans-serif;
@@ -71,11 +118,12 @@ export default {
 			font-family: "Montserrat", sans-serif;
 			font-weight: 900;
 			font-style: italic;
-			font-size: 6rem;
+			font-size: @large-font;
+			margin: 0.4em 0;
 		}
 
 		#course-description{
-			font-size: 1.6rem;
+			font-size: @medium-font;
 			line-height: 1.4em;
 		}
 	}
@@ -83,17 +131,27 @@ export default {
 	#socials{
 		border-top: 1px solid white;
 		font-family: "Montserrat", sans-serif;
-		padding: 1rem 2rem;
+		padding: 3.25vh 2rem;
+		display: block;
+		height: 10vh;
 
 		a{
 			text-decoration: none;
 			color: white;
 			margin: 0 2rem;
 			font-weight: 800;
-			font-size: 1.6rem;
+			font-size: @medium-font;
 
 			&:first-child{
 				margin-left: 0;
+			}
+		}
+
+		#header-collapse{
+			.icon{
+				font-size: calc(@medium-font * 2);
+				float: right;
+				transform: translateY(-2vh);
 			}
 		}
 	}
