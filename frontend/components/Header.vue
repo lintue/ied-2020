@@ -76,7 +76,7 @@ export default {
 	max-height: 100vh;
 	transform: translateY(0vh);
 	transition: transform 0.5s ease;
-	z-index: 1000;
+	z-index: 500;
 
 	&.collapsed{
 		transform: translateY(-70.1vh);
@@ -149,6 +149,7 @@ export default {
 		#course-description{
 			font-size: @medium-font;
 			line-height: 1.4em;
+			font-weight: 500;
 		}
 	}
 

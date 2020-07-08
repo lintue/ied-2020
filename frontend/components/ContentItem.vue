@@ -15,6 +15,10 @@ export default{
 			type: String,
 			required: true
 		},
+		title: {
+			type: String,
+			required: true
+		},
 		mode: {
 			type: String,
 			required: true
@@ -30,7 +34,7 @@ export default{
 			if(Math.hypot((downPos.x - e.screenX), (downPos.y - e.screenY)) <
 				this.$store.state.moveThreshold)
 			{
-				console.log("click");
+				this.$emit("showItem", this.title);
 			}
 		},
 		changeElPosition: function(){

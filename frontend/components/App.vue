@@ -14,9 +14,13 @@
 			:mode="mode"
 			:entries="entries"
 			v-on:chaosDown="chaosDown"
+			v-on:showItem="showItem"
 		></app-content>
 
-		<item-container></item-container>
+		<item-container
+			:title="showingItem"
+			v-on:closeItem="closeItem"
+		></item-container>
 	</main>
 </template>
 
@@ -44,12 +48,23 @@ export default {
 			default: []
 		}
 	},
+	data: function(){
+		return {
+			showingItem: ""
+		};
+	},
 	methods: {
 		chaosDown: function(el){
 			this.$emit("chaosDown", el);
 		},
 		switchMode: function(){
 			this.$emit("switchMode");
+		},
+		showItem: function(title){
+			this.showingItem = title;
+		},
+		closeItem: function(){
+			this.showingItem = "";
 		}
 	}
 };

@@ -7,9 +7,11 @@
 				v-for="entry in entries"
 
 				:media="entry.media"
+				:title="entry.title"
 				:mode="mode"
 
 				v-on:chaosDown="chaosDown"
+				v-on:showItem="showItem"
 			></app-item>
 		</section>
 
@@ -40,6 +42,9 @@ export default{
 	methods: {
 		chaosDown: function(el){
 			this.$emit("chaosDown", el);
+		},
+		showItem: function(title){
+			this.$emit("showItem", title);
 		}
 	}
 };
