@@ -1,0 +1,100 @@
+TO DO:
+
+- Book in works.json
+- Project + long-form description in works.json
+
+- Download all media
+- Resize media
+- Mogrify/photoshop macro thumbnails
+- Identify GIFs and change ext in .json
+- Add thumbnails to .json
+
+
+
+Filenames: ./<studentFirstName>-<categoryId>.<ext>
+
+
+
+Category keys:
+
+main (featured)
+making (of)
+office (corona)
+lockdown (task)
+studio (moment)
+add (-itional)
+
+
+
+Main feature duplicates (marked TBC in .json):
+
+Yi Lu
+Yiming Yang
+Dimitris
+Michael Tsang
+Jordan
+Debbie
+Yi Tian
+Arman
+Linnea
+
+
+
+Making of duplicates:
+
+Yi Lu
+Yiming Yang
+Lea
+
+
+
+Website duplicates (used personal for portfolio):
+
+Jessica
+Linnear
+
+
+
+Needs attention:
+
+Arman description (The file is the logo of my game and the link is the trailer for it)
+
+
+
+List of students:
+
+Quincy Cardinale
+Yi Lu
+Hengshi Kang
+Izabela Duszenko
+Zohar Dvir
+Miyuki Oka
+Yiming Yang
+Dimitris Menexopoulos
+Kenneth Lim
+Michael Tsang
+Akvile Terminaite
+Jamie Maule
+Leah Mentzis
+Julia Brackenbury
+Jordan Edge
+Celeste Camilleri 
+Sindi Breshani
+Erik Lintunen
+Giorgiana Theiler
+Anthony Jennison
+Feiqi Wang
+Debbie Poon
+Sammy Selin
+Alexia Charoud
+Pablo Colomina
+Yi Tian
+Christian Pecher
+Arman Ataman
+Juliette Coquet
+Jessica Scalzo
+Pierro Pozella
+Léa Mesplède
+Linnea Langfjord Kristensen
+
+
