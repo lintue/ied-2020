@@ -51,6 +51,7 @@ export default{
 
 	#items{
 		position: absolute;
+		padding-top: 10vh;
 	}
 }
 

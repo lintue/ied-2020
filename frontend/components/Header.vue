@@ -1,6 +1,6 @@
 <template>
 	<header id="page-header"
-		:class="collapsed ? 'collapsed' : ''"
+		:class="[collapsed ? 'collapsed' : '', mode]"
 	>
 		<div id="info">
 			<h2 id="about-title">ABOUT</h2>
@@ -59,7 +59,6 @@ export default {
 	},
 	methods: {
 		toggleHeader: function(){
-			console.log("here");
 			this.collapsed = !this.collapsed;
 		}
 	}
@@ -74,16 +73,41 @@ export default {
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: white;
-	border: 1px solid white;
 	max-height: 100vh;
-	background: #242424;
 	z-index: 1000;
 	transform: translateY(0vh);
 	transition: transform 0.5s ease;
 
 	&.collapsed{
 		transform: translateY(-70.1vh);
+	}
+
+	&.chaos{
+		border: 1px solid white;
+		color: white;
+		background: #242424;
+
+		a{
+			color: white;
+		}
+
+		#socials{
+			border-top: 1px solid white;
+		}
+	}
+
+	&.order{
+		border: 1px solid black;
+		color: black;
+		background: white;
+
+		a{
+			color: black;
+		}
+
+		#socials{
+			border-top: 1px solid black;
+		}
 	}
 
 	.yellow{
@@ -129,7 +153,6 @@ export default {
 	}
 
 	#socials{
-		border-top: 1px solid white;
 		font-family: "Montserrat", sans-serif;
 		padding: 3.25vh 2rem;
 		display: block;
@@ -137,7 +160,6 @@ export default {
 
 		a{
 			text-decoration: none;
-			color: white;
 			margin: 0 2rem;
 			font-weight: 800;
 			font-size: @medium-font;
