@@ -111,7 +111,7 @@ const app = new Vue({
 						el.style.left = "0px";
 					}
 
-					if(boundingBox.bottom > this.$el.clientHeight - document.querySelector("#page-header").clientHeight){
+					if(boundingBox.bottom > this.$el.clientHeight){
 						el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
 					}else if(boundingBox.top < 0){
 						el.style.top = "0px";

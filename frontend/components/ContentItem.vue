@@ -35,7 +35,6 @@ export default{
 		},
 		changeElPosition: function(){
 			if(this.mode === "chaos"){
-				// console.log(this.$parent);
 				const box = this.$parent.$el.getBoundingClientRect();
 				const bounds = {
 					width: box.width,
