@@ -74,9 +74,9 @@ export default {
 	top: 0;
 	left: 0;
 	max-height: 100vh;
-	z-index: 1000;
 	transform: translateY(0vh);
 	transition: transform 0.5s ease;
+	z-index: 1000;
 
 	&.collapsed{
 		transform: translateY(-70.1vh);

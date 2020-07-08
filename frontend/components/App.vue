@@ -73,6 +73,6 @@ export default {
 .app-switch{
 	position: fixed;
 	right: 40px;
-	top: 40px;
+	top: 100px;
 }
 </style>

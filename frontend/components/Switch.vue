@@ -25,10 +25,11 @@ export default{
 
 <style lang="less" scoped>
 #switch-btn{
+	z-index: 100;
+
 	img{
 		width: 10vw;
 		height: auto;
 	}
-	z-index: 2;
 }
 </style>
