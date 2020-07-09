@@ -1,9 +1,14 @@
 <template>
 	<div class="item"
-		:class="mode"
+		:class="[mode, entryType]"
 		v-on:mousedown.prevent="itemDown"
 		v-on:click="itemClick"
 	>
+		<p
+			v-if="entry.category === 'research'"
+		>
+			{{ entry.description }}
+		</p>
 	</div>
 </template>
 
@@ -18,6 +23,15 @@ export default{
 		mode: {
 			type: String,
 			required: true
+		}
+	},
+	computed: {
+		entryType: function(){
+			if(this.entry.category === "research"){
+				return "research";
+			}else{
+				return "";
+			}
 		}
 	},
 	methods: {
@@ -74,12 +88,26 @@ export default{
 </script>
 
 <style lang="less" scoped>
+@import url("../stylesheets/mixin.less");
+
 .item{
 	min-width: 100px;
 	min-height: 100px;
 	display: inline-block;
 	z-index: 1;
 	cursor: pointer;
+
+	&.research{
+		.light-theme();
+
+		min-height: 0;
+		border: 1px solid;
+		// Subtract the container size/3 by the margin on the element
+		width: ~"calc((100vw - 5rem) / 3 - 2rem)";
+		padding: 1rem;
+		font-size: 0.7rem;
+		font-family: "IBM Plex Mono", monospace;
+	}
 }
 
 .chaos{

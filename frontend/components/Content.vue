@@ -4,8 +4,9 @@
 			<section id="items"
 				v-if="mode === 'chaos'"
 			>
-				<app-item
-					v-for="entry in entries"
+				<app-item class="app-item"
+					v-for="(entry, index) in entries"
+					:key="index"
 
 					:entry="entry"
 					:mode="mode"
@@ -16,77 +17,124 @@
 			</section>
 
 			<section id="items" v-else>
-				<section id="students">
+				<section>
 					<h2 class="section-title">
 						STUDENTS
 					</h2>
 					<div class="order-items"></div>
 				</section>
 
-				<section id="students">
+				<section>
 					<h2 class="section-title">
 						PROJECT TITLE
 					</h2>
 					<div class="order-items"></div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						PROJECT
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in project"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						MAKING OF
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in makingOf"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
-				<section id="students">
+				<section class="research-centric">
 					<h2 class="section-title">
 						RESEARCH
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in research"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						LIBRARY
 					</h2>
 					<div class="order-items"></div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						EVENTS
 					</h2>
 					<div class="order-items"></div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						CORONA OFFICE
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in coronaOffice"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
-				<section id="students">
+				<section class="media-centric">
 					<h2 class="section-title">
 						LOCKDOWN TASK
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in lockdownTask"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
-				<!-- <app-item
-					v-for="entry in entries"
 
-					:entry="entry"
-					:mode="mode"
-
-					v-on:chaosDown="chaosDown"
-					v-on:showItem="showItem"
-				></app-item> -->
 			</section>
 		</div>
 	</div>
@@ -108,6 +156,38 @@ export default{
 		entries: {
 			type: Array,
 			default: []
+		}
+	},
+	computed: {
+		projectTitle: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "description";
+			});
+		},
+		project: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "main";
+			});
+		},
+		makingOf: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "making";
+			});
+		},
+		research: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "research";
+			});
+		},
+		coronaOffice: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "office";
+			});
+		},
+		lockdownTask: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "lockdown";
+			});
 		}
 	},
 	methods: {
@@ -148,7 +228,30 @@ export default{
 			}
 
 			.order-items{
-				padding: 3.5rem 3.5rem;
+				padding: 2.5rem;
+				display: flex;
+				flex-wrap: wrap;
+
+				.app-item{
+					margin: 1rem;
+				}
+			}
+
+			.media-centric{
+				.order-items{
+					flex-direction: row;
+
+					.app-item{
+						height: 240px;
+					}
+				}
+			}
+
+			.research-centric{
+				.order-items{
+					flex-direction: column;
+					height: 230vh;
+				}
 			}
 		}
 	}
@@ -187,7 +290,6 @@ export default{
 			position: absolute;
 			background-image: url("./grid-order.svg");
 			background-repeat: repeat-y;
-			background-size: cover;
 			min-width: 100%;
 			min-height: 100%;
 			top: 0;
