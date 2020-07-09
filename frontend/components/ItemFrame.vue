@@ -1,6 +1,6 @@
 <template>
 	<div id="item-content"
-			v-on:click.stop=""
+		v-on:click.stop=""
 	>
 		<section id="title-bar">
 			<div id="file-name">{{ entry.workTitle }}</div>

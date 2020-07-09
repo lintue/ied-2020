@@ -12,24 +12,32 @@
 		>
 		</item-frame>
 		<item-description
-			v-if="descriptionDisplay"
+			v-else-if="descriptionDisplay"
 			:entry="entry"
 			v-on:closeItem="closeItem"
 		>
 		</item-description>
+		<item-book
+			v-else-if="bookDisplay"
+			:entry="entry"
+			v-on:closeItem="closeItem"
+		>
 
+		</item-book>
 	</article>
 </template>
 
 <script>
 import ItemFrame from "./ItemFrame.vue";
 import ItemDescription from "./ItemDescription.vue";
+import ItemBook from "./ItemBook.vue";
 
 export default{
 	name: "ItemContainer",
 	components: {
 		"item-frame": ItemFrame,
-		"item-description": ItemDescription
+		"item-description": ItemDescription,
+		"item-book": ItemBook
 	},
 	props: {
 		entry: {
@@ -57,6 +65,11 @@ export default{
 			return _.contains([
 				"description",
 				"research"
+			], this.entry.category);
+		},
+		bookDisplay: function(){
+			return _.contains([
+				"book"
 			], this.entry.category);
 		}
 	},
