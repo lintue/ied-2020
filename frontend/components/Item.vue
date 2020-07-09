@@ -8,11 +8,13 @@
 			v-if="baseDisplay"
 			:entry="entry"
 			v-on:justify="setJustify"
+			v-on:closeItem="closeItem"
 		>
 		</item-frame>
 		<item-description
 			v-if="descriptionDisplay"
 			:entry="entry"
+			v-on:closeItem="closeItem"
 		>
 		</item-description>
 
