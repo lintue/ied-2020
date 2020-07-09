@@ -50,6 +50,8 @@ export default{
 </script>
 
 <style lang="less" scoped>
+@import url("../stylesheets/mixin.less");
+
 #main-content{
 	z-index: 0;
 
@@ -78,10 +80,6 @@ export default{
 		left: -50%;
 		background: url("./grid-chaos.svg") 0 0 repeat;
 		transform: rotate(10deg);
-		-webkit-transform: rotate(10deg);
-		-moz-transform: rotate(10deg);
-		-ms-transform: rotate(10deg);
-		-o-transform: rotate(10deg);
 	}
 
 	&.order:before{

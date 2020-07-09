@@ -72,13 +72,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import url("../stylesheets/mixin.less");
+
 #page-container{
 	min-width:100vw;
 	min-height: 100vh;
 	overflow-x: hidden;
 
 	&.chaos{
-		background-color: #242424;
+		background-color: @dark-color;
 	}
 
 	&.order{

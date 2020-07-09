@@ -66,6 +66,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import url("../stylesheets/mixin.less");
+
 @large-font: 12vh;
 @medium-font: 3.4vh;
 
@@ -85,7 +87,7 @@ export default {
 	&.chaos{
 		border: 1px solid white;
 		color: white;
-		background: #242424;
+		background: @dark-color;
 
 		a{
 			color: white;
