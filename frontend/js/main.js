@@ -18,7 +18,7 @@ const store = new Vuex.Store({
 			x: null,
 			y: null
 		},
-		// entries: entries
+		// entries: entries,
 		entries: [
 			{
 				"category": "description",
@@ -107,13 +107,13 @@ const app = new Vue({
 				if(el){
 					const boundingBox = el.getBoundingClientRect();
 
-					if(boundingBox.right > this.$el.clientWidth){
+					if(boundingBox.right + window.scrollX > this.$el.clientWidth){
 						el.style.left = `${this.$el.clientWidth - boundingBox.width}px`;
 					}else if(boundingBox.left < 0){
 						el.style.left = "0px";
 					}
 
-					if(boundingBox.bottom > this.$el.clientHeight){
+					if(boundingBox.bottom + window.scrollY > this.$el.clientHeight){
 						el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
 					}else if(boundingBox.top < 0){
 						el.style.top = "0px";

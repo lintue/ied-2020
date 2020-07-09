@@ -38,7 +38,7 @@ export default{
 				const box = this.$parent.$el.getBoundingClientRect();
 				const bounds = {
 					width: box.width,
-					height: box.height - 50,
+					height: box.height,
 					x: box.x + window.scrollX,
 					y: box.y + window.scrollY
 				};
