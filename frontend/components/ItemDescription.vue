@@ -1,6 +1,7 @@
 <template>
 	<div id="item-content"
-			v-on:click.stop=""
+		:class="entry.category"
+		v-on:click.stop=""
 	>
 		<section id="title-bar">
 			<div id="file-name">{{ entry.workTitle || "Description" }}</div>
@@ -55,8 +56,6 @@ export default{
 @import url("../stylesheets/mixin.less");
 
 #item-content{
-	.dark-theme();
-
 	max-width: 1000px;
 	width: 70%;
 	border: 1px solid;
@@ -64,6 +63,14 @@ export default{
 	left: 50%;
 	transform: translateX(-50%);
 	padding-bottom: 2rem;
+
+	&.description{
+		.dark-theme();
+	}
+
+	&.research{
+		.light-theme();
+	}
 
 	#title-bar{
 		text-align: center;

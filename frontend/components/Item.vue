@@ -54,7 +54,10 @@ export default{
 			], this.entry.category);
 		},
 		descriptionDisplay: function(){
-			return this.entry.category === "description";
+			return _.contains([
+				"description",
+				"research"
+			], this.entry.category);
 		}
 	},
 	methods: {
