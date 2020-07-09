@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const favicon = require("serve-favicon");
@@ -7,6 +8,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
 const index = require("./routes/index");
+const api = require("./routes/api");
 
 const app = express();
 
@@ -14,11 +16,12 @@ if(process.env.NODE_ENV !== "production"){
 	const Bundler = require("parcel-bundler");
 	const entryFiles = path.join(__dirname, "frontend/*.html");
 	const parcelOptions = {
-		outDir: "./public"
+		outDir: "./public",
+		watch: true
 	};
 	const bundler = new Bundler(entryFiles, parcelOptions);
 
-	app.use(bundler.middleware());
+	bundler.bundle();
 }
 
 // view engine setup
@@ -35,6 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", index);
+app.use("/api", api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -51,7 +55,9 @@ app.use(function(err, req, res, next) {
 
 	// render the error page
 	res.status(err.status || 500);
-	res.render("error");
+	res.json({
+		message: "Not Found"
+	});
 });
 
 module.exports = app;

@@ -25,6 +25,7 @@ export default{
 				return `https://img.youtube.com/vi/${youtubeID}/mqdefault.jpg`;
 			}else if(this.mediaType === "vimeo"){
 				const vimeoID = vimeoRE.exec(this.entry.media)[1];
+				return `/api/vimeo_thumbnail/${vimeoID}`;
 			}else{
 				return "";
 			}
