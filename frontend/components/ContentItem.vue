@@ -4,17 +4,23 @@
 		v-on:mousedown.prevent="itemDown"
 		v-on:click="itemClick"
 	>
-		<p
-			v-if="entry.category === 'research'"
-		>
-			{{ entry.description }}
-		</p>
+		<component
+			:is="entryType"
+			:entry="entry"
+		></component>
 	</div>
 </template>
 
 <script>
+import ItemResearch from "./ContentItemResearch.vue";
+import ItemMedia from "./ContentItemMedia.vue";
+
 export default{
 	name: "ChaosItem",
+	components: {
+		"item-research": ItemResearch,
+		"item-media": ItemMedia
+	},
 	props: {
 		entry:{
 			type: Object,
@@ -28,7 +34,14 @@ export default{
 	computed: {
 		entryType: function(){
 			if(this.entry.category === "research"){
-				return "research";
+				return "item-research";
+			}else if(_.contains([
+				"main",
+				"making",
+				"office",
+				"lockdown"
+			], this.entry.category)){
+				return "item-media";
 			}else{
 				return "";
 			}
@@ -42,7 +55,7 @@ export default{
 			const downPos = this.$store.state.mouseDownPos;
 
 			if(Math.hypot((downPos.x - e.screenX), (downPos.y - e.screenY)) <
-				this.$store.state.moveThreshold)
+				this.$store.state.moveThreshold || this.$store.state.mode === "order")
 			{
 				this.$emit("showItem", this.entry);
 			}
@@ -97,16 +110,8 @@ export default{
 	z-index: 1;
 	cursor: pointer;
 
-	&.research{
-		.light-theme();
-
+	&.item-research{
 		min-height: 0;
-		border: 1px solid;
-		// Subtract the container size/3 by the margin on the element
-		width: ~"calc((100vw - 5rem) / 3 - 2rem)";
-		padding: 1rem;
-		font-size: 0.7rem;
-		font-family: "IBM Plex Mono", monospace;
 	}
 }
 

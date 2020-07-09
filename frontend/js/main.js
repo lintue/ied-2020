@@ -71,55 +71,61 @@ const app = new Vue({
 	mounted: function(){
 		this.$nextTick(() => {
 			document.addEventListener("mousedown", (e) => {
-				this.$store.commit("setMouseDownPos", {
-					x: e.screenX + document.body.scrollLeft,
-					y: e.screenY + document.body.scrollTop
-				});
+				if(store.state.mode === "chaos"){
+					this.$store.commit("setMouseDownPos", {
+						x: e.screenX + document.body.scrollLeft,
+						y: e.screenY + document.body.scrollTop
+					});
 
-				pMouseX = e.screenX;
-				pMouseY = e.screenY;
+					pMouseX = e.screenX;
+					pMouseY = e.screenY;
+				}
 			});
 
 			document.addEventListener("mousemove", (e) => {
-				const el = this.$store.state.chaosElement;
+				if(store.state.mode === "chaos"){
+					const el = this.$store.state.chaosElement;
 
-				const mouseX = e.screenX;
-				const mouseY = e.screenY;
+					const mouseX = e.screenX;
+					const mouseY = e.screenY;
 
-				if(el && pMouseX !== null && pMouseY !== null){
-					const deltaX = mouseX - pMouseX;
-					const deltaY = mouseY - pMouseY;
+					if(el && pMouseX !== null && pMouseY !== null){
+						const deltaX = mouseX - pMouseX;
+						const deltaY = mouseY - pMouseY;
 
-					const boundingBox = el.getBoundingClientRect();
-					const newX = boundingBox.x + deltaX + window.scrollX;
-					const newY = boundingBox.y + deltaY + window.scrollY;
+						const boundingBox = el.getBoundingClientRect();
+						const newX = boundingBox.x + deltaX + window.scrollX;
+						const newY = boundingBox.y + deltaY + window.scrollY;
 
-					el.style.left = `${newX}px`;
-					el.style.top = `${newY}px`;
+						el.style.left = `${newX}px`;
+						el.style.top = `${newY}px`;
 
-					pMouseX = mouseX;
-					pMouseY = mouseY;
+						pMouseX = mouseX;
+						pMouseY = mouseY;
+					}
 				}
 			});
 
 			document.addEventListener("mouseup", (e) => {
-				const el = this.$store.state.chaosElement;
-				if(el){
-					const boundingBox = el.getBoundingClientRect();
+				if(store.state.mode === "chaos"){
+					const el = this.$store.state.chaosElement;
+					if(el){
+						const boundingBox = el.getBoundingClientRect();
 
-					if(boundingBox.right + window.scrollX > this.$el.clientWidth){
-						el.style.left = `${this.$el.clientWidth - boundingBox.width}px`;
-					}else if(boundingBox.left < 0){
-						el.style.left = "0px";
+						if(boundingBox.right + window.scrollX > this.$el.clientWidth){
+							el.style.left = `${this.$el.clientWidth - boundingBox.width}px`;
+						}else if(boundingBox.left < 0){
+							el.style.left = "0px";
+						}
+
+						if(boundingBox.bottom + window.scrollY > this.$el.clientHeight){
+							el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
+						}else if(boundingBox.top < 0){
+							el.style.top = "0px";
+						}
+
+						this.$store.commit("setChaosElement", null);
 					}
-
-					if(boundingBox.bottom + window.scrollY > this.$el.clientHeight){
-						el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
-					}else if(boundingBox.top < 0){
-						el.style.top = "0px";
-					}
-
-					this.$store.commit("setChaosElement", null);
 				}
 			});
 		});

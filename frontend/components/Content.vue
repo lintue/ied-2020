@@ -208,7 +208,7 @@ export default{
 	z-index: 0;
 
 	&.chaos{
-		height: 300vh;
+		height: 1000vh;
 	}
 
 	&.order{
