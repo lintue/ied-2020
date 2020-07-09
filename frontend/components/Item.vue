@@ -1,6 +1,6 @@
 <template>
 	<article id="item-container"
-		:class="[entry.title ? '' : 'hidden', justify]"
+		:class="[entry ? '' : 'hidden', justify]"
 		v-on:click.prevent.stop="closeItem"
 	>
 
@@ -8,7 +8,7 @@
 			v-on:click.stop=""
 		>
 			<section id="title-bar">
-				<div id="file-name">Project.img</div>
+				<div id="file-name">{{ entry.workTitle }}</div>
 				<div id="close-item-btn"
 					v-on:click="closeItem"
 				>
@@ -17,20 +17,27 @@
 					</span>
 				</div>
 			</section>
-			<section id="media">
+
+			<section id="media"
+				v-if="entry.media"
+			>
 				<img
 					:src="mediaPath"
 					v-on:load="mediaLoaded"
 				>
 			</section>
-			<section id="description">
-				<section id="name"
-					v-if="entry.name"
-				>
-					{{ entry.name }}
-				</section>
+
+			<section id="name"
+				v-if="entry.student"
+			>
+				{{ entry.student }}
+			</section>
+
+			<section id="description"
+				v-if="entry.description"
+			>
 				<h2 id="project-title">
-					{{ entry.title }}
+					{{ entry.workTitle }}
 				</h2>
 				<p id="description-text"
 					v-if="entry.description"
@@ -48,7 +55,8 @@ export default{
 	name: "ItemContainer",
 	props: {
 		entry: {
-			type: [Object, null]
+			type: [Object, null],
+			default: null
 		}
 	},
 	data: function(){
@@ -77,6 +85,18 @@ export default{
 </script>
 
 <style lang="less" scoped>
+.light-theme(){
+	background: white;
+	color: black;
+	border-color: black;
+}
+
+.dark-theme(){
+	background: #242424;
+	color: white;
+	border-color: white;
+}
+
 #item-container{
 	display: flex;
 	flex-direction: column;
@@ -88,7 +108,7 @@ export default{
 	overflow-y: scroll;
 	z-index: 1000;
 	background: rgba(0, 0, 0, 0.5);
-	color: white;
+
 
 	&.hidden{
 		display: none;
@@ -103,18 +123,20 @@ export default{
 	}
 
 	#item-content{
+		.dark-theme();
+
 		max-width: 1000px;
 		width: 70%;
-		border: 1px solid white;
-		background: #242424;
+		border: 1px solid;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
+		padding-bottom: 3rem;
 
 		#title-bar{
 			text-align: center;
 			font-size: 1.7rem;
-			border-bottom: 1px solid white;
+			border-bottom: 1px solid;
 
 			#file-name{
 				padding: 0.5rem;
@@ -128,7 +150,7 @@ export default{
 				padding: 0.4rem;
 				font-size: 1.9rem;
 				cursor: pointer;
-				border-left: 1px solid white;
+				border-left: 1px solid;
 			}
 		}
 
@@ -139,22 +161,23 @@ export default{
 			}
 		}
 
-		#description{
-			padding: 3rem;
-			padding-top: 4rem;
+		#name{
+			.light-theme();
 
-			#name{
-				position: absolute;
-				font-family: "Montserrat", sans-serif;
-				font-weight: 800;
-				font-size: 1.8rem;
-				font-style: italic;
-				transform: translateY(-5rem);
-				color:black;
-				padding: 0.5rem 3rem;
-				border: 3px solid black;
-				background: white;
-			}
+			position: absolute;
+			font-family: "Montserrat", sans-serif;
+			font-weight: 800;
+			font-size: 1.8rem;
+			font-style: italic;
+			padding: 0.5rem 3rem;
+			margin: 3rem;
+			border: 3px solid;
+			transform: translateY(-5rem);
+		}
+
+		#description{
+			padding: 0 3rem;
+			padding-top: 4rem;
 
 			#project-title{
 				font-family: "Montserrat", sans-serif;

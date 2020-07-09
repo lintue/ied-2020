@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import App from "../components/App.vue";
+import students from "../data/students.json";
+import entries from "../data/works.json";
 
 Vue.use(Vuex);
 
@@ -16,15 +18,17 @@ const store = new Vuex.Store({
 			x: null,
 			y: null
 		},
+		// entries: entries
 		entries: [
 			{
-				title: "Something Along These Lines",
-				description: "A room-sized installation that aims to induce the feeling of bewilderment at not understanding a language, with specific focus on the use of idioms or phrases that are language/culture specific.",
-				media: "something.png",
-				name: "Kenneth Lim",
-				category: "project"
+				"category": "main",
+				"student": "Quincy Cardinale",
+				"workTitle": "Dark Matter: Seeing the Unseen",
+				"description": "What might a Dark Planet look like?",
+				"media": "something.png"
 			}
-		]
+		],
+		students: students
 	},
 	mutations: {
 		toggleMode: function(state){

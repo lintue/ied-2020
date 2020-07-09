@@ -61,10 +61,7 @@ export default {
 		switchMode: function(){
 			this.$emit("switchMode");
 		},
-		showItem: function(title){
-			const entry = _.find(this.entries, (entry) => {
-				return entry.title === title;
-			});
+		showItem: function(entry){
 			this.showingItem = entry;
 		},
 		closeItem: function(){

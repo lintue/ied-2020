@@ -11,12 +11,8 @@
 export default{
 	name: "ChaosItem",
 	props: {
-		media: {
-			type: String,
-			required: true
-		},
-		title: {
-			type: String,
+		entry:{
+			type: Object,
 			required: true
 		},
 		mode: {
@@ -34,7 +30,7 @@ export default{
 			if(Math.hypot((downPos.x - e.screenX), (downPos.y - e.screenY)) <
 				this.$store.state.moveThreshold)
 			{
-				this.$emit("showItem", this.title);
+				this.$emit("showItem", this.entry);
 			}
 		},
 		changeElPosition: function(){

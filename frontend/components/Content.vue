@@ -6,8 +6,7 @@
 			<app-item
 				v-for="entry in entries"
 
-				:media="entry.media"
-				:title="entry.title"
+				:entry="entry"
 				:mode="mode"
 
 				v-on:chaosDown="chaosDown"
@@ -43,8 +42,8 @@ export default{
 		chaosDown: function(el){
 			this.$emit("chaosDown", el);
 		},
-		showItem: function(title){
-			this.$emit("showItem", title);
+		showItem: function(entry){
+			this.$emit("showItem", entry);
 		}
 	}
 };
