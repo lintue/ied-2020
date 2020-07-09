@@ -5,22 +5,29 @@
 	>
 
 		<item-frame
+			v-if="baseDisplay"
 			:entry="entry"
 			v-on:justify="setJustify"
 		>
-
 		</item-frame>
+		<item-description
+			v-if="descriptionDisplay"
+			:entry="entry"
+		>
+		</item-description>
 
 	</article>
 </template>
 
 <script>
 import ItemFrame from "./ItemFrame.vue";
+import ItemDescription from "./ItemDescription.vue";
 
 export default{
 	name: "ItemContainer",
 	components: {
-		"item-frame": ItemFrame
+		"item-frame": ItemFrame,
+		"item-description": ItemDescription
 	},
 	props: {
 		entry: {
@@ -33,6 +40,21 @@ export default{
 			justify: "justify-center"
 		};
 	},
+	computed: {
+		baseDisplay: function(){
+			return _.contains([
+				"main",
+				"making",
+				"office",
+				"lockdown",
+				"studio",
+				"add"
+			], this.entry.category);
+		},
+		descriptionDisplay: function(){
+			return this.entry.category === "description";
+		}
+	},
 	methods: {
 		closeItem: function(){
 			this.$emit("closeItem");
@@ -40,6 +62,15 @@ export default{
 		setJustify: function(value){
 			this.justify = value;
 		}
+	},
+	mounted: function(){
+		this.$nextTick(() => {
+			if(this.$el.querySelector("#item-content").clientHeight > window.innerHeight){
+				this.justify = "justify-start";
+			}else{
+				this.justify = "justify-center";
+			}
+		});
 	}
 };
 </script>

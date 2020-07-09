@@ -21,11 +21,9 @@ const store = new Vuex.Store({
 		// entries: entries
 		entries: [
 			{
-				"category": "main",
+				"category": "description",
 				"student": "Quincy Cardinale",
-				"workTitle": "Dark Matter: Seeing the Unseen",
-				"description": "What might a Dark Planet look like?",
-				"media": "something.png"
+				"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
 			}
 		],
 		students: students
