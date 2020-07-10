@@ -14,9 +14,11 @@
 			:mode="mode"
 			:entries="entries"
 			:students="students"
+			:showingStudent="showingStudent"
 
 			v-on:chaosDown="chaosDown"
 			v-on:showItem="showItem"
+			v-on:closeStudent="closeStudent"
 		></app-content>
 
 		<item-container
@@ -61,7 +63,8 @@ export default {
 	},
 	data: function(){
 		return {
-			showingItem: null
+			showingItem: null,
+			showingStudent: null
 		};
 	},
 	methods: {
@@ -72,10 +75,18 @@ export default {
 			this.$emit("switchMode");
 		},
 		showItem: function(entry){
-			this.showingItem = entry;
+			if(entry.category){
+				this.showingItem = entry;
+			}else{
+				// It's a student name
+				this.showingStudent = entry;
+			}
 		},
 		closeItem: function(){
 			this.showingItem = null;
+		},
+		closeStudent: function(){
+			this.showingStudent = null;
 		}
 	}
 };

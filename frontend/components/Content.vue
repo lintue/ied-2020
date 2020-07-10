@@ -1,8 +1,17 @@
 <template>
 	<div id="main-content" :class="mode">
 		<div id="grid" :class="mode">
+
+			<student-profile id="items"
+				v-if="mode === 'order' && showingStudent"
+				:student="showingStudent"
+
+				v-on:closeStudent="closeStudent"
+				v-on:showItem="showItem"
+			></student-profile>
+
 			<section id="items"
-				v-if="mode === 'chaos'"
+				v-else-if="mode === 'chaos'"
 			>
 				<app-item class="app-item"
 					v-for="(entry, index) in entries"
@@ -27,7 +36,7 @@
 				></app-item>
 			</section>
 
-			<section id="items" v-else>
+			<section id="items" v-else-if="mode === 'order'">
 				<section>
 					<h2 class="section-title">
 						STUDENTS
@@ -156,19 +165,21 @@
 						></app-item>
 					</div>
 				</section>
-
 			</section>
+
 		</div>
 	</div>
 </template>
 
 <script>
 import AppItem from "./ContentItem.vue";
+import StudentProfile from "./ContentStudent.vue";
 
 export default{
 	name: "Content",
 	components: {
-		"app-item": AppItem
+		"app-item": AppItem,
+		"student-profile": StudentProfile
 	},
 	props: {
 		mode: {
@@ -182,6 +193,10 @@ export default{
 		students: {
 			type: Array,
 			default: []
+		},
+		showingStudent: {
+			type: [Object, null],
+			default: null
 		}
 	},
 	computed: {
@@ -222,6 +237,9 @@ export default{
 		},
 		showItem: function(entry){
 			this.$emit("showItem", entry);
+		},
+		closeStudent: function(){
+			this.$emit("closeStudent");
 		}
 	}
 };
@@ -242,6 +260,10 @@ export default{
 			position: relative;
 			margin-top: 10vh;
 			z-index: 10;
+
+			&.student-profile{
+				padding: 0;
+			}
 
 			.section-title{
 				.light-theme();
@@ -316,6 +338,7 @@ export default{
 			position: absolute;
 			background-image: url("./grid-order.svg");
 			background-repeat: repeat-y;
+			background-size: 100vw;
 			min-width: 100%;
 			min-height: 100%;
 			top: 0;
