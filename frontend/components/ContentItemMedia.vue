@@ -19,7 +19,12 @@ export default{
 			const vimeoRE = /^(?:https?:\/\/)?(?:www\.)?vimeo\.com\/(?:channels\/)?(?:\w+\/)?(\d+)$/;
 
 			if(this.mediaType === "local"){
-				return `./media/${this.entry.media}`;
+				if(this.entry.thumbnail){
+					return `./media/${this.entry.thumbnail}`;
+				}else{
+					return `./media/${this.entry.media}`;
+				}
+
 			}else if(this.mediaType === "youtube"){
 				const youtubeID = youtubeRE.exec(this.entry.media)[1];
 				return `https://img.youtube.com/vi/${youtubeID}/mqdefault.jpg`;

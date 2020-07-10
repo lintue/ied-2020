@@ -131,13 +131,13 @@ export default{
 
 .chaos{
 	position: absolute;
-	background: grey;
+	// background: grey;
 }
 
 .order{
 	position: relative;
 	left: initial;
 	top: initial;
-	background: grey;
+	// background: grey;
 }
 </style>
