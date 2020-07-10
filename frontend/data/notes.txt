@@ -1,15 +1,8 @@
 TO DO:
 
-- Book in works.json (finish author/title + change media link + push)
-- Project + long-form description in works.json
-
-- Download all media
-- Resize media
 - Mogrify/photoshop macro thumbnails
-- Identify GIFs and change ext in .json
 - Add thumbnails to .json
-
-- Linnea RCA2020 link (all should be checked anyway).
+- xxx-add.jpg needs entry in works.json
 
 
 
@@ -19,6 +12,7 @@ Filenames: ./<studentFirstName>-<categoryId>.<ext>
 
 Category keys:
 
+event
 description (long-form)
 research (question)
 book (/article/inspiration)
@@ -64,6 +58,11 @@ Needs attention:
 
 Arman description (The file is the logo of my game and the link is the trailer for it)
 Two Yi's - use firstName-lastName-id
+Celeste Corona Office mov needs to be uploaded
+Yi Tian + Akvile lockdown movs need to be uploaded
+Lea lockdown .HEIC
+Yiming add mp4 needs to be uploaded
+
 
 
 List of students:
@@ -101,5 +100,6 @@ Jessica Scalzo
 Pierro Pozella
 Léa Mesplède
 Linnea Langfjord Kristensen
+
 
 

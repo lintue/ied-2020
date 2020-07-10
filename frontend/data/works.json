@@ -1,296 +1,411 @@
 [
 	{
+		"category": "event",
+		"workTitle": "305 Valley",
+		"date": "17/07/2020",
+		"time": "13:00",
+		"media": "./event-305Valley.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "Cellumonials ceremony",
+		"date": "17/07/2020",
+		"time": "11:00",
+		"media": "./event-CellumonialsCeremony.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "IED Quantum Awards",
+		"date": "23/07/2020",
+		"time": "19:00",
+		"media": "./event-IEDQuantumAwards.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "Quantum Cinema",
+		"date": "22/07/2020",
+		"time": "18:00",
+		"media": "./event-QuantumCinema.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "Quantum Vibrations 1/2",
+		"date": "21/07/2020",
+		"time": "14:00",
+		"media": "./event-QuantumVibrations1.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "Quantum Vibrations 2/2",
+		"date": "25/07/2020",
+		"time": "18:30",
+		"media": "./event-QuantumVibrations2.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "Really",
+		"date": "27/07/2020",
+		"time": "19:00",
+		"media": "./event-Really.svg"
+	},
+	{
+		"category": "event",
+		"workTitle": "White Noise",
+		"date": "18/07/2020",
+		"time": "18:00",
+		"media": "./event-WhiteNoise.svg"
+	},
+	{
 		"category": "description",
+		"workTitle": "Dark Matter: Seeing the Unseen",
 		"student": "Quincy Cardinale",
 		"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
 	},
 	{
 		"category": "description",
+		"workTitle": "305 Valley",
 		"student": "Yi Lu",
 		"description": "A dystopian future vision shown as an interactive fiction experience, where the physical and virtual merge, and embodied virtual presence is determined by one’s social credit score. This project explores how new technologies and social credit system affect people’s lives through a series of possible scenarios and issues of cohabitation in the mixed reality future. It gives viewers the chance to experience what it feels like to be involuntarily subject to low social scoring through a full-body tour experience and everyday narratives."
 	},
 	{
 		"category": "description",
+		"workTitle": "Black Window",
 		"student": "Hengshi Kang",
 		"description": "A collection of mindful abstract nature experiences for mobile. I used Three.js and Babylon.js (programming libraries of WebGL) to create these web experiences, that use mobile devices’ gyroscope or orientation sensing to simulate a change of view angle. Users can press the upper part of the screen to move the view forward and lower part to backward. Please scan the QR code with your phone to try."
 	},
 	{
 		"category": "description",
+		"workTitle": "Communication with the Inanimate",
 		"student": "Izabela Duszenko",
 		"description": "The aim of my project is to study our lost connection to the materials and surfaces around us, both natural and synthetic. To recognise the intense relationship and values that we previously had with objects and things, that we have lost over time. To capture, physicalize and attempt to understand the communication between objects within the conscious and the unconscious world in the context of our natural environment. The experience found in the distance between the viewer and the object, the eye and the surface, between a living organism and the matter that surrounds it."
 	},
 	{
 		"category": "description",
+		"workTitle": "Mercury's Retrograde",
 		"student": "Zohar Dvir",
 		"description": "A millennial is relying on her magic 8-ball to make sense of a chaotic life. Her non stopping questions cause her to fall through the sofa into her unconsciousness. When realising her 8-ball disappeared, she sets out on a journey to find it, encountering different aspects of herself. This satire is about a never ending quest towards self realisation, self improvement, and life's answers."
 	},
 	{
 		"category": "description",
+		"workTitle": "flows in a city",
 		"student": "Miyuki Oka",
 		"description": "This project explores the ways to use IoT technology to manifest the presence of the natural environment and life behind modern urban life. To feel the connection with others through energy and matter in the physical world, the piece's focus is on the subtle movement of air that occurs due to the wind, the breath of animals, or movements of things."
 	},
 	{
 		"category": "description",
+		"workTitle": "Splice",
 		"student": "Yiming Yang",
 		"description": "An installation fusing an interactive unity-based Virtual Reality and sonic environment, audience-controlled interactive robotics, with a performer lead experience. The process of mRNA splicing pertains to manually cutting and pasting pieces of our cells’ information transmission codes. Splice enmeshes a human organism with a robotic body, generating a cyborg, without interfering with genetics. This work challenges the notion of interlinks between and among human, nature and technology, and explores their impact on our subjectivity and psyche: creating a post-human, cyborg-driven scenario set in a transcendent, non-specific time in the future, in which we will be able to select our own organic bodies."
 	},
 	{
 		"category": "description",
+		"workTitle": "Homo Informis",
 		"student": "Dimitris Menexopoulos",
 		"description": "Homo Informis is a unique music creation system which functions by translating still and moving image into sound, and exposing the sonic parameters to be controlled by body gestures and EEG waves in real time."
 	},
 	{
 		"category": "description",
+		"workTitle": "Something Along These Lines",
 		"student": "Kenneth Lim",
 		"description": "A room-sized installation that aims to induce the feeling of bewilderment at not understanding a language, with specific focus on the use of idioms or phrases that are language/culture specific."
 	},
 	{
 		"category": "description",
+		"workTitle": "Mind the Gap: Is commuting on public transport beneficial to us?",
 		"student": "Michael Tsang",
 		"description": "This interactive video essay rethinks what our commute means to us through looking back in time. Commuting in London with public transportation was often said to cast a negative influence on our well-being. However ripping it from our lives, especially during the lockdown, has made us realize that there’s something that we miss – but what is it? Until about a decade ago, researchers started looking into positive psychology in commuting on public transport. They suggested that it could provide an impermeable “protected space” away from the world and a period of transition time for our minds to “shift gears”."
 	},
 	{
 		"category": "description",
+		"workTitle": "Bacteria as a Digital Mediator",
 		"student": "Akvile Terminaite",
 		"description": "To keep our information safe online we rely on encryption, a cryptography technique which is in constant need of random numbers. Such sequences can be found when a machine works with physical phenomena. With 4.57 billion of us actively using the internet and the growing threat of cyber security, we need to find reliable sources of entropy to seed random number generators. Presented here is a proof of concept for a random number generator that uses the process of bacterial growth as its source."
 	},
 	{
 		"category": "description",
+		"workTitle": "Cave Call",
 		"student": "Jamie Maule",
 		"description": "Cave Call is a generative, binaural audio work and installation. The narrative follows a group of animists, from around the time of the Neolithic agricultural revolution, who discover a cave with an arresting sound whilst walking the hills. Already aware of the complexity of the hill in which they live, the cave offers a clearer picture of their world. This piece draws on the work of thinkers including Timothy Morton, Gregory Bateson, and R. Murray Schafer. It includes ceramic bells made by Susan Atwill and illustrations by Laura Marija Balciunaite."
 	},
 	{
 		"category": "description",
+		"workTitle": "The North Somerset Heirloom",
 		"student": "Leah Mentzis",
 		"description": "The North Somerset Heirloom is a research project about human-landscape interaction. The Old Mills Batch is a slag heap located in Paulton, North-East Somerset. This hill is the result of human activity and centuries of mining in the region. Previous research about the reorganisation plans for industrial structures present in landscapes often misses the opinion of local communities. With this project I aim to uncover local feelings towards the Old Mills Batch using qualitative research methods."
 	},
 	{
 		"category": "description",
+		"workTitle": "Our House",
 		"student": "Julia Brackenbury",
 		"description": "Dissociative identity disorder (DID) is a survival type response to extreme stress and traumatic interpersonal life events, its defining feature being a severe change in identity and the creation of alters. Each alter may assume control of one’s behaviour and thoughts at different times. DID is a veiled mental health condition which Our House aims to introduce in an accessible way, primarily as a toolkit to be used in conjunction with my collaborator from charity First Person Plural, an organisation working for and on behalf of people affected by complex DID, at their conferences and training courses. As a public art piece, its purpose is to disseminate to a wider audience to educate and dispel the stigma around this mental health disorder."
 	},
 	{
 		"category": "description",
+		"workTitle": "Non Human Sonic Entities",
 		"student": "Jordan Edge",
 		"description": "Participants are invited to explore the latent potential of semantic sonic user experience in a virtual web ‘space’ with imagined non human sonic entities. Virtual ‘sound architectures’ and their already established networks present a sonic worlding and an institutionalised personal reality based around digital sounding avatars, personas and cognitive identities. A multi-dimensional reality resulting from the overlay of possibilities upon the world, challenging the convergence of experience in a space and the sound contained within it. Non Human Sonic Entities places you within a fictional experiential narrative to deconstruct, generate and rebuild sonic possible worlds through new ways of experiencing and thinking about sound."
 	},
 	{
 		"category": "description",
+		"workTitle": "Datafields",
 		"student": "Celeste Camilleri",
 		"description": "Datafields is a living data visualisation which embodies the racial bias present in medical text books."
 	},
 	{
 		"category": "description",
+		"workTitle": "Diktatura",
 		"student": "Sindi Breshani",
 		"description": "A VR docu-game that explores life inside a totalitarian regime, based on true accounts from four individuals who experienced the Albanian dictatorship. Players are transported to the center of a dystopian country, where you adopt the role of the Secretary of the Party monitoring your neighborhood by collecting information on its residents. As you progress through the narrative, you see the dictatorship from different perspectives, experiencing the life of each individual, and their untold stories. By drawing parallels between the Albanian dictatorship and our current times, Diktatura offers a unique take on nationalism, surveillance, and data collection."
 	},
 	{
 		"category": "description",
+		"workTitle": "Cloudy Logic: A Visual Manifesto on Bias",
 		"student": "Erik Lintunen",
 		"description": "A piece of philosophical writing and a multimedia artwork hosted online, made up of several narratives that broadly contemplate representations, knowledge and the nature of reality. It is inspired by an article of the same name (James, 2015), in which parallels are made between machine learning and pseudo-rational practices such as astrological forecasting: essentially, masquerading superstitions in empirical terms to make them seem more credible. Developed in response to conversations with various experts and nonexperts about interpretability in AI, the core idea behind the featured stories is to consider bias in the context of knowledge production, because, without specificity it is merely reduced to rhetoric – a scapegoat for a more expansive problem."
 	},
 	{
 		"category": "description",
+		"workTitle": "Emotional Geography",
 		"student": "Giorgiana Theiler",
 		"description": "Using experimental and exploratory research methods, the piece places authorial control in the hands of people and allows them to imagine their own therapeutic spaces in a digital form. The idea behind this project is to design your own space and hypnosis will come to you within that space."
 	},
 	{
 		"category": "description",
+		"workTitle": "Masc or Manage.",
 		"student": "Anthony Jennison",
 		"description": "The Masc or Manage initiatives objective is to mitigate the risk of male suicide in the UK through DIY activity. Statistics by Samaritans report men are three times as likely to commit suicide, with the highest rate amongst those aged 45-49 (Samaritans, 2019). The design is a large-scale knitted tea cosy structure, that will travel on a nationwide tour of 35 towns and cities in local working men’s clubs, vacant retail premises and community centres, where DIY workshops will take place. Working collaboratively with local charities, the aim is to re-ignite community foundations and signpost NHS services to those who feel unheard."
 	},
 	{
 		"category": "description",
+		"workTitle": "The Radiant City",
 		"student": "Feiqi Wang",
 		"description": "Mass Gymnastics is one of the simplest forms of massive collective actions which directs an arrayed crowd of people into patterned matrices with a sense of geometrical beauty. Dehumanisation, which displays a conflicting effect both visually and mentally, is the subject that The Radiant City project looks into. It is an experimental art game, a mental journey, a vast and mysterious virtual utopia space that has been built for the invisible individuals streaming in the tide of collectivism."
 	},
 	{
 		"category": "description",
+		"workTitle": "Seeking Solace in Stones",
 		"student": "Debbie Poon",
 		"description": "A short film composed of two fictional narratives that have been extracted from the memories and anecdotes surrounding jade, a hard gemstone. This piece examines the stone’s significance in the character’s lives – one associates with it spiritually whilst the other has a more consequential relationship, the jade being their main source of income. The stories never intersect but form a paradigm of beliefs, two people sharing their faith in something magical and intangible yet foundational to how they view the world."
 	},
 	{
 		"category": "description",
+		"workTitle": "Once Upon a Shadow Dimension",
 		"student": "Sammy Selin",
 		"description": "This abstract experimental film tells a surreal narrative of parallel selves and inter-dimensional adventures. The film is a cumulation of research using shadow as a metaphor to explore the relationship between our physical self and our digital persona."
 	},
 	{
 		"category": "description",
+		"workTitle": "The Explorer",
 		"student": "Alexia Charoud",
 		"description": "An interactive sound installation that uses light to reveal a hidden soundscape, The Explorer disrupts the common affordances of light and creates an evolving musical piece through its exploration. As visitors enter the space around them with their torch light, a mysterious sonic world emerges. The different choreographies of light and movement create unique sound pieces each time, making participants both explorers, and performers of this huge instrument."
 	},
 	{
 		"category": "description",
+		"workTitle": "Tempus Edax Rerum",
 		"student": "Pablo Colomina",
 		"description": "This project is a reflection on how to 'leave a mark'. It is a prototyped kinetic sculpture inspired by St Francis of Assisi's words: 'When you leave this earth, you can take nothing that you have received… but only what you gave'. The sculpture is composed of an arm rotating against a surface. A full rotation represents a day of life, the number of rotations completed represents a lifetime. At some point, the erosion and friction will break the sculpture. The eroded material will fall and be taken away in people's shoes. What you gave, not what you received."
 	},
 	{
 		"category": "description",
+		"workTitle": "Undeveloped Portrait",
 		"student": "Yi Tian",
 		"description": "As we actively reveal our lives onto the virtual world with selected portrait photos, we are also passively involved in image production, becoming a part of mass post-production (Hito Steterl). In this work, water is used as an organic medium and metaphor to demonstrate the position of digital representation that lies between the physical body (the Positive) and external world (the Negative). In real time, the digital image displays softness and fragility that is also a reflection of our physical bodies."
 	},
 	{
 		"category": "description",
+		"workTitle": "theMEADOW and theGIANTS",
 		"student": "Christian Pecher",
 		"description": "TheMEADOW and theGIANTS are two vivid spatial compositions, exploring new concepts of dynamic urban design, public engagement, and cultivation of materials, to educate and create awareness about more sustainable, flexible, and mindful approaches to building and living. These places focus on interaction with growing plants, its yield, workmanship, and the related experience. The audience is able to witness its evolution and is involved in the development and design process through various points of contact."
 	},
 	{
 		"category": "description",
+		"workTitle": "Ascension",
 		"student": "Arman Ataman",
 		"description": "Ascension is not goal oriented game, but creates opportunities for reflective experiences. It aims to communicate philosophical themes influenced by authors such as Herman Hasse, Henry David Thoureu, Nietzche, Graham Harman and Federico Campagna. Heavily inspired by Hasse’s book 'Siddhartha', in the game we witness a man's journey to seek enlightenment. The journey is not a direct path but goes through the sum of different contemplative experiences. The game incorporates MIDI protocols into its gameplay allowing the players to connect external synthesizers (USB supported), giving them control over the audio of the game."
 	},
 	{
 		"category": "description",
+		"workTitle": "You are in a block of tofu",
 		"student": "Juliette Coquet",
 		"description": "Blandness, by definition, is the image of something missing. It can be a lack of taste, a lack of colour, a lack of character. Due to its negative connotation, we tend to forget its value, this moment when the opposites balance each other and make other senses available. This project aims to invite the audience to think about and experience what may seem impossible: the richness of a bland texture, a bland sound, a bland smell, a bland colour and a bland taste. It makes people mindful of blandness by asking them to pay attention to something that does not seem to deserve it."
 	},
 	{
 		"category": "description",
+		"workTitle": "dis(ORDER)",
 		"student": "Jessica Scalzo",
 		"description": "An immersive installation reflecting eight experiences of obsessive-compulsive disorder (OCD). Through metronomic sound, digitally projected visuals and dance loops, it reveals the underlying internal processes of OCD and how they may be affected by common anxiety treatments. Although termed a ‘disorder’, ironically, there is great order in what is seemingly chaotic. dis(ORDER) is an interactive physical installation, a multi-sensory piece allowing the audience to determine the course of the live performance through introducing external variables (i.e. OCD treatments). For the virtual show, the installation has been adapted to the screen – a teaser of the full experience!"
 	},
 	{
 		"category": "description",
+		"workTitle": "Aerosphere Oscillation",
 		"student": "Pierro Pozella",
 		"description": "An investigation into the electromagnetic fields capturing visual data, to reveal the extent of their presence within a natural environment and to gain an understanding of the negative effects they are having on the natural world."
 	},
 	{
 		"category": "description",
+		"workTitle": "It's breathing",
 		"student": "Léa Mesplède",
 		"description": "In this fictional epistolary film, the evolution of a breakable time is seen through the lens of the communication between a pair of twins. A global pandemic leads to a falling birthrate, and siblings Jean and Gisèle witness the Anthropocene’s decline in an alternate reality where scientists and government have joined forces to build a better, but controlled, future. People can order a customisable fetus on the internet and grow their child artificially in a microwave. This remote video series experience is a testimony of my generation's experiences, where viewers can interact and explore the life of the characters by seeing and using their social platforms, websites, online games, filters. You are at the core of the narration."
 	},
 	{
 		"category": "description",
+		"workTitle": "Is it really ever really really really real? Or is real reality really just a representation? Really.",
 		"student": "Linnea Langfjord Kristensen",
 		"description": "This is a play about real/reality/representation with a set of characters trying to understand what it means to be real when reality itself is a representation. The narrative is concerned with the prevailing understanding of what it means to be a successful human being in our culture and the negative consequences the ways we measure this success has on people’s mental health. The play aims to translate complex philosophical ideas and contemporary social critiques into an engaging and compelling narrative for an audience who would not normally be exposed to those critiques."
 	},
 	{
 		"category": "research",
+		"workTitle": "Dark Matter: Seeing the Unseen",
 		"student": "Quincy Cardinale",
 		"description": "How might we explain dark matter to a broad audience?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Communication with the Inanimate",
 		"student": "Izabela Duszenko",
 		"description": "If we could study our raw, intense relationships to objects from our earliest prehistory, how would it look?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Mercury's Retrograde",
 		"student": "Zohar Dvir",
 		"description": "Why?"
 	},
 	{
 		"category": "research",
+		"workTitle": "flows in a city",
 		"student": "Miyuki Oka",
 		"description": "How can we use the IoT to manifest non-human beings and feel the connection with them?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Splice",
 		"student": "Yiming Yang",
 		"description": "Spiders detect sound via their legs. What would emerge if human beings could fuse their senses with technologies via artificial means? What range of potentialities does the human body have by increasing integration with technology? What are the effects and ramifications of increasingly occupying a virtual reality on human spirituality, that can occur as we enter a realm that operates according to laws and maxims outside the remit of our commonplace imagination?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Homo Informis",
 		"student": "Dimitris Menexopoulos",
 		"description": "Is it possible to construct a versatile music creation system that relies completely on human body data for the generation and control of the sonic and musical elements?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Something Along These Lines",
 		"student": "Kenneth Lim",
 		"description": "In all natural languages there are idioms, metaphors, puns, and other such phrases that are specific to that language or culture, and they are often difficult to translate to another language or simply untranslatable. We can provide as best an explanation of what we're expressing in simpler terms, but in the end give up and say 'Something Along These Lines', which itself is ironic, because 'something along these lines' itself is such a phrase."
 	},
 	{
 		"category": "research",
+		"workTitle": "Mind the Gap: Is commuting on public transport beneficial to us?",
 		"student": "Michael Tsang",
 		"description": "Is commuting on public transport beneficial to us?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Bacteria as a Digital Mediator",
 		"student": "Akvile Terminaite",
 		"description": "If machines are considered deterministic and humans are considered random, how do they form a symbiotic relationship?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Cave Call",
 		"student": "Jamie Maule",
 		"description": "How can we better understand ourselves as ecological beings?"
 	},
 	{
 		"category": "research",
+		"workTitle": "The North Somerset Heirloom",
 		"student": "Leah Mentzis",
 		"description": "What are the feelings of the local community of North Somerset towards their industrial landscape?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Non Human Sonic Entities",
 		"student": "Jordan Edge",
 		"description": "What does it mean for something more commonly regarded as abstract and ethereal to become intrinsically linked to a specific physical sound?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Datafields",
 		"student": "Celeste Camilleri",
 		"description": "Racial Bias presents itself across medicine, how might representation within education material play into this disparity?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Diktatura",
 		"student": "Sindi Breshani",
 		"description": "How do you know that what you know is real?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Cloudy Logic",
 		"student": "Erik Lintunen",
 		"description": "How should we frame the conversation around bias in machine learning systems to constructively discuss their real-world implications?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Emotional Geography",
 		"student": "Giorgiana Theiler",
 		"description": "How do spatial dynamics affect healing encounters?"
 	},
 	{
 		"category": "research",
+		"workTitle": "The Radiant City",
 		"student": "Feiqi Wang",
 		"description": "As individuals, how do we look back on our existence among collectivities whilst being buried in neat patterns? As social animals, how do we face our primitive calling of collective-seeking fearlessly without hostility?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Seeking Solace in Stones",
 		"student": "Debbie Poon",
 		"description": "What is jade magic?"
 	},
 	{
 		"category": "research",
+		"workTitle": "The Explorer",
 		"student": "Alexia Charoud",
 		"description": "Light does not show us a world of visible objects we can identify and manipulate; rather it gives voice to a universe otherwise unheard, ephemeral glimpses of a world constantly unfolding beyond the reach of our perception. Using light and placing listening at the heart of an experience, how might one experience an invisible world of sounds? How can the medium of sound be a means to reveal hidden realities?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Tempus Edax Rerum",
 		"student": "Pablo Colomina",
 		"description": "We all need to leave a mark, to feel that our time being alive was well spent and that we contributed to this whole who-knows-what with our grain of sand. Because if we don't, we won't be able to welcome death with the dignity and peace necessary to enjoy the dance. How should we face this, though? How should one leave a mark?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Undeveloped Portrait",
 		"student": "Yi Tian",
 		"description": "We now live in a hyper-reality. Our digital format is expanding greatly via enormous duplication and fast transportation. When the representation of ourselves is proliferating more than expected and immortalising, does it make that representation, the portrait-size picture of who we are, become more dominant in virtual world than our true selves?"
 	},
 	{
 		"category": "research",
+		"workTitle": "theMEADOW and theGIANTS",
 		"student": "Christian Pecher",
 		"description": "How do we create awareness about more sustainable, flexible, and mindful approaches to building and living?"
 	},
 	{
 		"category": "research",
+		"workTitle": "Ascension",
 		"student": "Arman Ataman",
 		"description": "How can experimentation be used as a method in design process?"
 	},
 	{
 		"category": "research",
+		"workTitle": "You are in a block of tofu",
 		"student": "Juliette Coquet",
 		"description": "Does blandness come from food or via the eater?"
 	},
 	{
 		"category": "research",
+		"workTitle": "dis(ORDER)",
 		"student": "Jessica Scalzo",
 		"description": "How can OCD be revealed beyond common portrayals of repetitive and organizational behaviors (e.g. hand washing or arranging items)? Looking at control or the conscious resistance of OCD obsessions, my investigation evolved into attempting to understand the underlying processes of the OCD mind. Similarities across participant testimonies include themes of oppositional forces at play, feedback loops, infinite evolution and experimentation with anxiety treatments. The final piece attempts to integrate these themes and evoke an understanding and emotional resonance."
 	},
 	{
 		"category": "research",
+		"workTitle": "It's breathing",
 		"student": "Léa Mesplède",
 		"description": "What is the future of family? In society the notion of family is being questioned more than ever, more specifically our own human species. My artistic contribution is about opening visions, proposing answers to future possibilities, and making people aware of our potential from using the information at present."
 	},
@@ -299,231 +414,264 @@
 		"student": "Quincy Cardinale",
 		"author": "Kurzgesagt",
 		"workTitle": "In a Nutshell",
-		"media": "./quincy-book.jpg"
+		"media": "./quincy-book.jpg",
+		"thumbnail": "./quincy-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Yi Lu",
 		"author": "Nicholas Negroponte",
 		"workTitle": "Being Digital",
-		"media": "./yi-lu-book.jpg"
+		"media": "./yi-lu-book.jpg",
+		"thumbnail": "./yi-lu-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Hengshi Kang",
 		"author": "Lusion Ltd",
 		"workTitle": "From Concept Prototyping to Production in a Creative Studio",
-		"media": "./hengshi-book.jpg"
+		"media": "./hengshi-book.jpg",
+		"thumbnail": "./hengshi-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Izabela Duszenko",
 		"author": "Tim Ingold",
 		"workTitle": "Making: Anthropology, Archaeology, Art and Architecture",
-		"media": "./izabela-book.jpg"
+		"media": "./izabela-book.jpg",
+		"thumbnail": "./izabela-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Zohar Dvir",
 		"author": "Carl Jung",
 		"workTitle": "The Archetypes and the Collective Unconscious",
-		"media": "./zohar-book.jpg"
+		"media": "./zohar-book.jpg",
+		"thumbnail": "./zohar-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Miyuki Oka",
 		"author": "Ted Chiang",
 		"workTitle": "Exhalation",
-		"media": "./miyuki-book.jpg"
+		"media": "./miyuki-book.jpg",
+		"thumbnail": "./miyuki-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Yiming Yang",
 		"author": "Donna Haraway",
 		"workTitle": "The Companion Species Manifesto: Dogs, People, and Significant Otherness",
-		"media": "./yiming-book.jpg"
+		"media": "./yiming-book.jpg",
+		"thumbnail": "./yiming-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Dimitris Menexopoulos",
 		"author": "Mike Featherstone and Roger Burrows",
 		"workTitle": "Cyberspace/Cyberbodies/Cyberpunk: Cultures of Technological Embodiment",
-		"media": "./dimitris-book.jpg"
+		"media": "./dimitris-book.jpg",
+		"thumbnail": "./dimitris-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Kenneth Lim",
 		"author": "Umberto Eco",
 		"workTitle": "The Search for the Perfect Language",
-		"media": "./kenneth-book.jpg"
+		"media": "./kenneth-book.jpg",
+		"thumbnail": "./kenneth-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Michael Tsang",
 		"author": "Glenn Lyons and Kiron Chatterjee",
 		"workTitle": "A Human Perspective on the Daily Commute: Costs, Benefits and Trade-offs",
-		"media": "./michael-book.jpg"
+		"media": "./michael-book.jpg",
+		"thumbnail": "./michael-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Akvile Terminaite",
 		"author": "Leah Kelly",
 		"workTitle": "Self of Sense",
-		"media": "./akvile-book.jpg"
+		"media": "./akvile-book.jpg",
+		"thumbnail": "./akvile-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Jamie Maule",
 		"author": "Timothy Morton",
 		"workTitle": "Humankind",
-		"media": "./jamie-book.jpg"
+		"media": "./jamie-book.jpg",
+		"thumbnail": "./jamie-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Leah Mentzis",
 		"author": "Tim Ingold",
 		"workTitle": "The Temporality of the Landscape",
-		"media": "./leah-book.jpg"
+		"media": "./leah-book.jpg",
+		"thumbnail": "./leah-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Julia Brackenbury",
 		"author": "Kennedy, F., Kennerley, F. and Pearson, D.",
 		"workTitle": "Cognitive Behavioural Approaches to the Understanding and Treatment of Dissociation",
-		"media": "./julia-book.jpg"
+		"media": "./julia-book.jpg",
+		"thumbnail": "./julia-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Jordan Edge",
 		"author": "Lawrence Abu Hamdan",
 		"workTitle": "A Politics of Listening In 4 Acts",
-		"media": "./jordan-book.jpg"
+		"media": "./jordan-book.jpg",
+		"thumbnail": "./jordan-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Celeste Camilleri",
 		"author": "Malone Mukwende",
 		"workTitle": "Mind The Gap: A Handbook of Clinical Signs in Black & Brown Skin",
-		"media": "./celeste-book.jpg"
+		"media": "./celeste-book.jpg",
+		"thumbnail": "./celeste-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Sindi Breshani",
 		"author": "Paulo Freire",
 		"workTitle": "Pedagogy of the Oppressed",
-		"media": "./sindi-book.jpg"
+		"media": "./sindi-book.jpg",
+		"thumbnail": "./sindi-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Erik Lintunen",
 		"author": "Robin James",
 		"workTitle": "Cloudy Logic (2015)",
-		"media": "./erik-book.jpg"
+		"media": "./erik-book.jpg",
+		"thumbnail": "./erik-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Giorgiana Theiler",
 		"author": "Schweitzer, M., Gilpin, L. and Frampton, S.",
 		"workTitle": "Healing Spaces: Elements of Environmental Design that Make an Impact on Health",
-		"media": "./giorgiana-book.jpg"
+		"media": "./giorgiana-book.jpg",
+		"thumbnail": "./giorgiana-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Anthony Jennison",
 		"author": "Mikhail Karikis and Uriel Orlow",
 		"workTitle": "Sounds from Beneath",
-		"media": "./anthony-book.jpg"
+		"media": "./anthony-book.jpg",
+		"thumbnail": "./anthony-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Feiqi Wang",
 		"author": "Akiko Busch",
 		"workTitle": "How to Disappear: Notes on Invisibility in a Time of Transparency",
-		"media": "./feiqi-book.jpg"
+		"media": "./feiqi-book.jpg",
+		"thumbnail": "./feiqi-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Debbie Poon",
 		"author": "Jun'ichirō Tanizaki",
 		"workTitle": "In Praise of Shadows",
-		"media": "./debbie-book.jpg"
+		"media": "./debbie-book.jpg",
+		"thumbnail": "./debbie-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Sammy Selin",
 		"author": "Donna Haraway",
 		"workTitle": "A Cyborg Manifesto",
-		"media": "./sammy-book.jpg"
+		"media": "./sammy-book.jpg",
+		"thumbnail": "./sammy-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Alexia Charoud",
 		"author": "Maurice Merleau-Ponty",
 		"workTitle": "The Visible and the Invisible",
-		"media": "./alexia-book.jpg"
+		"media": "./alexia-book.jpg",
+		"thumbnail": "./alexia-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Pablo Colomina",
 		"author": "Epictetus",
 		"workTitle": "Of Human Freedom",
-		"media": "./pablo-book.jpg"
+		"media": "./pablo-book.jpg",
+		"thumbnail": "./pablo-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Yi Tian",
 		"author": "Hito Steyerl",
 		"workTitle": "Duty Free Art: Art in the Age of Planetary Civil War",
-		"media": "./yi-tian-book.jpg"
+		"media": "./yi-tian-book.jpg",
+		"thumbnail": "./yi-tian-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Christian Pecher",
 		"author": "David Farrelly",
 		"workTitle": "The Book of Bamboo",
-		"media": "./christian-book.jpg"
+		"media": "./christian-book.jpg",
+		"thumbnail": "./christian-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Arman Ataman",
 		"author": "Herman Hesse",
 		"workTitle": "Siddhartha",
-		"media": "./arman-book.jpg"
+		"media": "./arman-book.jpg",
+		"thumbnail": "./arman-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Juliette Coquet",
 		"author": "François Jullien",
 		"workTitle": "In Praise of Blandness",
-		"media": "./juliette-book.jpg"
+		"media": "./juliette-book.jpg",
+		"thumbnail": "./juliette-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Jessica Scalzo",
 		"author": "Peter Godfrey-Smith",
 		"workTitle": "Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness",
-		"media": "./jessica-book.jpg"
+		"media": "./jessica-book.jpg",
+		"thumbnail": "./jessica-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Pierro Pozella",
 		"author": "Thomas Thwaites",
 		"workTitle": "Goat Man",
-		"media": "./pierro-book.jpg"
+		"media": "./pierro-book.jpg",
+		"thumbnail": "./pierro-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Léa Mesplède",
 		"author": "Aldous Huxley",
 		"workTitle": "Brave New World",
-		"media": "./lea-book.jpg"
+		"media": "./lea-book.jpg",
+		"thumbnail": "./lea-book-icon.jpg"
 	},
 	{
 		"category": "book",
 		"student": "Linnea Langfjord Kristensen",
 		"author": "Simon O'Sullivan",
 		"workTitle": "On Deleuze's fold",
-		"media": "./linnea-book.jpg"
+		"media": "./linnea-book.jpg",
+		"thumbnail": "./linnea-book-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -593,7 +741,7 @@
 		"student": "Michael Tsang",
 		"workTitle": "Mind the Gap: Is commuting on public transport beneficial to us?",
 		"description": "Research-led interactive video website",
-		"media": "TBC"
+		"media": "./michael-main.gif"
 	},
 	{
 		"category": "main",
@@ -677,7 +825,7 @@
 		"student": "Debbie Poon",
 		"workTitle": "Seeking Solace in Stones",
 		"description": "Seeking Solace in Stones film",
-		"media": "TBC"
+		"media": "./debbie-main.gif"
 	},
 	{
 		"category": "main",
@@ -712,7 +860,7 @@
 		"student": "Christian Pecher",
 		"workTitle": "theGIANTS - Growth Simulation",
 		"description": "Dynamic simulation of possible possible shapes and growth of living Bamboo structures in Grasshopper3D",
-		"media": "./christian-main.jpg"
+		"media": "./christian-main.gif"
 	},
 	{
 		"category": "main",
@@ -796,7 +944,7 @@
 		"student": "Miyuki Oka",
 		"workTitle": "Copy of the movement",
 		"description": "Physical digital twin",
-		"media": "./miyuki-making.jpg"
+		"media": "./miyuki-making.gif"
 	},
 	{
 		"category": "making",
@@ -915,28 +1063,28 @@
 		"student": "Alexia Charoud",
 		"workTitle": "The Explorer - Making-Of",
 		"description": "Coding, Prototyping, Testing, Sound Designing, Installing in a bedroom during lockdown, Missing Monica...",
-		"media": "./alexia-making.jpg"
+		"media": "./alexia-making.gif"
 	},
 	{
 		"category": "making",
 		"student": "Pablo Colomina",
 		"workTitle": ".",
 		"description": ".",
-		"media": "./pablo-making.jpg"
+		"media": "./pablo-making.gif"
 	},
 	{
 		"category": "making",
 		"student": "Yi Tian",
 		"workTitle": "Work In Progress",
 		"description": "The making progress is a series of actions which in transitions between negative and positive form, which is very similar to the approach of film developing",
-		"media": "./yi-tian-making.jpg"
+		"media": "./yi-tian-making.gif"
 	},
 	{
 		"category": "making",
 		"student": "Christian Pecher",
 		"workTitle": "Making of a Matcha Whisk",
 		"description": "First attempt of crafting a bamboo matcha whisk after traditional methods",
-		"media": "./christian-making.jpg"
+		"media": "./christian-making.gif"
 	},
 	{
 		"category": "making",
@@ -950,14 +1098,14 @@
 		"student": "Juliette Coquet",
 		"workTitle": "Falling Tofu",
 		"description": "A 3D experiment on colour, texture and physics of tofu",
-		"media": "./juliette-making.jpg"
+		"media": "./juliette-making.gif"
 	},
 	{
 		"category": "making",
 		"student": "Jessica Scalzo",
 		"workTitle": "dis(ORDER): Editing Process",
 		"description": "Editing the animation of the Mandelbulb",
-		"media": "./jessica-making.jpg"
+		"media": "./jessica-making.gif"
 	},
 	{
 		"category": "making",
