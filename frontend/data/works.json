@@ -415,7 +415,7 @@
 		"author": "Kurzgesagt",
 		"workTitle": "In a Nutshell",
 		"media": "./quincy-book.jpg",
-		"thumbnail": "./quincy-book-icon.jpg"
+		"thumbnail": "./quincy-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -423,7 +423,7 @@
 		"author": "Nicholas Negroponte",
 		"workTitle": "Being Digital",
 		"media": "./yi-lu-book.jpg",
-		"thumbnail": "./yi-lu-book-icon.jpg"
+		"thumbnail": "./yi-lu-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -431,7 +431,7 @@
 		"author": "Lusion Ltd",
 		"workTitle": "From Concept Prototyping to Production in a Creative Studio",
 		"media": "./hengshi-book.jpg",
-		"thumbnail": "./hengshi-book-icon.jpg"
+		"thumbnail": "./hengshi-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -439,7 +439,7 @@
 		"author": "Tim Ingold",
 		"workTitle": "Making: Anthropology, Archaeology, Art and Architecture",
 		"media": "./izabela-book.jpg",
-		"thumbnail": "./izabela-book-icon.jpg"
+		"thumbnail": "./izabela-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -447,7 +447,7 @@
 		"author": "Carl Jung",
 		"workTitle": "The Archetypes and the Collective Unconscious",
 		"media": "./zohar-book.jpg",
-		"thumbnail": "./zohar-book-icon.jpg"
+		"thumbnail": "./zohar-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -455,7 +455,7 @@
 		"author": "Ted Chiang",
 		"workTitle": "Exhalation",
 		"media": "./miyuki-book.jpg",
-		"thumbnail": "./miyuki-book-icon.jpg"
+		"thumbnail": "./miyuki-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -463,7 +463,7 @@
 		"author": "Donna Haraway",
 		"workTitle": "The Companion Species Manifesto: Dogs, People, and Significant Otherness",
 		"media": "./yiming-book.jpg",
-		"thumbnail": "./yiming-book-icon.jpg"
+		"thumbnail": "./yiming-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -471,7 +471,7 @@
 		"author": "Mike Featherstone and Roger Burrows",
 		"workTitle": "Cyberspace/Cyberbodies/Cyberpunk: Cultures of Technological Embodiment",
 		"media": "./dimitris-book.jpg",
-		"thumbnail": "./dimitris-book-icon.jpg"
+		"thumbnail": "./dimitris-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -479,7 +479,7 @@
 		"author": "Umberto Eco",
 		"workTitle": "The Search for the Perfect Language",
 		"media": "./kenneth-book.jpg",
-		"thumbnail": "./kenneth-book-icon.jpg"
+		"thumbnail": "./kenneth-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -487,7 +487,7 @@
 		"author": "Glenn Lyons and Kiron Chatterjee",
 		"workTitle": "A Human Perspective on the Daily Commute: Costs, Benefits and Trade-offs",
 		"media": "./michael-book.jpg",
-		"thumbnail": "./michael-book-icon.jpg"
+		"thumbnail": "./michael-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -495,7 +495,7 @@
 		"author": "Leah Kelly",
 		"workTitle": "Self of Sense",
 		"media": "./akvile-book.jpg",
-		"thumbnail": "./akvile-book-icon.jpg"
+		"thumbnail": "./akvile-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -503,7 +503,7 @@
 		"author": "Timothy Morton",
 		"workTitle": "Humankind",
 		"media": "./jamie-book.jpg",
-		"thumbnail": "./jamie-book-icon.jpg"
+		"thumbnail": "./jamie-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -511,7 +511,7 @@
 		"author": "Tim Ingold",
 		"workTitle": "The Temporality of the Landscape",
 		"media": "./leah-book.jpg",
-		"thumbnail": "./leah-book-icon.jpg"
+		"thumbnail": "./leah-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -519,7 +519,7 @@
 		"author": "Kennedy, F., Kennerley, F. and Pearson, D.",
 		"workTitle": "Cognitive Behavioural Approaches to the Understanding and Treatment of Dissociation",
 		"media": "./julia-book.jpg",
-		"thumbnail": "./julia-book-icon.jpg"
+		"thumbnail": "./julia-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -535,7 +535,7 @@
 		"author": "Malone Mukwende",
 		"workTitle": "Mind The Gap: A Handbook of Clinical Signs in Black & Brown Skin",
 		"media": "./celeste-book.jpg",
-		"thumbnail": "./celeste-book-icon.jpg"
+		"thumbnail": "./celeste-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -543,7 +543,7 @@
 		"author": "Paulo Freire",
 		"workTitle": "Pedagogy of the Oppressed",
 		"media": "./sindi-book.jpg",
-		"thumbnail": "./sindi-book-icon.jpg"
+		"thumbnail": "./sindi-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -551,7 +551,7 @@
 		"author": "Robin James",
 		"workTitle": "Cloudy Logic (2015)",
 		"media": "./erik-book.jpg",
-		"thumbnail": "./erik-book-icon.jpg"
+		"thumbnail": "./erik-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -559,7 +559,7 @@
 		"author": "Schweitzer, M., Gilpin, L. and Frampton, S.",
 		"workTitle": "Healing Spaces: Elements of Environmental Design that Make an Impact on Health",
 		"media": "./giorgiana-book.jpg",
-		"thumbnail": "./giorgiana-book-icon.jpg"
+		"thumbnail": "./giorgiana-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -567,7 +567,7 @@
 		"author": "Mikhail Karikis and Uriel Orlow",
 		"workTitle": "Sounds from Beneath",
 		"media": "./anthony-book.jpg",
-		"thumbnail": "./anthony-book-icon.jpg"
+		"thumbnail": "./anthony-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -575,7 +575,7 @@
 		"author": "Akiko Busch",
 		"workTitle": "How to Disappear: Notes on Invisibility in a Time of Transparency",
 		"media": "./feiqi-book.jpg",
-		"thumbnail": "./feiqi-book-icon.jpg"
+		"thumbnail": "./feiqi-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -583,7 +583,7 @@
 		"author": "Jun'ichirō Tanizaki",
 		"workTitle": "In Praise of Shadows",
 		"media": "./debbie-book.jpg",
-		"thumbnail": "./debbie-book-icon.jpg"
+		"thumbnail": "./debbie-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -591,7 +591,7 @@
 		"author": "Donna Haraway",
 		"workTitle": "A Cyborg Manifesto",
 		"media": "./sammy-book.jpg",
-		"thumbnail": "./sammy-book-icon.jpg"
+		"thumbnail": "./sammy-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -599,7 +599,7 @@
 		"author": "Maurice Merleau-Ponty",
 		"workTitle": "The Visible and the Invisible",
 		"media": "./alexia-book.jpg",
-		"thumbnail": "./alexia-book-icon.jpg"
+		"thumbnail": "./alexia-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -607,7 +607,7 @@
 		"author": "Epictetus",
 		"workTitle": "Of Human Freedom",
 		"media": "./pablo-book.jpg",
-		"thumbnail": "./pablo-book-icon.jpg"
+		"thumbnail": "./pablo-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -615,7 +615,7 @@
 		"author": "Hito Steyerl",
 		"workTitle": "Duty Free Art: Art in the Age of Planetary Civil War",
 		"media": "./yi-tian-book.jpg",
-		"thumbnail": "./yi-tian-book-icon.jpg"
+		"thumbnail": "./yi-tian-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -623,7 +623,7 @@
 		"author": "David Farrelly",
 		"workTitle": "The Book of Bamboo",
 		"media": "./christian-book.jpg",
-		"thumbnail": "./christian-book-icon.jpg"
+		"thumbnail": "./christian-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -631,7 +631,7 @@
 		"author": "Herman Hesse",
 		"workTitle": "Siddhartha",
 		"media": "./arman-book.jpg",
-		"thumbnail": "./arman-book-icon.jpg"
+		"thumbnail": "./arman-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -639,7 +639,7 @@
 		"author": "François Jullien",
 		"workTitle": "In Praise of Blandness",
 		"media": "./juliette-book.jpg",
-		"thumbnail": "./juliette-book-icon.jpg"
+		"thumbnail": "./juliette-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -647,7 +647,7 @@
 		"author": "Peter Godfrey-Smith",
 		"workTitle": "Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness",
 		"media": "./jessica-book.jpg",
-		"thumbnail": "./jessica-book-icon.jpg"
+		"thumbnail": "./jessica-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -655,7 +655,7 @@
 		"author": "Thomas Thwaites",
 		"workTitle": "Goat Man",
 		"media": "./pierro-book.jpg",
-		"thumbnail": "./pierro-book-icon.jpg"
+		"thumbnail": "./pierro-book-icon.png"
 	},
 	{
 		"category": "book",
@@ -663,7 +663,7 @@
 		"author": "Aldous Huxley",
 		"workTitle": "Brave New World",
 		"media": "./lea-book.jpg",
-		"thumbnail": "./lea-book-icon.jpg"
+		"thumbnail": "./lea-book-icon.png"
 	},
 	{
 		"category": "book",
