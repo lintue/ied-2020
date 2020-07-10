@@ -43,7 +43,10 @@ export default{
 				"main",
 				"making",
 				"office",
-				"lockdown"
+				"lockdown",
+				"studio",
+				"add",
+				"book"
 			], this.entry.category)){
 				return "item-media";
 			}else if(this.entry.category === "description"){

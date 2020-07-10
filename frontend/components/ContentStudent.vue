@@ -35,6 +35,15 @@
 
 			<div class="subcontainer">
 				<app-item class="app-item"
+					:entry="projectTitle"
+					mode="order"
+
+					v-on:showItem="showItem"
+				></app-item>
+			</div>
+
+			<div class="subcontainer">
+				<app-item class="app-item"
 					v-for="entry in studentEntries"
 					:entry="entry"
 					mode="order"
@@ -63,10 +72,19 @@ export default{
 	computed: {
 		studentEntries: function(){
 			const entries = _.filter(this.$store.state.entries, (entry) => {
-				return entry.student === this.student.name;
+				return entry.student === this.student.name && entry.category !== "description";
 			});
 
+			console.log(entries);
 			return entries;
+		},
+		projectTitle: function(){
+			const entry = _.find(this.$store.state.entries, (entry) => {
+				return entry.student === this.student.name && entry.category === "description";
+			});
+
+			console.log(entry);
+			return entry;
 		}
 	},
 	methods: {
@@ -125,6 +143,7 @@ export default{
 			margin-bottom: 3rem;
 			display: flex;
 			flex-wrap: wrap;
+			align-items: flex-start;
 
 			.app-item{
 				margin: 1rem;
