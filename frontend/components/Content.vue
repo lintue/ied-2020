@@ -13,12 +13,14 @@
 			<section id="items"
 				v-else-if="mode === 'chaos'"
 			>
-				<app-item class="app-item"
+				<app-item
 					v-for="(entry, index) in entries"
+					:class="['app-item', entry.category === 'book' ? 'book' : '']"
 					:key="index"
 
 					:entry="entry"
 					:mode="mode"
+					:isBook="entry.category === 'book'"
 
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
