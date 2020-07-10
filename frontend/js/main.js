@@ -129,8 +129,8 @@ const app = new Vue({
 
 						if(boundingBox.bottom + window.scrollY > this.$el.clientHeight){
 							el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
-						}else if(boundingBox.top < 0){
-							el.style.top = "0px";
+						}else if(boundingBox.top < window.innerHeight / 10){
+							el.style.top = `${window.innerHeight / 10}px`;
 						}
 
 						this.$store.commit("setChaosElement", null);

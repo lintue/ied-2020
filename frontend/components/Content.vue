@@ -59,7 +59,18 @@
 					<h2 class="section-title">
 						PROJECT TITLE
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in projectTitle"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
 				<section class="media-centric">

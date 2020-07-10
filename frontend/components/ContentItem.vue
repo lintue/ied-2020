@@ -15,13 +15,15 @@
 import ItemResearch from "./ContentItemResearch.vue";
 import ItemMedia from "./ContentItemMedia.vue";
 import ItemStudent from "./ContentItemStudent.vue";
+import ItemProject from "./ContentItemProject.vue";
 
 export default{
 	name: "AppItem",
 	components: {
 		"item-research": ItemResearch,
 		"item-media": ItemMedia,
-		"item-student": ItemStudent
+		"item-student": ItemStudent,
+		"item-project": ItemProject
 	},
 	props: {
 		entry:{
@@ -44,6 +46,8 @@ export default{
 				"lockdown"
 			], this.entry.category)){
 				return "item-media";
+			}else if(this.entry.category === "description"){
+				return "item-project";
 			}else if(this.entry.name && this.entry.RCA2020){
 				return "item-student";
 			}else{
@@ -74,7 +78,7 @@ export default{
 					y: box.y + window.scrollY
 				};
 				let x = Math.floor(Math.random() * bounds.width) + bounds.x;
-				let y = Math.floor(Math.random() * bounds.height) + bounds.y;
+				let y = Math.floor(Math.random() * (bounds.height - window.innerHeight/10)) + bounds.y + window.innerHeight/10;
 
 				if(x + this.$el.clientWidth > bounds.x + bounds.width){
 					x = bounds.x + bounds.width - this.$el.clientWidth;
@@ -109,7 +113,6 @@ export default{
 
 .item{
 	min-width: 100px;
-	min-height: 100px;
 	display: inline-block;
 	z-index: 1;
 	cursor: pointer;

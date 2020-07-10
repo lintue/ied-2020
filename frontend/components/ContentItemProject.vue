@@ -1,12 +1,12 @@
 <template>
 	<div class="student-item">
-		<h2 v-html="entry.name.replace(new RegExp(' +', 'g'), '&nbsp;')"></h2>
+		<h2 v-html="entry.workTitle.replace(new RegExp(' +', 'g'), '&nbsp;')"></h2>
 	</div>
 </template>
 
 <script>
-export default {
-	name: "AppStudentItem",
+export default{
+	name: "AppStudentProject",
 	props: {
 		entry: {
 			type: Object,
@@ -20,16 +20,13 @@ export default {
 @import url("../stylesheets/mixin.less");
 
 .student-item{
-	.light-theme();
+	.dark-theme();
 
 	padding: 0.5rem;
-	border: 3px solid;
 
 	h2{
 		margin: 0;
-		font-family: "Montserrat", sans-serif;
-		font-style: italic;
-		font-weight: 800;
+		font-weight: 400;
 		font-size: 1.5rem;
 		text-align: center;
 	}
