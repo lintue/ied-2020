@@ -13,6 +13,8 @@
 		<app-content
 			:mode="mode"
 			:entries="entries"
+			:students="students"
+
 			v-on:chaosDown="chaosDown"
 			v-on:showItem="showItem"
 		></app-content>
@@ -46,7 +48,15 @@ export default {
 		},
 		entries: {
 			type: Array,
-			default: []
+			default: function(){
+				return [];
+			}
+		},
+		students: {
+			type: Array,
+			default: function(){
+				return [];
+			}
 		}
 	},
 	data: function(){

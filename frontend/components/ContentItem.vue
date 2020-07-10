@@ -14,17 +14,19 @@
 <script>
 import ItemResearch from "./ContentItemResearch.vue";
 import ItemMedia from "./ContentItemMedia.vue";
+import ItemStudent from "./ContentItemStudent.vue";
 
 export default{
-	name: "ChaosItem",
+	name: "AppItem",
 	components: {
 		"item-research": ItemResearch,
-		"item-media": ItemMedia
+		"item-media": ItemMedia,
+		"item-student": ItemStudent
 	},
 	props: {
 		entry:{
-			type: Object,
-			required: true
+			type: [Object, null],
+			default: null
 		},
 		mode: {
 			type: String,
@@ -42,6 +44,8 @@ export default{
 				"lockdown"
 			], this.entry.category)){
 				return "item-media";
+			}else if(this.entry.name && this.entry.RCA2020){
+				return "item-student";
 			}else{
 				return "";
 			}
@@ -111,6 +115,10 @@ export default{
 	cursor: pointer;
 
 	&.item-research{
+		min-height: 0;
+	}
+
+	&.item-student{
 		min-height: 0;
 	}
 }

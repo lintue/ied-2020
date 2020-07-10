@@ -14,6 +14,17 @@
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
 				></app-item>
+
+				<app-item class="app-item"
+					v-for="student in students"
+					:key="student.name"
+
+					:entry="student"
+					:mode="mode"
+
+					v-on:chaosDown="chaosDown"
+					v-on:showItem="showItem"
+				></app-item>
 			</section>
 
 			<section id="items" v-else>
@@ -154,6 +165,10 @@ export default{
 			required: true
 		},
 		entries: {
+			type: Array,
+			default: []
+		},
+		students: {
 			type: Array,
 			default: []
 		}

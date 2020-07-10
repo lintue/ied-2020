@@ -18,15 +18,23 @@ const store = new Vuex.Store({
 			x: null,
 			y: null
 		},
-		entries: entries,
-		// entries: [
-		// 	{
-		// 		"category": "description",
-		// 		"student": "Quincy Cardinale",
-		// 		"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
-		// 	}
-		// ],
-		students: students
+		// entries: entries,
+		entries: [
+			// {
+			// 	"category": "description",
+			// 	"student": "Quincy Cardinale",
+			// 	"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
+			// }
+		],
+		// students: students
+		students: [
+			{
+				"name": "Quincy Cardinale",
+				"instagram": "https://www.instagram.com/quincy.cool/",
+				"portfolio": "https://www.quincy.cool/",
+				"RCA2020": "2020.rca.ac.uk/students/quincy-cardinale"
+			}
+		]
 	},
 	mutations: {
 		toggleMode: function(state){
@@ -56,7 +64,8 @@ const app = new Vue({
 		return createElement(App, {
 			props: {
 				mode: store.state.mode,
-				entries: store.state.entries
+				entries: store.state.entries,
+				students: store.state.students
 			},
 			on: {
 				chaosDown: function(el){
