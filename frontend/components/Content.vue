@@ -32,7 +32,18 @@
 					<h2 class="section-title">
 						STUDENTS
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="student in students"
+							:key="student.name"
+
+							:entry="student"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
 				<section>
@@ -243,7 +254,7 @@ export default{
 			}
 
 			.order-items{
-				padding: 2.5rem;
+				padding: 1.5rem 2.5rem;
 				display: flex;
 				flex-wrap: wrap;
 

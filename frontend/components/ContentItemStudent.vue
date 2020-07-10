@@ -24,14 +24,13 @@ export default {
 
 	padding: 0.5rem;
 	border: 3px solid;
-	min-width: 240px;
 
 	h2{
 		margin: 0;
 		font-family: "Montserrat", sans-serif;
 		font-style: italic;
 		font-weight: 800;
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 		text-align: center;
 	}
 }
