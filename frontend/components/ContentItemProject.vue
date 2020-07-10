@@ -23,6 +23,7 @@ export default{
 	.dark-theme();
 
 	padding: 0.5rem;
+	background-color: black;
 
 	h2{
 		margin: 0;
