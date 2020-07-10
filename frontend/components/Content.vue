@@ -131,14 +131,37 @@
 					<h2 class="section-title">
 						LIBRARY
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item book"
+							v-for="(entry, index) in library"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+							isBook=true
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
 				<section class="media-centric">
 					<h2 class="section-title">
 						EVENTS
 					</h2>
-					<div class="order-items"></div>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="(entry, index) in events"
+							:key="index"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
 				</section>
 
 				<section class="media-centric">
@@ -231,6 +254,16 @@ export default{
 				return entry.category === "research";
 			});
 		},
+		library: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "book";
+			});
+		},
+		events: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "event";
+			});
+		},
 		coronaOffice: function(){
 			return _.filter(this.entries, (entry) => {
 				return entry.category === "office";
@@ -302,6 +335,10 @@ export default{
 
 					.app-item{
 						height: 240px;
+
+						&.book{
+							height: 170px;
+						}
 					}
 				}
 			}

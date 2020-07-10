@@ -1,5 +1,7 @@
 <template>
-	<div class="media-item">
+	<div
+		:class="['media-item', isBook ? 'book' : '']"
+	>
 		<img :src="mediaPath">
 	</div>
 </template>
@@ -11,6 +13,10 @@ export default{
 		entry: {
 			type: Object,
 			required: true
+		},
+		isBook: {
+			type: Boolean,
+			default: false
 		}
 	},
 	computed: {
@@ -56,6 +62,12 @@ export default{
 
 <style lang="less" scoped>
 .media-item{
+	&.book{
+		img{
+			height: 170px;
+		}
+	}
+
 	img{
 		height: 240px;
 	}

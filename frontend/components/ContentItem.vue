@@ -7,6 +7,7 @@
 		<component
 			:is="entryType"
 			:entry="entry"
+			:isBook="isBook"
 		></component>
 	</div>
 </template>
@@ -33,6 +34,10 @@ export default{
 		mode: {
 			type: String,
 			required: true
+		},
+		isBook: {
+			type: Boolean,
+			default: false
 		}
 	},
 	computed: {
@@ -46,7 +51,8 @@ export default{
 				"lockdown",
 				"studio",
 				"add",
-				"book"
+				"book",
+				"event"
 			], this.entry.category)){
 				return "item-media";
 			}else if(this.entry.category === "description"){
