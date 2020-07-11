@@ -197,6 +197,40 @@
 						></app-item>
 					</div>
 				</section>
+
+				<section class="media-centric">
+					<h2 class="section-title">
+						STUDIO MOMENT
+					</h2>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="entry in studioMoment"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
+				</section>
+
+				<section class="media-centric">
+					<h2 class="section-title">
+						ADDITIONAL
+					</h2>
+					<div class="order-items">
+						<app-item class="app-item"
+							v-for="entry in additional"
+
+							:entry="entry"
+							:mode="mode"
+
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
+					</div>
+				</section>
 			</section>
 
 		</div>
@@ -270,6 +304,16 @@ export default{
 		lockdownTask: function(){
 			return _.filter(this.entries, (entry) => {
 				return entry.category === "lockdown";
+			});
+		},
+		studioMoment: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "studio";
+			});
+		},
+		additional: function(){
+			return _.filter(this.entries, (entry) => {
+				return entry.category === "add";
 			});
 		}
 	},
