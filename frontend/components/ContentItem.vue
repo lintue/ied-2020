@@ -4,11 +4,13 @@
 		v-on:mousedown.prevent="itemDown"
 		v-on:click="itemClick"
 	>
-		<component
-			:is="entryType"
-			:entry="entry"
-			:isBook="isBook"
-		></component>
+		<keep-alive>
+			<component
+				:is="entryType"
+				:entry="entry"
+				:isBook="isBook"
+			></component>
+		</keep-alive>
 	</div>
 </template>
 

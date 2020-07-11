@@ -1,6 +1,6 @@
 <template>
 	<div class="student-item">
-		<h2 v-html="entry.workTitle.replace(new RegExp(' +', 'g'), '&nbsp;')"></h2>
+		<h2 v-html="nonBreakingName"></h2>
 	</div>
 </template>
 
@@ -11,6 +11,11 @@ export default{
 		entry: {
 			type: Object,
 			required: true
+		}
+	},
+	computed: {
+		nonBreakingName: function(){
+			return this.entry.workTitle.replace(new RegExp(" +", "g"), "&nbsp;");
 		}
 	}
 };
