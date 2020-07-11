@@ -1,5 +1,11 @@
 TO DO:
 
+- compress GIFs
+- tell people to upload videos
+- thumbnails
+- see events from prototypes and see if there is more info
+- studio and add categories 
+
 - Mogrify/photoshop macro thumbnails
 - Add thumbnails to .json
 - xxx-add.jpg needs entry in works.json
@@ -24,26 +30,9 @@ studio (moment)
 add (-itional)
 
 
-
-Main feature duplicates (marked TBC in .json):
-
-Yi Lu
-Yiming Yang
-Dimitris
-Michael Tsang
-Jordan
-Debbie
-Yi Tian
-Arman
-Linnea
-
-
-
-Making of duplicates:
+Main and making of duplicate (TBC in .json):
 
 Yi Lu
-Yiming Yang
-Lea
 
 
 
@@ -57,10 +46,8 @@ Linnear
 Needs attention:
 
 Arman description (The file is the logo of my game and the link is the trailer for it)
-Two Yi's - use firstName-lastName-id
 Celeste Corona Office mov needs to be uploaded
 Yi Tian + Akvile lockdown movs need to be uploaded
-Lea lockdown .HEIC
 Yiming add mp4 needs to be uploaded
 
 
