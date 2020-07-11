@@ -9,21 +9,26 @@
 			:entry="entry"
 			v-on:justify="setJustify"
 			v-on:closeItem="closeItem"
-		>
-		</item-frame>
+		></item-frame>
+
 		<item-description
 			v-else-if="descriptionDisplay"
 			:entry="entry"
 			v-on:closeItem="closeItem"
-		>
-		</item-description>
+		></item-description>
+
 		<item-book
 			v-else-if="bookDisplay"
 			:entry="entry"
 			v-on:closeItem="closeItem"
-		>
+		></item-book>
 
-		</item-book>
+		<item-event
+			v-else-if="eventDisplay"
+			:entry="entry"
+			v-on:closeItem="closeItem"
+		></item-event>
+
 	</article>
 </template>
 
@@ -31,13 +36,15 @@
 import ItemFrame from "./ItemFrame.vue";
 import ItemDescription from "./ItemDescription.vue";
 import ItemBook from "./ItemBook.vue";
+import ItemEvent from "./ItemEvent.vue";
 
 export default{
 	name: "ItemContainer",
 	components: {
 		"item-frame": ItemFrame,
 		"item-description": ItemDescription,
-		"item-book": ItemBook
+		"item-book": ItemBook,
+		"item-event": ItemEvent
 	},
 	props: {
 		entry: {
@@ -70,6 +77,11 @@ export default{
 		bookDisplay: function(){
 			return _.contains([
 				"book"
+			], this.entry.category);
+		},
+		eventDisplay: function(){
+			return _.contains([
+				"event"
 			], this.entry.category);
 		}
 	},
