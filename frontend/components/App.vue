@@ -67,6 +67,15 @@ export default {
 			showingStudent: null
 		};
 	},
+	watch: {
+		showingItem: function(val){
+			if(val){
+				document.body.style["overflow-y"] = "hidden";
+			}else{
+				document.body.style["overflow-y"] = "scroll";
+			}
+		}
+	},
 	methods: {
 		chaosDown: function(el){
 			this.$emit("chaosDown", el);

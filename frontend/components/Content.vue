@@ -140,7 +140,7 @@
 
 							:entry="entry"
 							:mode="mode"
-							isBook=true
+							isBook
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
