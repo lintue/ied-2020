@@ -14,9 +14,8 @@
 				v-else-if="mode === 'chaos'"
 			>
 				<app-item
-					v-for="(entry, index) in entries"
+					v-for="entry in entries"
 					:class="['app-item', entry.category === 'book' ? 'book' : '']"
-					:key="index"
 
 					:entry="entry"
 					:mode="mode"
@@ -29,7 +28,6 @@
 
 				<app-item class="app-item"
 					v-for="student in students"
-					:key="student.name"
 
 					:entry="student"
 					:mode="mode"
@@ -53,7 +51,6 @@
 					<div class="order-items">
 						<app-item class="app-item"
 							v-for="student in students"
-							:key="student.name"
 
 							:entry="student"
 							:mode="mode"
@@ -70,8 +67,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in projectTitle"
-							:key="index"
+							v-for="entry in projectTitle"
 
 							:entry="entry"
 							:mode="mode"
@@ -88,8 +84,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in project"
-							:key="index"
+							v-for="entry in project"
 
 							:entry="entry"
 							:mode="mode"
@@ -106,8 +101,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in makingOf"
-							:key="index"
+							v-for="entry in makingOf"
 
 							:entry="entry"
 							:mode="mode"
@@ -124,8 +118,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in research"
-							:key="index"
+							v-for="entry in research"
 
 							:entry="entry"
 							:mode="mode"
@@ -142,8 +135,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item book"
-							v-for="(entry, index) in library"
-							:key="index"
+							v-for="entry in library"
 
 							:entry="entry"
 							:mode="mode"
@@ -161,8 +153,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in events"
-							:key="index"
+							v-for="entry in events"
 
 							:entry="entry"
 							:mode="mode"
@@ -179,8 +170,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in coronaOffice"
-							:key="index"
+							v-for="entry in coronaOffice"
 
 							:entry="entry"
 							:mode="mode"
@@ -197,8 +187,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="(entry, index) in lockdownTask"
-							:key="index"
+							v-for="entry in lockdownTask"
 
 							:entry="entry"
 							:mode="mode"
