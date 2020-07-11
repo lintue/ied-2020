@@ -3,7 +3,25 @@
 		v-on:click.stop=""
 	>
 		<section id="title-bar">
-			<div id="file-name">{{ entry.workTitle }}</div>
+			<div id="file-name"
+				v-if="entry.category === 'main'"
+			>Project.img</div>
+			<div id="file-name"
+				v-else-if="entry.category === 'corona'"
+			>CoronaOffice.img</div>
+			<div id="file-name"
+				v-else-if="entry.category === 'lockdown'"
+			>LockdownTask.img</div>
+			<div id="file-name"
+				v-else-if="entry.category === 'studio'"
+			>StudioMoment.img</div>
+			<div id="file-name"
+				v-else-if="entry.category === 'add'"
+			>additional.img</div>
+			<div id="file-name"
+				v-else
+			>untitled.img</div>
+
 			<div id="close-item-btn"
 				v-on:click="closeItem"
 			>
