@@ -20,11 +20,11 @@ const store = new Vuex.Store({
 		},
 		entries: entries,
 		// entries: [
-			// {
-			// 	"category": "description",
-			// 	"student": "Quincy Cardinale",
-			// 	"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
-			// }
+		// 	{
+		// 		"category": "description",
+		// 		"student": "Quincy Cardinale",
+		// 		"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
+		// 	}
 		// ],
 		students: students
 		// students: [

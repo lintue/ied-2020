@@ -1,6 +1,6 @@
 <template>
 	<div class="item"
-		:class="[mode, entryType]"
+		:class="[mode, entryType, isHighlighted]"
 		v-on:mousedown.prevent="itemDown"
 		v-on:click="itemClick"
 	>
@@ -38,6 +38,10 @@ export default{
 		isBook: {
 			type: Boolean,
 			default: false
+		},
+		highlighted:{
+			type: [Boolean, null],
+			default: null
 		}
 	},
 	computed: {
@@ -59,6 +63,15 @@ export default{
 				return "item-project";
 			}else if(this.entry.name && this.entry.RCA2020){
 				return "item-student";
+			}else{
+				return "";
+			}
+		},
+		isHighlighted: function(){
+			if(this.highlighted === true){
+				return "highlighted";
+			}else if(this.highlighted === false){
+				return "dehighlighted";
 			}else{
 				return "";
 			}
@@ -125,6 +138,14 @@ export default{
 	display: inline-block;
 	z-index: 1;
 	cursor: pointer;
+
+	&.highlighted{
+		z-index: 10;
+	}
+
+	&.dehighlighted{
+		opacity: 0.3;
+	}
 
 	&.item-research{
 		min-height: 0;

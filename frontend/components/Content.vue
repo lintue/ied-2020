@@ -21,6 +21,7 @@
 					:entry="entry"
 					:mode="mode"
 					:isBook="entry.category === 'book'"
+					:highlighted="isHighlighted(entry.student)"
 
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
@@ -32,10 +33,16 @@
 
 					:entry="student"
 					:mode="mode"
+					:highlighted="isHighlighted(student.name)"
 
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
 				></app-item>
+
+				<div class="close-student-button"
+					v-if="showingStudent"
+					v-on:click="closeStudent"
+				></div>
 			</section>
 
 			<section id="items" v-else-if="mode === 'order'">
@@ -286,6 +293,17 @@ export default{
 		},
 		closeStudent: function(){
 			this.$emit("closeStudent");
+		},
+		isHighlighted: function(studentName){
+			if(this.showingStudent === null){
+				return null;
+			}else{
+				if(studentName === this.showingStudent.name){
+					return true;
+				}else{
+					return false;
+				}
+			}
 		}
 	}
 };
@@ -299,6 +317,18 @@ export default{
 
 	&.chaos{
 		height: 1000vh;
+
+		#items{
+			.close-student-button{
+				display: block;
+				width: 100vw;
+				height: 100vh;
+				z-index: 5;
+				position: fixed;
+				left: 0;
+				top: 0;
+			}
+		}
 	}
 
 	&.order{
