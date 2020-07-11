@@ -2,7 +2,9 @@
 	<div
 		:class="['media-item', isBook ? 'book' : '']"
 	>
-		<img :src="mediaPath">
+		<img loading="lazy"
+			:src="mediaPath"
+		>
 	</div>
 </template>
 
