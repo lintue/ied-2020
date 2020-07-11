@@ -832,7 +832,7 @@
 		"student": "Sammy Selin",
 		"workTitle": "Trailer 👁",
 		"description": "A sneak peek teaser of Once Upon a Shadow Dimension.",
-		"media": "https://vimeo.com/435538204/17b652cbe0"
+		"media": "https://vimeo.com/435538204"
 	},
 	{
 		"category": "main",
@@ -923,7 +923,7 @@
 		"student": "Hengshi Kang",
 		"workTitle": "Making of",
 		"description": "The making of these scenes and QR codes to access them",
-		"media": "./hengshi-making.gif"
+		"media": "./hengshi-making.jpg"
 	},
 	{
 		"category": "making",
@@ -1007,7 +1007,7 @@
 		"student": "Celeste Camilleri",
 		"workTitle": "Making of Datafields",
 		"description": "Building of my 'studio' set up in my bed room",
-		"media": "./celeste-making.jpg"
+		"media": "./celeste-making.gif"
 	},
 	{
 		"category": "making",
