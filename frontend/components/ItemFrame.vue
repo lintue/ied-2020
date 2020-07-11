@@ -35,9 +35,28 @@
 			v-if="entry.media"
 		>
 			<img
+				v-if="mediaType === 'local'"
 				:src="mediaPath"
 				v-on:load="mediaLoaded"
 			>
+
+			<div class="embed-container"
+				v-else-if="mediaType === 'youtube'"
+			>
+				<iframe class="embed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+					:src="youtubeEmbedLink"
+					v-on:load="mediaLoaded"
+				></iframe>
+			</div>
+
+			<div class="embed-container"
+				v-else-if="mediaType === 'vimeo'"
+			>
+				<iframe class="embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
+					:src="vimeoEmbedLink"
+					v-on:load="mediaLoaded"
+				></iframe>
+			</div>
 		</section>
 
 		<section id="name"
@@ -73,6 +92,33 @@ export default{
 	computed: {
 		mediaPath: function(){
 			return `./media/${this.entry.media}`;
+		},
+		mediaType: function(){
+			const youtubeRE = /^(?:https?:\/\/)?(?:www\.)?youtu(?:\.be|be\.com)\/(?:watch|embed\/watch|embed)?[?/]?(?:v=|feature=player_embedded&v=)?([\w-_]+).*?$/;
+			const vimeoRE = /^(?:https?:\/\/)?(?:www\.)?vimeo\.com\/(?:channels\/)?(?:\w+\/)?(\d+)$/;
+
+			if(youtubeRE.test(this.entry.media)){
+				// Youtube link
+				return "youtube";
+			}else if(vimeoRE.test(this.entry.media)){
+				// Vimeo link
+				return "vimeo";
+			}else{
+				// Local file path
+				return "local";
+			}
+		},
+		youtubeEmbedLink: function(){
+			const youtubeRE = /^(?:https?:\/\/)?(?:www\.)?youtu(?:\.be|be\.com)\/(?:watch|embed\/watch|embed)?[?/]?(?:v=|feature=player_embedded&v=)?([\w-_]+).*?$/;
+			const youtubeID = youtubeRE.exec(this.entry.media)[1];
+
+			return `https://www.youtube.com/embed/${youtubeID}`;
+		},
+		vimeoEmbedLink: function(){
+			const vimeoRE = /^(?:https?:\/\/)?(?:www\.)?vimeo\.com\/(?:channels\/)?(?:\w+\/)?(\d+)$/;
+			const vimeoID = vimeoRE.exec(this.entry.media)[1];
+
+			return `https://player.vimeo.com/video/${vimeoID}`;
 		}
 	},
 	methods: {
@@ -129,6 +175,21 @@ export default{
 		img{
 			max-width: 1000px;
 			width: ~"calc(70vw - 2px)";
+		}
+
+		.embed-container{
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+
+			.embed{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 
