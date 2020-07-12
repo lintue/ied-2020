@@ -409,7 +409,7 @@ export default{
 	&.order{
 		#items{
 			position: relative;
-			margin-top: 10vh;
+			margin-top: 4rem;
 			z-index: 10;
 
 			&.student-profile{
