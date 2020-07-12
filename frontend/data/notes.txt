@@ -1,14 +1,7 @@
 TO DO:
 
 - compress GIFs
-- tell people to upload videos
-- thumbnails
-- see events from prototypes and see if there is more info
-- studio and add categories 
-
-- Mogrify/photoshop macro thumbnails
-- Add thumbnails to .json
-- xxx-add.jpg needs entry in works.json
+- Yi Tian lockdown + Akvile lockdown links
 
 
 
@@ -28,27 +21,6 @@ office (corona)
 lockdown (task)
 studio (moment)
 add (-itional)
-
-
-Main and making of duplicate (TBC in .json):
-
-Yi Lu
-
-
-
-Website duplicates (used personal for portfolio):
-
-Jessica
-Linnear
-
-
-
-Needs attention:
-
-Arman description (The file is the logo of my game and the link is the trailer for it)
-Celeste Corona Office mov needs to be uploaded
-Yi Tian + Akvile lockdown movs need to be uploaded
-Yiming add mp4 needs to be uploaded
 
 
 
@@ -87,6 +59,4 @@ Jessica Scalzo
 Pierro Pozella
 Léa Mesplède
 Linnea Langfjord Kristensen
-
-
 

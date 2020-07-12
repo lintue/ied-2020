@@ -4,6 +4,7 @@
 		"workTitle": "305 Valley",
 		"date": "17/07/2020",
 		"time": "13:00",
+		"description": "This project explores how the new technologies and social credit system affect people’s lives through a series of possible scenarios and issues of cohabitation in the mixed reality future. It gives viewers the chance to experience what it feels like to be involuntarily subject to low social scoring through a full-body tour experience and everyday narratives.",
 		"media": "./event-305Valley.svg"
 	},
 	{
@@ -11,6 +12,7 @@
 		"workTitle": "Cellumonials ceremony",
 		"date": "17/07/2020",
 		"time": "11:00",
+		"description": "How can we start to experience our mammalian, macro bodies as ecosystems coexisting with the microscopic life within and around us? Which potentials does our sensorial reality hold in order to mediate the relationships between multiscalar worlds? In this interactive talk Baum & Leahy present their research into the Microbiocene – a microbe-centric alternative to the Anthropocene, and invite participants to take part in short cellular ceremonies (Cellumonials) throughout. Guided meditative reflections and tactile encounters – with the ubiquitous microbial ecologies in your body and home – will explore new, remote practices of symbiosis and collective healing. These physical-digital micro-ceremonies invite you to discover how your body and mind are interwoven with the microbial life cycles moving within and around you, and how the ongoing pandemic can reveal new perspectives on the multiscalar reality we live in. Baum & Leahy (Amanda Baum (DK) and Rose Leahy (UK)) is an award-winning international, creative duo working across interactive installation, art direction, scenography and experience design. Collaborating with experts across disciplines, from microbiologists to musicians, quantum computer scientists to architects, they open up, question and sensorialise scientific research into tactile, participatory experiences. Through research-led, experience-centred tactile storytelling, their work allows the beholder a proximity to alternative realities, melting between the feasible and fantastical. They met studying their MA in Information Experience Design at the Royal College of Art 2015-2017.",
 		"media": "./event-CellumonialsCeremony.svg"
 	},
 	{
@@ -18,6 +20,7 @@
 		"workTitle": "IED Quantum Awards",
 		"date": "23/07/2020",
 		"time": "19:00",
+		"description": "The department of Information Experience Design cordially invites you to the 1st Annual Quantum Awards. Dress Code: Fancy Tops",
 		"media": "./event-IEDQuantumAwards.svg"
 	},
 	{
@@ -25,6 +28,7 @@
 		"workTitle": "Quantum Cinema",
 		"date": "22/07/2020",
 		"time": "18:00",
+		"description": "A special screening of strange and experimental moving image works by artists and designers in Information Experience Design. Followed by a Q&A with the creators.",
 		"media": "./event-QuantumCinema.svg"
 	},
 	{
@@ -32,6 +36,7 @@
 		"workTitle": "Quantum Vibrations 1/2",
 		"date": "21/07/2020",
 		"time": "14:00",
+		"description": "14:00_ Guest Talk with Beatrice Dillon; 15:00_ Q&A with Jamie Maule Jordan Edge, Linnea Langfjord, and guests.",
 		"media": "./event-QuantumVibrations1.svg"
 	},
 	{
@@ -39,6 +44,7 @@
 		"workTitle": "Quantum Vibrations 2/2",
 		"date": "25/07/2020",
 		"time": "18:30",
+		"description": "A live presentation of IED Sound Design students' work showcased as a part of RCA2020. 18:30_ Jamie Maule. A dive into the Max patch and the construction of Jamie's sound work; 19:00_Alexia Charoud. A live demonstration of Alexia's interactive experience The Explorer: a musical soundscape revealed by light and the emergence of a mysterious world of sounds; 19:30_Yiming Yang. A VR experience with sound and the exploration of Yiming's interactive Web.",
 		"media": "./event-QuantumVibrations2.svg"
 	},
 	{
@@ -46,6 +52,7 @@
 		"workTitle": "Really",
 		"date": "27/07/2020",
 		"time": "19:00",
+		"description": "Live theatre performance on Zoom with a talk by writer, performer, and live-artist Greg Wohead. About the play: Set in a heightened version of today’s world, where people are financially punished for not being productive enough or busy enough, 5 characters explore what it means to be real when reality itself is a representation. Some interrogate their use of language while others question the reality of their own bodies or thoughts. The play is concerned with the prevailing understanding of what it means to be a successful human being in our culture and the negative consequences the ways we measure this success has on people’s mental health.",
 		"media": "./event-Really.svg"
 	},
 	{
@@ -53,6 +60,7 @@
 		"workTitle": "White Noise",
 		"date": "18/07/2020",
 		"time": "18:00",
+		"description": "Monthly event showcasing sound experiments by students at the Royal College of Arts",
 		"media": "./event-WhiteNoise.svg"
 	},
 	{
@@ -678,21 +686,23 @@
 		"student": "Quincy Cardinale",
 		"workTitle": "Dark Matter: Seeing the Unseen",
 		"description": "What might a Dark Planet look like?",
-		"media": "./quincy-main.jpg"
+		"media": "./quincy-main.jpg",
+		"thumbnail": "./quincy-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Yi Lu",
 		"workTitle": "Trailer of 305 Valley",
 		"description": "Screenshot of 305 Valley",
-		"media": "TBC"
+		"media": "https://vimeo.com/425461525"
 	},
 	{
 		"category": "main",
 		"student": "Hengshi Kang",
 		"workTitle": "Black Window",
 		"description": "Three scenes of mindful abstract nature experiences on mobile website",
-		"media": "./hengshi-main.gif"
+		"media": "./hengshi-main.gif",
+		"thumbnail": "./hengshi-main-icon.gif"
 	},
 	{
 		"category": "main",
@@ -734,21 +744,24 @@
 		"student": "Kenneth Lim",
 		"workTitle": "Something Along These Lines",
 		"description": "A mock up the the final spatial installation",
-		"media": "./kenneth-main.jpg"
+		"media": "./kenneth-main.jpg",
+		"thumbnail": "./kenneth-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Michael Tsang",
 		"workTitle": "Mind the Gap: Is commuting on public transport beneficial to us?",
 		"description": "Research-led interactive video website",
-		"media": "./michael-main.gif"
+		"media": "./michael-main.gif",
+		"thumbnail": "./michael-main-icon.gif"
 	},
 	{
 		"category": "main",
 		"student": "Akvile Terminaite",
 		"workTitle": "Hashing",
 		"description": "Hashing is a process that converts an image into strings of numbers that seed the random number generator",
-		"media": "./akvile-main.jpg"
+		"media": "./akvile-main.jpg",
+		"thumbnail": "./akvile-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -762,14 +775,16 @@
 		"student": "Leah Mentzis",
 		"workTitle": "North Somerset map by Juliette Coquet",
 		"description": "The North Somerset Map represents specific places I visited during the research journey",
-		"media": "./leah-main.jpg"
+		"media": "./leah-main.jpg",
+		"thumbnail": "./leah-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Julia Brackenbury",
 		"workTitle": "Our House",
 		"description": "Used by June, who has been anonymised, during her Recovery process. The house was a vehicle for unity, a safe space for her and her alters to process the abuse they had suffered.",
-		"media": "./julia-main.jpg"
+		"media": "./julia-main.jpg",
+		"thumbnail": "./julia-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -783,7 +798,8 @@
 		"student": "Celeste Camilleri",
 		"workTitle": "Datafields",
 		"description": "Stop motion video of seeds growing at different speeds after a biased watering system stunts/nourishes its growth",
-		"media": "./celeste-main.jpg"
+		"media": "./celeste-main.jpg",
+		"thumbnail": "./celeste-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -797,21 +813,24 @@
 		"student": "Erik Lintunen",
 		"workTitle": "cloudylogic.space",
 		"description": "The Temple of Apollo.",
-		"media": "./erik-main.gif"
+		"media": "./erik-main.gif",
+		"thumbnail": "./erik-main-icon.gif"
 	},
 	{
 		"category": "main",
 		"student": "Giorgiana Theiler",
 		"workTitle": "Emotional Geography",
 		"description": "Collaborating with a first year IED student, a high resolution render of an image I had created for the participant",
-		"media": "./giorgiana-main.jpg"
+		"media": "./giorgiana-main.jpg",
+		"thumbnail": "./giorgiana-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Anthony Jennison",
 		"workTitle": "Tea Cosy, 2020.",
 		"description": "The tea cosy is a symbol for the conversational space. It retains warmth and is a measure of time.",
-		"media": "./anthony-main.jpg"
+		"media": "./anthony-main.jpg",
+		"thumbnail": "./anthony-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -825,7 +844,8 @@
 		"student": "Debbie Poon",
 		"workTitle": "Seeking Solace in Stones",
 		"description": "Seeking Solace in Stones film",
-		"media": "./debbie-main.gif"
+		"media": "./debbie-main.gif",
+		"thumbnail": "./debbie-main-icon.gif"
 	},
 	{
 		"category": "main",
@@ -846,7 +866,8 @@
 		"student": "Pablo Colomina",
 		"workTitle": "Tempus Edax Rerum",
 		"description": "Some prototypes exploring different materials and mechasisms (including the arm of one of my favourite Action Man)",
-		"media": "./pablo-main.jpg"
+		"media": "./pablo-main.jpg",
+		"thumbnail": "./pablo-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -860,13 +881,14 @@
 		"student": "Christian Pecher",
 		"workTitle": "theGIANTS - Growth Simulation",
 		"description": "Dynamic simulation of possible possible shapes and growth of living Bamboo structures in Grasshopper3D",
-		"media": "./christian-main.gif"
+		"media": "./christian-main.gif",
+		"thumbnail": "./christian-main-icon.gif"
 	},
 	{
 		"category": "main",
 		"student": "Arman Ataman",
 		"workTitle": "Ascension / Ascension Demo",
-		"description": "The file is the logo of my game and the link is the trailer for it",
+		"description": "Game trailer",
 		"media": "https://vimeo.com/435590378"
 	},
 	{
@@ -874,21 +896,24 @@
 		"student": "Juliette Coquet",
 		"workTitle": "The Bland Dinner",
 		"description": "A meal is served to them. It is made up of pure, nebulous, diluted flavours.",
-		"media": "./juliette-main.jpg"
+		"media": "./juliette-main.jpg",
+		"thumbnail": "./juliette-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Jessica Scalzo",
 		"workTitle": "dis(ORDER): Mandelbulb",
 		"description": "A 3d generated image of a Mandelbulb fractal",
-		"media": "./jessica-main.jpg"
+		"media": "./jessica-main.jpg",
+		"thumbnail": "./jessica-main-icon.jpg"
 	},
 	{
 		"category": "main",
 		"student": "Pierro Pozella",
 		"workTitle": "Aerosphere Oscillation Reading",
 		"description": "A reading capturing the presence of electro magnetic fields produced within a protected woodlands in the UK",
-		"media": "./pierro-main.jpg"
+		"media": "./pierro-main.jpg",
+		"thumbnail": "./pierro-main-icon.jpg"
 	},
 	{
 		"category": "main",
@@ -909,42 +934,48 @@
 		"student": "Quincy Cardinale",
 		"workTitle": "Making the dots",
 		"description": "Using a process of mark making, I explored creating a handmade pattern, later to be digitally manipulated",
-		"media": "./quincy-making.jpg"
+		"media": "./quincy-making.jpg",
+		"thumbnail": "./quincy-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Yi Lu",
 		"workTitle": "Trailer of 305 Valley",
 		"description": "Screenshot of 305 Valley",
-		"media": "TBC"
+		"media": "./yi-lu-making.jpg",
+		"thumbnail": "./yi-lu-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Hengshi Kang",
 		"workTitle": "Making of",
 		"description": "The making of these scenes and QR codes to access them",
-		"media": "./hengshi-making.jpg"
+		"media": "./hengshi-making.jpg",
+		"thumbnail": "./hengshi-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Izabela Duszenko",
 		"workTitle": "Interactive sculpture",
 		"description": "Bronze casting process",
-		"media": "./izabela-making.jpg"
+		"media": "./izabela-making.jpg",
+		"thumbnail": "./izabela-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Zohar Dvir",
 		"workTitle": "Storyboard",
 		"description": "A segment of the storyboard made in an early production stage",
-		"media": "./zohar-making.jpg"
+		"media": "./zohar-making.jpg",
+		"thumbnail": "./zohar-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Miyuki Oka",
 		"workTitle": "Copy of the movement",
 		"description": "Physical digital twin",
-		"media": "./miyuki-making.gif"
+		"media": "./miyuki-making.gif",
+		"thumbnail": "./miyuki-making-icon.gif"
 	},
 	{
 		"category": "making",
@@ -958,84 +989,96 @@
 		"student": "Dimitris Menexopoulos",
 		"workTitle": "Mono Itow",
 		"description": "One of the very first prototypes about converting still or moving images to sonic waveterrains",
-		"media": "./dimitris-making.jpg"
+		"media": "./dimitris-making.jpg",
+		"thumbnail": "./dimitris-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Kenneth Lim",
 		"workTitle": "Prototype of spatial installation's control",
 		"description": "15 light sensors connected to a MegaMux board, feeding analog inputs to an arduino",
-		"media": "./kenneth-making.jpg"
+		"media": "./kenneth-making.jpg",
+		"thumbnail": "./kenneth-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Michael Tsang",
 		"workTitle": "Mood",
 		"description": "After being stuck at home and realising that most of my ideas cannot be achieved in the way I wanted",
-		"media": "./michael-making.jpg"
+		"media": "./michael-making.jpg",
+		"thumbnail": "./michael-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Akvile Terminaite",
 		"workTitle": "Cultivating bacteria while carrying out live hashing",
 		"description": "Creating random numbers: while the bacteria grows inside the incubator, the captured images are put through hashing function",
-		"media": "./akvile-making.jpg"
+		"media": "./akvile-making.jpg",
+		"thumbnail": "./akvile-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Jamie Maule",
 		"workTitle": "Basement Workshop",
 		"description": "Building the structure in the makeshift workshop basement under my flat",
-		"media": "./jamie-making.jpg"
+		"media": "./jamie-making.jpg",
+		"thumbnail": "./jamie-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Leah Mentzis",
 		"workTitle": "Postcards",
 		"description": "Postcards written by the local community of North Somerset in the context of a cultural probes kit",
-		"media": "./leah-making.jpg"
+		"media": "./leah-making.jpg",
+		"thumbnail": "./leah-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Julia Brackenbury",
 		"workTitle": "Our House: The Alters",
 		"description": "A selection (from many) of the five alters that live within June. We abstracted them, so to not convolute or overcomplicate their significance and presence. They aren’t direct representations of June’s own alters, rather they are inspired by them. The form of the Russian doll was a perfect metaphor for how the alters are part of one.",
-		"media": "./julia-making.jpg"
+		"media": "./julia-making.jpg",
+		"thumbnail": "./julia-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Celeste Camilleri",
 		"workTitle": "Making of Datafields",
 		"description": "Building of my 'studio' set up in my bed room",
-		"media": "./celeste-making.gif"
+		"media": "./celeste-making.gif",
+		"thumbnail": "./celeste-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Sindi Breshani",
 		"workTitle": "Screenplay",
 		"description": "In this project, I learned how to write a script",
-		"media": "./sindi-making.jpg"
+		"media": "./sindi-making.jpg",
+		"thumbnail": "./sindi-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Erik Lintunen",
 		"workTitle": "you are absolutely and utterly fucked.(: CONGR",
 		"description": "The Oracle of Delphi spitting it true (early prototype using the GPT-2 language model)",
-		"media": "./erik-making.jpg"
+		"media": "./erik-making.jpg",
+		"thumbnail": "./erik-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Giorgiana Theiler",
 		"workTitle": "Participant Imagination Room",
 		"description": "This is the ideal imagination room I had created from a voice recording of one of the participants",
-		"media": "./giorgiana-making.jpg"
+		"media": "./giorgiana-making.jpg",
+		"thumbnail": "./giorgiana-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Anthony Jennison",
 		"workTitle": "Tea cosy construction.",
 		"description": "When faced with lockdown, my work environment moved to a joiner’s shop, where I built a 1:1 scaled framework for the Tea Cosy",
-		"media": "./anthony-making.jpg"
+		"media": "./anthony-making.jpg",
+		"thumbnail": "./anthony-making-icon.jpg"
 	},
 	{
 		"category": "making",
@@ -1049,63 +1092,72 @@
 		"student": "Debbie Poon",
 		"workTitle": "Worn jade at Hendon Community Centre",
 		"description": "Research phase interviewing women from London's Chinese community spaces who wore jade, to understand better about their beliefs and feelings towards this material",
-		"media": "./debbie-making.jpg"
+		"media": "./debbie-making.jpg",
+		"thumbnail": "./debbie-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Sammy Selin",
 		"workTitle": "Lights, Camera, Action ⚡️",
 		"description": "Backstage of our makeshift living room filmset",
-		"media": "./sammy-making.jpg"
+		"media": "./sammy-making.jpg",
+		"thumbnail": "./sammy-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Alexia Charoud",
 		"workTitle": "The Explorer - Making-Of",
 		"description": "Coding, Prototyping, Testing, Sound Designing, Installing in a bedroom during lockdown, Missing Monica...",
-		"media": "./alexia-making.gif"
+		"media": "./alexia-making.gif",
+		"thumbnail": "./alexia-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Pablo Colomina",
 		"workTitle": ".",
 		"description": ".",
-		"media": "./pablo-making.gif"
+		"media": "./pablo-making.gif",
+		"thumbnail": "./pablo-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Yi Tian",
 		"workTitle": "Work In Progress",
 		"description": "The making progress is a series of actions which in transitions between negative and positive form, which is very similar to the approach of film developing",
-		"media": "./yi-tian-making.gif"
+		"media": "./yi-tian-making.gif",
+		"thumbnail": "./ti-tian-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Christian Pecher",
 		"workTitle": "Making of a Matcha Whisk",
 		"description": "First attempt of crafting a bamboo matcha whisk after traditional methods",
-		"media": "./christian-making.gif"
+		"media": "./christian-making.gif",
+		"thumbnail": "./christian-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Arman Ataman",
 		"workTitle": "Test of concept in Processing.",
 		"description": "Test of concept in Processing",
-		"media": "./arman-making.jpg"
+		"media": "./arman-making.jpg",
+		"thumbnail": "./arman-making-icon.jpg"
 	},
 	{
 		"category": "making",
 		"student": "Juliette Coquet",
 		"workTitle": "Falling Tofu",
 		"description": "A 3D experiment on colour, texture and physics of tofu",
-		"media": "./juliette-making.gif"
+		"media": "./juliette-making.gif",
+		"thumbnail": "./juliette-making-icon.gif"
 	},
 	{
 		"category": "making",
 		"student": "Jessica Scalzo",
 		"workTitle": "dis(ORDER): Editing Process",
 		"description": "Editing the animation of the Mandelbulb",
-		"media": "./jessica-making.gif"
+		"media": "./jessica-making.gif",
+		"thumbnail": "./jessica-making-icon.gif"
 	},
 	{
 		"category": "making",
@@ -1126,343 +1178,391 @@
 		"student": "Linnea Langfjord Kristensen",
 		"workTitle": "Diagram wings",
 		"description": "Theory diagrams painted on silk",
-		"media": "./linnea-making.jpg"
+		"media": "./linnea-making.jpg",
+		"thumbnail": "./linnea-making-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Yi Lu",
 		"location": "Shanghai",
-		"media": "./yi-lu-office.jpg"
+		"media": "./yi-lu-office.jpg",
+		"thumbnail": "./yi-lu-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Izabela Duszenko",
 		"location": "Worthing",
-		"media": "./izabela-office.jpg"
+		"media": "./izabela-office.jpg",
+		"thumbnail": "./izabela-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Zohar Dvir",
 		"location": "London",
-		"media": "./zohar-office.jpg"
+		"media": "./zohar-office.jpg",
+		"thumbnail": "./zohar-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Yiming Yang",
 		"location": "Shanghai / Cloud / London",
-		"media": "./yiming-office.jpg"
+		"media": "./yiming-office.jpg",
+		"thumbnail": "./yiming-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Dimitris Menexopoulos",
 		"location": "London",
-		"media": "./dimitris-office.jpg"
+		"media": "./dimitris-office.jpg",
+		"thumbnail": "./dimitris-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Kenneth Lim",
 		"location": "London",
-		"media": "./kenneth-office.jpg"
+		"media": "./kenneth-office.jpg",
+		"thumbnail": "./kenneth-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Michael Tsang",
 		"location": "London",
-		"media": "./michael-office.jpg"
+		"media": "./michael-office.jpg",
+		"thumbnail": "./michael-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Akvile Terminaite",
 		"location": "London",
-		"media": "./akvile-office.jpg"
+		"media": "./akvile-office.jpg",
+		"thumbnail": "./akvile-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Jamie Maule",
 		"location": "London",
-		"media": "./jamie-office.jpg"
+		"media": "./jamie-office.jpg",
+		"thumbnail": "./jamie-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Julia Brackenbury",
 		"location": "London",
-		"media": "./julia-office.jpg"
+		"media": "./julia-office.jpg",
+		"thumbnail": "./julia-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Celeste Camilleri",
 		"location": "London",
-		"media": "./celeste-office.jpg"
+		"media": "./celeste-office.jpg",
+		"thumbnail": "./celeste-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Sindi Breshani",
 		"location": "London",
-		"media": "./sindi-office.jpg"
+		"media": "./sindi-office.jpg",
+		"thumbnail": "./sindi-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Giorgiana Theiler",
 		"location": "Zurich",
-		"media": "./giorgiana-office.jpg"
+		"media": "./giorgiana-office.jpg",
+		"thumbnail": "./giorgiana-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Anthony Jennison",
 		"location": "Pickering",
-		"media": "./anthony-office.jpg"
+		"media": "./anthony-office.jpg",
+		"thumbnail": "./anthony-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Debbie Poon",
 		"location": "London",
-		"media": "./debbie-office.jpg"
+		"media": "./debbie-office.jpg",
+		"thumbnail": "./debbie-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Sammy Selin",
 		"location": "London",
-		"media": "./sammy-office.jpg"
+		"media": "./sammy-office.jpg",
+		"thumbnail": "./sammy-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Alexia Charoud",
 		"location": "Paris",
-		"media": "./alexia-office.jpg"
+		"media": "./alexia-office.jpg",
+		"thumbnail": "./alexia-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Pablo Colomina",
 		"location": "",
-		"media": "./pablo-office.jpg"
+		"media": "./pablo-office.jpg",
+		"thumbnail": "./pablo-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Yi Tian",
 		"location": "London",
-		"media": "./yi-tian-office.jpg"
+		"media": "./yi-tian-office.jpg",
+		"thumbnail": "./yi-tian-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Christian Pecher",
 		"location": "London",
-		"media": "./christian-office.jpg"
+		"media": "./christian-office.jpg",
+		"thumbnail": "./christian-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Juliette Coquet",
 		"location": "Paris",
-		"media": "./juliette-office.jpg"
+		"media": "./juliette-office.jpg",
+		"thumbnail": "./juliette-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Pierro Pozella",
 		"location": "Effingham Junction",
-		"media": "./pierro-office.jpg"
+		"media": "./pierro-office.jpg",
+		"thumbnail": "./pierro-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Léa Mesplède",
 		"location": "Bergerac",
-		"media": "./lea-office.jpg"
+		"media": "./lea-office.jpg",
+		"thumbnail": "./lea-office-icon.jpg"
 	},
 	{
 		"category": "office",
 		"student": "Linnea Langfjord Kristensen",
 		"location": "Laptop",
-		"media": "./linnea-office.jpg"
+		"media": "./linnea-office.jpg",
+		"thumbnail": "./linnea-office-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Quincy Cardinale",
 		"workTitle": "Designing a piece: what might Dark Matter look like on a large scale?",
-		"media": "./quincy-lockdown.jpg"
+		"media": "./quincy-lockdown.jpg",
+		"thumbnail": "./quincy-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Izabela Duszenko",
 		"workTitle": "Photographing natural surfaces at the local beach.",
-		"media": "./izabela-lockdown.jpg"
+		"media": "./izabela-lockdown.jpg",
+		"thumbnail": "./izabela-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Zohar Dvir",
 		"workTitle": "BBQ",
-		"media": "./zohar-lockdown.jpg"
+		"media": "./zohar-lockdown.jpg",
+		"thumbnail": "./zohar-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Yiming Yang",
 		"workTitle": "Splice Interactive Web-based Performance",
-		"media": "./yiming-lockdown.jpg"
+		"media": "./yiming-lockdown.jpg",
+		"thumbnail": "./yiming-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Dimitris Menexopoulos",
 		"workTitle": "Watering the plants",
-		"media": "./dimitris-lockdown.jpg"
+		"media": "./dimitris-lockdown.jpg",
+		"thumbnail": "./dimitris-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Michael Tsang",
 		"workTitle": "Great London Cook Off: Solo Edition",
-		"media": "./michael-lockdown.jpg"
+		"media": "./michael-lockdown.jpg",
+		"thumbnail": "./michael-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Akvile Terminaite",
 		"workTitle": "Finding creative ways to spend time",
-		"media": "./akvile-lockdown.jpg"
+		"media": "TBC"
 	},
 	{
 		"category": "lockdown",
 		"student": "Leah Mentzis",
 		"workTitle": "Making ravioli takes ages...",
-		"media": "./leah-lockdown.jpg"
+		"media": "./leah-lockdown.jpg",
+		"thumbnail": "./leah-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Sindi Breshani",
 		"workTitle": "My favourite lockdown moment was attending Hay Festival, especially this lecture from Carlo Rovelli.",
-		"media": "./sindi-lockdown.jpg"
-	},
-	{
-		"category": "lockdown",
-		"student": "Erik Lintunen",
-		"workTitle": "Walks in the Ribble Valley.",
-		"media": "./erik-lockdown.jpg"
+		"media": "./sindi-lockdown.jpg",
+		"thumbnail": "./sindi-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Debbie Poon",
 		"workTitle": "Home haircuts",
-		"media": "./debbie-lockdown.jpg"
+		"media": "./debbie-lockdown.jpg",
+		"thumbnail": "./debbie-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Sammy Selin",
 		"workTitle": "Making Friends with Flowers 🌸",
-		"media": "./sammy-lockdown.jpg"
+		"media": "./sammy-lockdown.jpg",
+		"thumbnail": "./sammy-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Alexia Charoud",
 		"workTitle": "Being a foot",
-		"media": "./alexia-lockdown.jpg"
+		"media": "./alexia-lockdown.jpg",
+		"thumbnail": "./alexia-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Yi Tian",
 		"workTitle": "Yi's mind",
-		"media": "./yi-tian-lockdown.jpg"
+		"media": "TBC"
 	},
 	{
 		"category": "lockdown",
 		"student": "Christian Pecher",
 		"workTitle": "Sourdough Bread",
-		"media": "./christian-lockdown.jpg"
+		"media": "./christian-lockdown.jpg",
+		"thumbnail": "./christian-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Juliette Coquet",
 		"workTitle": "Mother, Bong Joon-ho — watching movies instead of working on my project but that still made me think about my project",
-		"media": "./juliette-lockdown.jpg"
+		"media": "./juliette-lockdown.jpg",
+		"thumbnail": "./juliette-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Léa Mesplède",
 		"workTitle": "Remote aperitif",
-		"media": "./lea-lockdown.jpg"
+		"media": "./lea-lockdown.jpg",
+		"thumbnail": "./lea-lockdown-icon.jpg"
 	},
 	{
 		"category": "lockdown",
 		"student": "Linnea Langfjord Kristensen",
 		"workTitle": "Zoom rehearsals",
-		"media": "./linnea-lockdown.jpg"
+		"media": "./linnea-lockdown.jpg",
+		"thumbnail": "./linnea-lockdown-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Quincy Cardinale",
 		"workTitle": "Exploring opposites",
-		"media": "./quincy-studio.jpg"
+		"media": "./quincy-studio.jpg",
+		"thumbnail": "./quincy-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Zohar Dvir",
 		"workTitle": "The band",
-		"media": "./zohar-studio.jpg"
+		"media": "./zohar-studio.jpg",
+		"thumbnail": "./zohar-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Yiming Yang",
 		"workTitle": "AR Work Presented in Studio",
-		"media": "./yiming-studio.jpg"
+		"media": "./yiming-studio.jpg",
+		"thumbnail": "./yiming-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Dimitris Menexopoulos",
 		"workTitle": "Live performance with Yiming",
-		"media": "./dimitris-studio.jpg"
+		"media": "./dimitris-studio.jpg",
+		"thumbnail": "./dimitris-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Michael Tsang",
 		"workTitle": "Just another day of learning abstract ideas",
-		"media": "./michael-studio.jpg"
+		"media": "./michael-studio.jpg",
+		"thumbnail": "./michael-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Akvile Terminaite",
 		"workTitle": "Cheers to better times",
-		"media": "./akvile-studio.jpg"
+		"media": "./akvile-studio.jpg",
+		"thumbnail": "./akvile-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Leah Mentzis",
 		"workTitle": "Testing prototypes, photograph by John Fass",
-		"media": "./leah-studio.jpg"
+		"media": "./leah-studio.jpg",
+		"thumbnail": "./leah-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Celeste Camilleri",
 		"workTitle": "Tripod?",
-		"media": "./celeste-studio.jpg"
+		"media": "./celeste-studio.jpg",
+		"thumbnail": "./celeste-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Sindi Breshani",
 		"workTitle": "Karaoke night after the WIP show!",
-		"media": "./sindi-studio.jpg"
+		"media": "./sindi-studio.jpg",
+		"thumbnail": "./sindi-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Anthony Jennison",
 		"workTitle": "Dark Sapphire 2019. (Transformational Surface)",
-		"media": "./anthony-studio.jpg"
+		"media": "./anthony-studio.jpg",
+		"thumbnail": "./anthony-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Sammy Selin",
 		"workTitle": "Directing the Evil Queen 🎬",
-		"media": "./sammy-studio.jpg"
+		"media": "./sammy-studio.jpg",
+		"thumbnail": "./sammy-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Alexia Charoud",
 		"workTitle": "Building a whole set in the capture studio with little IED team",
-		"media": "./alexia-studio.jpg"
+		"media": "./alexia-studio.jpg",
+		"thumbnail": "./alexia-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Pablo Colomina",
 		"workTitle": "",
-		"media": "./pablo-studio.jpg"
+		"media": "./pablo-studio.jpg",
+		"thumbnail": "./pablo-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Yi Tian",
 		"workTitle": "Where's the Funk, by Yaprak Goker",
-		"media": "./yi-tian-studio.jpg"
+		"media": "./yi-tian-studio.jpg",
+		"thumbnail": "./yi-tian-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
@@ -1474,72 +1574,89 @@
 		"category": "studio",
 		"student": "Juliette Coquet",
 		"workTitle": "Festival of Play with Sindi, Izabela and Dimitris",
-		"media": "./juliette-studio.jpg"
+		"media": "./juliette-studio.jpg",
+		"thumbnail": "./juliette-studio-icon.jpg"
 	},
 	{
 		"category": "studio",
 		"student": "Léa Mesplède",
 		"workTitle": "Mapping everywhere",
-		"media": "./lea-studio.jpg"
+		"media": "./lea-studio.jpg",
+		"thumbnail": "./lea-studio-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Quincy Cardinale",
 		"workTitle": "Prototype of a room for the exhibition, with matching chair and dress",
-		"media": "./quincy-add.jpg"
+		"media": "./quincy-add.jpg",
+		"thumbnail": "./quincy-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Zohar Dvir",
 		"workTitle": "Monica",
-		"media": "./zohar-add.jpg"
+		"media": "./zohar-add.jpg",
+		"thumbnail": "./zohar-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Yiming Yang",
-		"workTitle": "Physical Splice Making Stage, https://vimeo.com/user94208386/review/435665236/274218fba4 One more video to the lockdown task: https://vimeo.com/435586974",
-		"media": "./yiming-add.jpg"
+		"workTitle": "Physical Splice Making Stage",
+		"media": "https://vimeo.com/435586974"
 	},
 	{
 		"category": "add",
 		"student": "Dimitris Menexopoulos",
 		"workTitle": "A beautiful egg I cooked during lockdown.",
-		"media": "./dimitris-add.jpg"
+		"media": "./dimitris-add.jpg",
+		"thumbnail": "./dimitris-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Debbie Poon",
 		"workTitle": "A journal of the plague year",
-		"media": "./debbie-add.jpg"
+		"media": "./debbie-add.jpg",
+		"thumbnail": "./debbie-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Sammy Selin",
 		"workTitle": "Monica the Studio Heartbreaker 💔",
-		"media": "./sammy-add.jpg"
+		"media": "./sammy-add.jpg",
+		"thumbnail": "./sammy-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Alexia Charoud",
 		"workTitle": "I-Refrain', my first IED release, is out! https://soundcloud.com/alexiacharoud/sets/l-refrain - album art by Zohar Dvir !",
-		"media": "./alexia-add.jpg"
+		"media": "./alexia-add.jpg",
+		"thumbnail": "./alexia-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Yi Tian",
 		"workTitle": "Mahjong workshop",
-		"media": "./yi-tian-add.jpg"
+		"media": "./yi-tian-add.jpg",
+		"thumbnail": "./yi-tian-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Christian Pecher",
 		"workTitle": "",
-		"media": "./christian-add.jpg"
+		"media": "./christian-add.jpg",
+		"thumbnail": "./christian-add-icon.jpg"
 	},
 	{
 		"category": "add",
 		"student": "Léa Mesplède",
 		"workTitle": "The warning signs",
-		"media": "./lea-add.jpg"
+		"media": "./lea-add.jpg",
+		"thumbnail": "./lea-add-icon.jpg"
+	},
+	{
+		"category": "add",
+		"student": "Fabio Fidanza",
+		"media": "./xxx-add.jpg",
+		"thumbnail": "./xxx-add-icon.jpg"
 	}
 ]
