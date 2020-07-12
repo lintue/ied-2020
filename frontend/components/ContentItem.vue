@@ -77,6 +77,9 @@ export default{
 			}else{
 				return "";
 			}
+		},
+		parentRect: function(){
+			return this.$parent.$el.getBoundingClientRect();
 		}
 	},
 	methods: {
@@ -94,7 +97,7 @@ export default{
 		},
 		changeElPosition: function(){
 			if(this.mode === "chaos"){
-				const box = this.$parent.$el.getBoundingClientRect();
+				const box = this.parentRect;
 				const bounds = {
 					width: box.width,
 					height: box.height,

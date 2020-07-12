@@ -2,7 +2,7 @@
 	<div
 		:class="['media-item', isBook ? 'book' : '']"
 	>
-		<img loading="lazy"
+		<img loading="lazy" class="media-image"
 			:src="mediaPath"
 		>
 	</div>
@@ -65,12 +65,12 @@ export default{
 <style lang="less" scoped>
 .media-item{
 	&.book{
-		img{
+		.media-image{
 			height: 170px;
 		}
 	}
 
-	img{
+	.media-image{
 		height: 240px;
 	}
 }
