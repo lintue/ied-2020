@@ -457,7 +457,7 @@ export default{
 	#grid{
 		min-width: 100vw;
 		min-height: 100vh;
-		width: 100%;
+		width: 300%;
 		height: 100%;
 		position: relative;
 
