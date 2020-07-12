@@ -18,7 +18,7 @@ const store = new Vuex.Store({
 			x: null,
 			y: null
 		},
-		entries: entries,
+		entries: _.shuffle(entries),
 		// entries: [
 		// 	{
 		// 		"category": "description",
@@ -26,7 +26,7 @@ const store = new Vuex.Store({
 		// 		"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
 		// 	}
 		// ],
-		students: students
+		students: _.shuffle(students)
 		// students: [
 		// 	{
 		// 		"name": "Kenneth Lim",

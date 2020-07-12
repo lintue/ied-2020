@@ -50,7 +50,7 @@
 					</h2>
 					<div class="order-items">
 						<app-item class="app-item"
-							v-for="student in shuffledStudents()"
+							v-for="student in students"
 
 							:entry="student"
 							:mode="mode"
@@ -337,9 +337,6 @@ export default{
 					return false;
 				}
 			}
-		},
-		shuffledStudents: function(){
-			return _.shuffle(this.students);
 		}
 	}
 };
