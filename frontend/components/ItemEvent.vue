@@ -21,7 +21,8 @@
 			<div id="info">
 				<h1 class="title">{{ entry.workTitle }}</h1>
 				<div class="event-info">
-					{{ entry.date }}
+					<p>{{ entry.description }}</p>
+					<p>{{ formattedDate }}</p>
 				</div>
 			</div>
 		</section>
@@ -40,6 +41,10 @@ export default{
 	computed: {
 		mediaPath: function(){
 			return `./media/${this.entry.media}`;
+		},
+		formattedDate: function(){
+			const d = moment(`${this.entry.date} ${this.entry.time}`, "DD/MM/YYYY hh:mm");
+			return d.format("MMMM Do, h:mma");
 		}
 	},
 	methods: {
