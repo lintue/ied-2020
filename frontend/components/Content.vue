@@ -466,7 +466,6 @@ export default{
 
 	#grid{
 		min-width: 100vw;
-		max-width: 100vw;
 		min-height: 100vh;
 		width: 300%;
 		height: 100%;
@@ -475,6 +474,10 @@ export default{
 		&.chaos{
 			border: 1px solid white;
 			overflow: hidden;
+		}
+
+		&.order{
+			max-width: 100vw;
 		}
 
 		&.chaos:before{
