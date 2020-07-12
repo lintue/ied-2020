@@ -37,6 +37,7 @@
 				<app-item class="app-item"
 					:entry="projectTitle"
 					mode="order"
+					:boundingRect="boundingRect"
 
 					v-on:showItem="showItem"
 				></app-item>
@@ -47,6 +48,7 @@
 					v-for="entry in studentEntries"
 					:entry="entry"
 					mode="order"
+					:boundingRect="boundingRect"
 
 					v-on:showItem="showItem"
 				></app-item>
@@ -67,6 +69,10 @@ export default{
 		student: {
 			type: Object,
 			required: true
+		},
+		boundingRect: {
+			type: [DOMRect, null],
+			required: true
 		}
 	},
 	computed: {
@@ -75,7 +81,6 @@ export default{
 				return entry.student === this.student.name && entry.category !== "description";
 			});
 
-			console.log(entries);
 			return entries;
 		},
 		projectTitle: function(){
@@ -83,7 +88,6 @@ export default{
 				return entry.student === this.student.name && entry.category === "description";
 			});
 
-			console.log(entry);
 			return entry;
 		}
 	},

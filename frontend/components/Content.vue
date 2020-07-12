@@ -6,6 +6,7 @@
 				<student-profile id="items"
 					v-if="mode === 'order' && showingStudent"
 					:student="showingStudent"
+					:boundingRect="computedRect"
 
 					v-on:closeStudent="closeStudent"
 					v-on:showItem="showItem"
