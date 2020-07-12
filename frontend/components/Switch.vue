@@ -26,6 +26,7 @@ export default{
 <style lang="less" scoped>
 #switch-btn{
 	z-index: 100;
+	cursor: pointer;
 
 	img{
 		width: 10vw;
