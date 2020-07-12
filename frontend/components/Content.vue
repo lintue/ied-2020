@@ -314,8 +314,11 @@ export default{
 			});
 		},
 		events: function(){
-			return _.filter(this.entries, (entry) => {
+			return _.sortBy(_.filter(this.entries, (entry) => {
 				return entry.category === "event";
+			}), (entry) => {
+				const d = moment(`${entry.date} ${entry.time}`, "DD/MM/YYYY hh:mm");
+				return d.unix();
 			});
 		},
 		coronaOffice: function(){
