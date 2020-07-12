@@ -105,8 +105,10 @@ export default{
 					x: box.x + window.scrollX,
 					y: box.y + window.scrollY
 				};
+
+				const randomy = Math.random();
 				let x = Math.random() * (bounds.width - this.$el.clientWidth) + bounds.x;
-				let y = Math.random() * (bounds.height - window.innerHeight/10 - this.$el.clientHeight) + bounds.y + window.innerHeight/10;
+				let y = randomy * (bounds.height - window.innerHeight/10 - this.$el.clientHeight) + box.top + window.innerHeight/10;
 
 				if(x + this.$el.clientWidth > bounds.x + bounds.width){
 					x = bounds.x + bounds.width - this.$el.clientWidth;
