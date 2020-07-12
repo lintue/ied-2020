@@ -69,19 +69,21 @@ export default {
 @import url("../stylesheets/mixin.less");
 
 @large-font: 12vh;
-@medium-font: 3.4vh;
+@medium-font: 1.5rem;
 
 #page-header{
 	position: absolute;
 	top: 0;
 	left: 0;
 	max-height: 100vh;
-	transform: translateY(0vh);
+	transform: translateY(0);
 	transition: transform 0.5s ease;
 	z-index: 500;
+	display: flex;
+	flex-direction: column;
 
 	&.collapsed{
-		transform: translateY(-70.1vh);
+		transform: translateY(~"calc(-100% + 4rem)");
 	}
 
 	&.chaos{
@@ -129,8 +131,8 @@ export default {
 	}
 
 	#info{
-		padding: 3.25vh 2rem;
-		height: 70vh;
+		padding: 1.25rem 2rem;
+		height: 80%;
 		display: block;
 
 		#about-title{
@@ -157,9 +159,9 @@ export default {
 
 	#socials{
 		font-family: "Montserrat", sans-serif;
-		padding: 3.25vh 2rem;
+		padding: 1.25rem 2rem;
 		display: block;
-		height: 10vh;
+		height: 4rem;
 
 		a{
 			text-decoration: none;
@@ -173,10 +175,15 @@ export default {
 		}
 
 		#header-collapse{
+			&:focus{
+				border: none;
+				outline: none;
+			}
+
 			.icon{
 				font-size: calc(@medium-font * 2);
 				float: right;
-				transform: translateY(-2vh);
+				transform: translateY(-1rem);
 			}
 		}
 	}
