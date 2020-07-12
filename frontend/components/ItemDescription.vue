@@ -4,7 +4,7 @@
 		v-on:click.stop=""
 	>
 		<section id="title-bar">
-			<div id="file-name">{{ entry.workTitle || "Description" }}</div>
+			<div id="file-name">{{ titleText }}</div>
 			<div id="close-item-btn"
 				v-on:click="closeItem"
 			>
@@ -24,7 +24,7 @@
 			v-if="entry.description"
 		>
 			<h2 id="project-title">
-				{{ entry.workTitle || "Description" }}
+				{{ entry.workTitle }}
 			</h2>
 			<p id="description-text"
 				v-if="entry.description"
@@ -42,6 +42,17 @@ export default{
 		entry: {
 			type: Object,
 			required: true
+		}
+	},
+	computed: {
+		titleText: function(){
+			if(this.entry.category === "research"){
+				return "ResearchQuestion.txt";
+			}else if(this.entry.category === "description"){
+				return "Project.txt";
+			}else{
+				return "untitled.txt";
+			}
 		}
 	},
 	methods: {

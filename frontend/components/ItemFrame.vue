@@ -7,7 +7,10 @@
 				v-if="entry.category === 'main'"
 			>Project.img</div>
 			<div id="file-name"
-				v-else-if="entry.category === 'corona'"
+				v-else-if="entry.category === 'making'"
+			>MakingOf.img</div>
+			<div id="file-name"
+				v-else-if="entry.category === 'office'"
 			>CoronaOffice.img</div>
 			<div id="file-name"
 				v-else-if="entry.category === 'lockdown'"
