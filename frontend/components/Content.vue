@@ -1,5 +1,6 @@
 <template>
 	<div id="main-content" :class="mode">
+		<template v-if="computedMounted">
 		<div id="grid" :class="mode">
 
 			<student-profile id="items"
@@ -21,6 +22,7 @@
 					:mode="mode"
 					:isBook="entry.category === 'book'"
 					:highlighted="isHighlighted(entry.student)"
+					:boundingRect="computedRect"
 
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
@@ -32,6 +34,7 @@
 					:entry="student"
 					:mode="mode"
 					:highlighted="isHighlighted(student.name)"
+					:boundingRect="computedRect"
 
 					v-on:chaosDown="chaosDown"
 					v-on:showItem="showItem"
@@ -54,6 +57,7 @@
 
 							:entry="student"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -71,6 +75,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -88,6 +93,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -105,6 +111,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -122,6 +129,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -140,6 +148,7 @@
 							:entry="entry"
 							:mode="mode"
 							isBook
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -157,6 +166,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -174,6 +184,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -191,6 +202,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -208,6 +220,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -225,6 +238,7 @@
 
 							:entry="entry"
 							:mode="mode"
+							:boundingRect="computedRect"
 
 							v-on:chaosDown="chaosDown"
 							v-on:showItem="showItem"
@@ -234,6 +248,7 @@
 			</section>
 
 		</div>
+		</template>
 	</div>
 </template>
 
@@ -264,6 +279,12 @@ export default{
 			type: [Object, null],
 			default: null
 		}
+	},
+	data: function(){
+		return {
+			boundingRect: new DOMRect(),
+			isMounted: false
+		};
 	},
 	computed: {
 		projectTitle: function(){
@@ -315,6 +336,12 @@ export default{
 			return _.filter(this.entries, (entry) => {
 				return entry.category === "add";
 			});
+		},
+		computedRect: function(){
+			return this.boundingRect;
+		},
+		computedMounted: function(){
+			return this.isMounted;
 		}
 	},
 	methods: {
@@ -338,6 +365,10 @@ export default{
 				}
 			}
 		}
+	},
+	mounted: function(){
+		this.boundingRect = this.$el.getBoundingClientRect();
+		this.isMounted = true;
 	}
 };
 </script>

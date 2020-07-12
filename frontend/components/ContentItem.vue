@@ -41,9 +41,13 @@ export default{
 			type: Boolean,
 			default: false
 		},
-		highlighted:{
+		highlighted: {
 			type: [Boolean, null],
 			default: null
+		},
+		boundingRect: {
+			type: [DOMRect],
+			required: true
 		}
 	},
 	computed: {
@@ -77,9 +81,6 @@ export default{
 			}else{
 				return "";
 			}
-		},
-		parentRect: function(){
-			return this.$parent.$el.getBoundingClientRect();
 		}
 	},
 	methods: {
@@ -97,7 +98,7 @@ export default{
 		},
 		changeElPosition: function(){
 			if(this.mode === "chaos"){
-				const box = this.parentRect;
+				const box = this.boundingRect;
 				const bounds = {
 					width: box.width,
 					height: box.height,
@@ -120,11 +121,6 @@ export default{
 				this.$el.style.left = "revert";
 				this.$el.style.top = "revert";
 			}
-		}
-	},
-	watch: {
-		mode: function(){
-			this.changeElPosition();
 		}
 	},
 	mounted: function(){
