@@ -1,7 +1,14 @@
 <template>
 	<div id="main-content" :class="mode">
+		<div id="preload">
+			<img src="./grid-chaos.svg">
+			<img src="./grid-order.svg">
+		</div>
+
 		<template v-if="computedMounted">
-			<div id="grid" :class="mode">
+			<div id="grid"
+				:class="mode"
+			>
 
 				<student-profile id="items"
 					v-if="mode === 'order' && showingStudent"
@@ -495,5 +502,7 @@ export default{
 	}
 }
 
-
+#preload{
+	display: none;
+}
 </style>
