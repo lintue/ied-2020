@@ -1,7 +1,16 @@
 TO DO:
 
-- compress GIFs
-- Yi Tian lockdown + Akvile lockdown links
+- students check their own media (especially GIFs => re-export < 4MB)
+- Yi Tian + Akvile lockdown links
+- load grid before other media?
+- events (organise by date/time in order?)
+- header responsiveness
+
+
+
+BUGS:
+
+
 
 
 
