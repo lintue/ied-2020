@@ -43,6 +43,12 @@ const store = new Vuex.Store({
 			}else{
 				state.mode = "chaos";
 			}
+
+			if(state.mode === "chaos"){
+				document.body.style.background = "#242424";
+			}else{
+				document.body.style.background = "#FFFFFF";
+			}
 		},
 		setChaosElement: function(state, el){
 			state.chaosElement = el;
