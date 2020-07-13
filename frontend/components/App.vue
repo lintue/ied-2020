@@ -105,8 +105,6 @@ export default {
 @import url("../stylesheets/mixin.less");
 
 #page-container{
-	min-width:100vw;
-	min-height: 100vh;
 	overflow-x: hidden;
 
 	&.chaos{
