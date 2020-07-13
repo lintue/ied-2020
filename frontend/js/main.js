@@ -135,7 +135,7 @@ const app = new Vue({
 
 						if(boundingBox.bottom + window.scrollY > this.$el.clientHeight){
 							el.style.top = `${this.$el.clientHeight - boundingBox.height}px`;
-						}else if(boundingBox.top < window.innerHeight / 10){
+						}else if(boundingBox.top + window.scrollY < window.innerHeight / 10){
 							el.style.top = `${window.innerHeight / 10}px`;
 						}
 
