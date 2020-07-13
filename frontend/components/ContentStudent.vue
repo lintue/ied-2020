@@ -15,21 +15,21 @@
 					v-if="student.RCA2020"
 					:href="student.RCA2020"
 				>
-					RCA SHOW 2020 &nearr;
+					RCA SHOW 2020 <span class="arrow"></span>
 				</a>
 
 				<a class="socials" target="_blank"
 					v-if="student.portfolio"
 					:href="student.portfolio"
 				>
-					PORTFOLIO &nearr;
+					PORTFOLIO <span class="arrow"></span>
 				</a>
 
 				<a class="socials" target="_blank"
 					v-if="student.instagram"
 					:href="student.instagram"
 				>
-					INSTAGRAM &nearr;
+					INSTAGRAM <span class="arrow"></span>
 				</a>
 			</div>
 
@@ -167,6 +167,13 @@ export default{
 				font-weight: 700;
 				font-size: 1.4rem;
 				text-decoration: none;
+
+				.arrow{
+					background-image: url("./arrow-black.svg");
+					display: inline-block;
+					width: ~"calc(30px - 0.7rem)";
+					height: ~"calc(30px - 0.7rem)";
+				}
 			}
 		}
 	}
