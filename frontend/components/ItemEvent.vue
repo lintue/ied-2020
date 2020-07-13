@@ -25,6 +25,12 @@
 				<div class="event-info">
 					<p>{{ entry.description }}</p>
 					<p>{{ formattedDate }}</p>
+					<p>
+						<a target="_blank"
+							class="link"
+							:href="entry.link"
+						>Link</a>
+					</p>
 				</div>
 			</div>
 		</section>
@@ -115,6 +121,10 @@ export default{
 
 			.event-info{
 				margin: 2rem 0;
+
+				.link{
+					color: white;
+				}
 			}
 		}
 

@@ -5,7 +5,8 @@
 		"date": "17/07/2020",
 		"time": "13:00",
 		"description": "This project explores how the new technologies and social credit system affect people’s lives through a series of possible scenarios and issues of cohabitation in the mixed reality future. It gives viewers the chance to experience what it feels like to be involuntarily subject to low social scoring through a full-body tour experience and everyday narratives.",
-		"media": "./event-305Valley.svg"
+		"media": "./event-305Valley.svg",
+		"link": "https://vimeo.com/425461525"
 	},
 	{
 		"category": "event",
@@ -13,47 +14,58 @@
 		"date": "17/07/2020",
 		"time": "11:00",
 		"description": "How can we start to experience our mammalian, macro bodies as ecosystems coexisting with the microscopic life within and around us? Which potentials does our sensorial reality hold in order to mediate the relationships between multiscalar worlds? In this interactive talk Baum & Leahy present their research into the Microbiocene – a microbe-centric alternative to the Anthropocene, and invite participants to take part in short cellular ceremonies (Cellumonials) throughout. Guided meditative reflections and tactile encounters – with the ubiquitous microbial ecologies in your body and home – will explore new, remote practices of symbiosis and collective healing. These physical-digital micro-ceremonies invite you to discover how your body and mind are interwoven with the microbial life cycles moving within and around you, and how the ongoing pandemic can reveal new perspectives on the multiscalar reality we live in. Baum & Leahy (Amanda Baum (DK) and Rose Leahy (UK)) is an award-winning international, creative duo working across interactive installation, art direction, scenography and experience design. Collaborating with experts across disciplines, from microbiologists to musicians, quantum computer scientists to architects, they open up, question and sensorialise scientific research into tactile, participatory experiences. Through research-led, experience-centred tactile storytelling, their work allows the beholder a proximity to alternative realities, melting between the feasible and fantastical. They met studying their MA in Information Experience Design at the Royal College of Art 2015-2017.",
-		"media": "./event-CellumonialsCeremony.svg"
+		"media": "./event-CellumonialsCeremony.svg",
+		"link": "https://rca-ac.zoom.us/j/3813740488?pwd=OWdDcG9MeGdIZjdyMXppeGY2NjhYdz09"
 	},
 	{
 		"category": "event",
 		"workTitle": "IED Quantum Awards",
+		"student": "Zohar Dvir",
 		"date": "23/07/2020",
 		"time": "19:00",
 		"description": "The department of Information Experience Design cordially invites you to the 1st Annual Quantum Awards. Dress Code: Fancy Tops",
-		"media": "./event-IEDQuantumAwards.svg"
+		"media": "./event-IEDQuantumAwards.svg",
+		"link": "https://rca-ac.zoom.us/j/95287951049?pwd=VXNSc1pxVkRxeHFEM2Q0MFBHQkVmZz09"
 	},
 	{
 		"category": "event",
 		"workTitle": "Quantum Cinema",
+		"student": "Sammy Selin",
 		"date": "22/07/2020",
 		"time": "18:00",
 		"description": "A special screening of strange and experimental moving image works by artists and designers in Information Experience Design. Followed by a Q&A with the creators.",
-		"media": "./event-QuantumCinema.svg"
+		"media": "./event-QuantumCinema.svg",
+		"link": "https://vimeo.com/436717166"
 	},
 	{
 		"category": "event",
 		"workTitle": "Quantum Vibrations 1/2",
+		"student:": "Alexia Charoud",
 		"date": "21/07/2020",
 		"time": "14:00",
 		"description": "14:00_ Guest Talk with Beatrice Dillon; 15:00_ Q&A with Jamie Maule Jordan Edge, Linnea Langfjord, and guests.",
-		"media": "./event-QuantumVibrations1.svg"
+		"media": "./event-QuantumVibrations1.svg",
+		"link": "https://vimeo.com/event/160893"
 	},
 	{
 		"category": "event",
 		"workTitle": "Quantum Vibrations 2/2",
+		"student:": "Alexia Charoud",
 		"date": "25/07/2020",
 		"time": "18:30",
 		"description": "A live presentation of IED Sound Design students' work showcased as a part of RCA2020. 18:30_ Jamie Maule. A dive into the Max patch and the construction of Jamie's sound work; 19:00_Alexia Charoud. A live demonstration of Alexia's interactive experience The Explorer: a musical soundscape revealed by light and the emergence of a mysterious world of sounds; 19:30_Yiming Yang. A VR experience with sound and the exploration of Yiming's interactive Web.",
-		"media": "./event-QuantumVibrations2.svg"
+		"media": "./event-QuantumVibrations2.svg",
+		"link": "https://vimeo.com/event/160893"
 	},
 	{
 		"category": "event",
 		"workTitle": "Is it really ever really really really real? Or is real reality really just a representation? Really.",
+		"student": "Linnea Langfjord Kristensen",
 		"date": "27/07/2020",
 		"time": "19:00",
 		"description": "Live theatre performance on Zoom with a talk by writer, performer, and live-artist Greg Wohead. About the play: Set in a heightened version of today’s world, where people are financially punished for not being productive enough or busy enough, 5 characters explore what it means to be real when reality itself is a representation. Some interrogate their use of language while others question the reality of their own bodies or thoughts. The play is concerned with the prevailing understanding of what it means to be a successful human being in our culture and the negative consequences the ways we measure this success has on people’s mental health.",
-		"media": "./event-Really.svg"
+		"media": "./event-Really.svg",
+		"link": "https://rca-ac.zoom.us/s/91733368804"
 	},
 	{
 		"category": "event",
@@ -61,7 +73,8 @@
 		"date": "18/07/2020",
 		"time": "18:00",
 		"description": "Monthly event showcasing sound experiments by students at the Royal College of Arts",
-		"media": "./event-WhiteNoise.svg"
+		"media": "./event-WhiteNoise.svg",
+		"link": "https://www.twitch.tv/rcawhitenoise"
 	},
 	{
 		"category": "description",
