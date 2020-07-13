@@ -177,7 +177,7 @@ export default{
 	#media{
 		img{
 			max-width: 1000px;
-			width: ~"calc(70vw - 2px)";
+			width: ~"calc(70vw - 3px)";
 		}
 
 		.embed-container{
