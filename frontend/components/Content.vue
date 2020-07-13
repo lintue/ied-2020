@@ -472,7 +472,6 @@ export default{
 		position: relative;
 
 		&.chaos{
-			border: 1px solid white;
 			overflow: hidden;
 		}
 

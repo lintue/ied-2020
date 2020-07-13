@@ -19,7 +19,9 @@
 			</div>
 
 			<div id="info">
-				<h1 class="title">{{ entry.workTitle }}</h1>
+				<h1
+					:class="['title', isLong]"
+				>{{ entry.workTitle }}</h1>
 				<div class="event-info">
 					<p>{{ entry.description }}</p>
 					<p>{{ formattedDate }}</p>
@@ -45,6 +47,9 @@ export default{
 		formattedDate: function(){
 			const d = moment(`${this.entry.date} ${this.entry.time}`, "DD/MM/YYYY hh:mm");
 			return d.format("MMMM Do, h:mma");
+		},
+		isLong: function(){
+			return this.entry.workTitle === "Is it really ever really really really real? Or is real reality really just a representation? Really." ? "long" : "";
 		}
 	},
 	methods: {
@@ -102,6 +107,10 @@ export default{
 				font-weight: 700;
 				font-size: 2.5rem;
 				margin: 0;
+
+				&.long{
+					font-size: 2rem;
+				}
 			}
 
 			.event-info{
