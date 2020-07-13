@@ -19,11 +19,11 @@
 			<a href="https://www.instagram.com/rcaied/" target="_blank"
 				v-if="!collapsed"
 				v-on:click.stop=""
-			>INSTAGRAM &nearr;</a>
+			>INSTAGRAM <span class="arrow"></span></a>
 			<a href="https://2020.rca.ac.uk/programmes/information-experience-design-ma" target="_blank"
 				v-if="!collapsed"
 				v-on:click.stop=""
-			>RCA SHOW 2020 &nearr;</a>
+			>RCA SHOW 2020 <span class="arrow"></span></a>
 
 			<a href="#rca2020"
 				v-if="collapsed"
@@ -99,6 +99,13 @@ export default {
 
 		#socials{
 			border-top: 1px solid white;
+
+			.arrow{
+				background-image: url("./arrow-white.svg");
+				display: inline-block;
+				width: ~"calc(30px - 0.7rem)";
+				height: ~"calc(30px - 0.7rem)";
+			}
 		}
 	}
 
@@ -113,6 +120,13 @@ export default {
 
 		#socials{
 			border-top: 1px solid black;
+
+			.arrow{
+				background-image: url("./arrow-black.svg");
+				display: inline-block;
+				width: ~"calc(30px - 0.7rem)";
+				height: ~"calc(30px - 0.7rem)";
+			}
 		}
 	}
 
