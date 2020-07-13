@@ -13,21 +13,23 @@
 			</div>
 		</div>
 
-		<div id="socials">
+		<div id="socials"
+			v-on:click.prevent="toggleHeader"
+		>
 			<a href="#instagram"
 				v-if="!collapsed"
+				v-on:click.stop=""
 			>INSTAGRAM &nearr;</a>
 			<a href="#rca2020"
 				v-if="!collapsed"
+				v-on:click.stop=""
 			>RCA SHOW 2020 &nearr;</a>
 
 			<a href="#rca2020"
 				v-if="collapsed"
 			>ABOUT</a>
 
-			<a href="#" id="header-collapse"
-				v-on:click.prevent="toggleHeader"
-			>
+			<a href="#" id="header-collapse">
 				<span class="material-icons icon"
 					v-if="collapsed"
 				>
@@ -162,6 +164,7 @@ export default {
 		padding: 1.25rem 2rem;
 		display: block;
 		height: 4rem;
+		cursor: pointer;
 
 		a{
 			text-decoration: none;
