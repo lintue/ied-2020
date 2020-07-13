@@ -107,6 +107,7 @@ export default{
 
 		#cover{
 			width: 50%;
+			margin-bottom: -3px;
 
 			img{
 				max-width:100%;
