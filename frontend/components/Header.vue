@@ -16,11 +16,11 @@
 		<div id="socials"
 			v-on:click.prevent="toggleHeader"
 		>
-			<a href="#instagram"
+			<a href="https://www.instagram.com/rcaied/" target="_blank"
 				v-if="!collapsed"
 				v-on:click.stop=""
 			>INSTAGRAM &nearr;</a>
-			<a href="#rca2020"
+			<a href="https://2020.rca.ac.uk/programmes/information-experience-design-ma" target="_blank"
 				v-if="!collapsed"
 				v-on:click.stop=""
 			>RCA SHOW 2020 &nearr;</a>
