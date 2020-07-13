@@ -25,7 +25,7 @@
 				v-on:click.stop=""
 			>RCA SHOW 2020 <span class="arrow"></span></a>
 
-			<a href="#rca2020"
+			<a href="#rca2020" class="about"
 				v-if="collapsed"
 			>ABOUT</a>
 
@@ -77,7 +77,6 @@ export default {
 	position: absolute;
 	top: 0;
 	left: 0;
-	max-height: 100vh;
 	transform: translateY(0);
 	transition: transform 0.5s ease;
 	z-index: 500;
@@ -201,6 +200,35 @@ export default {
 				font-size: calc(@medium-font * 2);
 				float: right;
 				transform: translateY(-1rem);
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		#info{
+			#course-description{
+				font-size: 1rem;
+			}
+		}
+
+		#socials{
+			display: flex;
+			flex-direction: column;
+			height: 6rem;
+
+			a{
+				font-size: 1rem;
+				margin: 0;
+				margin-bottom: 1rem;
+				width: 50%;
+			}
+
+			.about{
+				transform: translateY(2rem);
+			}
+
+			#header-collapse{
+				display: none;
 			}
 		}
 	}
