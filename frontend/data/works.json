@@ -1058,8 +1058,8 @@
 		"student": "Celeste Camilleri",
 		"workTitle": "Making of Datafields",
 		"description": "Building of my 'studio' set up in my bed room",
-		"media": "./celeste-making.gif",
-		"thumbnail": "./celeste-making-icon.gif"
+		"media": "./celeste-office.jpg",
+		"thumbnail": "./celeste-office-icon.jpg"
 	},
 	{
 		"category": "making",
@@ -1263,13 +1263,6 @@
 		"location": "London",
 		"media": "./julia-office.jpg",
 		"thumbnail": "./julia-office-icon.jpg"
-	},
-	{
-		"category": "office",
-		"student": "Celeste Camilleri",
-		"location": "London",
-		"media": "./celeste-office.jpg",
-		"thumbnail": "./celeste-office-icon.jpg"
 	},
 	{
 		"category": "office",
@@ -1580,7 +1573,7 @@
 	{
 		"category": "studio",
 		"student": "Christian Pecher",
-		"workTitle": "",
+		"workTitle": "The Row 11/2019",
 		"media": "https://vimeo.com/435440912"
 	},
 	{
