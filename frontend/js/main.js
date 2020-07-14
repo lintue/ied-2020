@@ -19,22 +19,8 @@ const store = new Vuex.Store({
 			y: null
 		},
 		entries: _.shuffle(entries),
-		// entries: [
-		// 	{
-		// 		"category": "description",
-		// 		"student": "Quincy Cardinale",
-		// 		"description": "This is a proposal for an immersive educational exhibition that explores the possibilities of what dark matter could be. The goal is to make complex physics accessible to adult audiences interested in science."
-		// 	}
-		// ],
-		students: _.shuffle(students)
-		// students: [
-		// 	{
-		// 		"name": "Kenneth Lim",
-		// 		"instagram": "https://www.instagram.com/quincy.cool/",
-		// 		"portfolio": "https://www.quincy.cool/",
-		// 		"RCA2020": "2020.rca.ac.uk/students/quincy-cardinale"
-		// 	}
-		// ]
+		students: _.shuffle(students),
+		isMobile: true
 	},
 	mutations: {
 		toggleMode: function(state){
@@ -56,6 +42,14 @@ const store = new Vuex.Store({
 		setMouseDownPos: function(state, pos){
 			state.mouseDownPos.x = pos.x;
 			state.mouseDownPos.y = pos.y;
+		},
+		setMobile: function(state, isMobile){
+			if(isMobile){
+				state.isMobile = true;
+				state.mode = "order";
+			}else{
+				state.isMobile = false;
+			}
 		}
 	},
 	actions: {
@@ -71,7 +65,8 @@ const app = new Vue({
 			props: {
 				mode: store.state.mode,
 				entries: store.state.entries,
-				students: store.state.students
+				students: store.state.students,
+				isMobile: store.state.isMobile
 			},
 			on: {
 				chaosDown: function(el){
@@ -81,6 +76,23 @@ const app = new Vue({
 					store.commit("toggleMode");
 				}
 			},
+		});
+	},
+	beforeCreate: function(){
+		window.addEventListener("load", () => {
+			if(window.innerWidth < 750){
+				this.$store.commit("setMobile", true);
+			}else{
+				this.$store.commit("setMobile", false);
+			}
+		});
+
+		window.addEventListener("resize", () => {
+			if(window.innerWidth < 750){
+				this.$store.commit("setMobile", true);
+			}else{
+				this.$store.commit("setMobile", false);
+			}
 		});
 	},
 	mounted: function(){

@@ -9,251 +9,277 @@
 			<div id="grid"
 				:class="mode"
 			>
+				<template v-if="isMobile">
+					<section id="mobile-container">
+						<div id="computer-container">
+							<img id="computer-image" src="./computer.svg">
+						</div>
 
-				<student-profile id="items"
-					v-if="mode === 'order' && showingStudent"
-					:student="showingStudent"
-					:boundingRect="computedRect"
+						<div id="warning-box">
+							<p>Hi!</p>
+							<p>
+								This website is best viewed on a big screen.<br>
+								Any attempt to use it on mobile may produce unintended results.
+							</p>
+						</div>
 
-					v-on:closeStudent="closeStudent"
-					v-on:showItem="showItem"
-				></student-profile>
+						<div id="links">
+							<a href="https://2020.rca.ac.uk/programmes/information-experience-design-ma" target="_blank" class="external-links"
+								v-on:click.stop=""
+							>RCA SHOW 2020 <span class="arrow"></span></a>
+							<a href="https://www.instagram.com/rcaied/" target="_blank" class="external-links"
+								v-on:click.stop=""
+							>INSTAGRAM <span class="arrow"></span></a>
+						</div>
+					</section>
+				</template>
 
-				<section id="items"
-					v-else-if="mode === 'chaos'"
-				>
-					<app-item
-						v-for="entry in entries"
-						:class="['app-item', entry.category === 'book' ? 'book' : '']"
-
-						:entry="entry"
-						:mode="mode"
-						:isBook="entry.category === 'book'"
-						:highlighted="isHighlighted(entry.student)"
+				<template v-else>
+					<student-profile id="items"
+						v-if="mode === 'order' && showingStudent"
+						:student="showingStudent"
 						:boundingRect="computedRect"
 
-						v-on:chaosDown="chaosDown"
+						v-on:closeStudent="closeStudent"
 						v-on:showItem="showItem"
-					></app-item>
+					></student-profile>
 
-					<app-item class="app-item"
-						v-for="student in students"
+					<section id="items"
+						v-else-if="mode === 'chaos'"
+					>
+						<app-item
+							v-for="entry in entries"
+							:class="['app-item', entry.category === 'book' ? 'book' : '']"
 
-						:entry="student"
-						:mode="mode"
-						:highlighted="isHighlighted(student.name)"
-						:boundingRect="computedRect"
+							:entry="entry"
+							:mode="mode"
+							:isBook="entry.category === 'book'"
+							:highlighted="isHighlighted(entry.student)"
+							:boundingRect="computedRect"
 
-						v-on:chaosDown="chaosDown"
-						v-on:showItem="showItem"
-					></app-item>
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
 
-					<div class="close-student-button"
-						v-if="showingStudent"
-						v-on:click="closeStudent"
-					></div>
-				</section>
+						<app-item class="app-item"
+							v-for="student in students"
 
-				<section id="items" v-else-if="mode === 'order'">
-					<section>
-						<h2 class="section-title">
-							STUDENTS
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="student in students"
+							:entry="student"
+							:mode="mode"
+							:highlighted="isHighlighted(student.name)"
+							:boundingRect="computedRect"
 
-								:entry="student"
-								:mode="mode"
-								:boundingRect="computedRect"
+							v-on:chaosDown="chaosDown"
+							v-on:showItem="showItem"
+						></app-item>
 
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
+						<div class="close-student-button"
+							v-if="showingStudent"
+							v-on:click="closeStudent"
+						></div>
 					</section>
 
-					<section>
-						<h2 class="section-title">
-							PROJECT TITLE
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in projectTitle"
+					<section id="items" v-else-if="mode === 'order'">
+						<section>
+							<h2 class="section-title">
+								STUDENTS
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="student in students"
 
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
+									:entry="student"
+									:mode="mode"
+									:boundingRect="computedRect"
 
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-title">
+								PROJECT TITLE
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in projectTitle"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								PROJECT
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in project"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								MAKING OF
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in makingOf"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="research-centric">
+							<h2 class="section-title">
+								RESEARCH
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in research"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								LIBRARY
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item book"
+									v-for="entry in library"
+
+									:entry="entry"
+									:mode="mode"
+									isBook
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								EVENTS
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in events"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								CORONA OFFICE
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in coronaOffice"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								LOCKDOWN TASK
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in lockdownTask"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								STUDIO MOMENT
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in studioMoment"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
+
+						<section class="media-centric">
+							<h2 class="section-title">
+								ADDITIONAL
+							</h2>
+							<div class="order-items">
+								<app-item class="app-item"
+									v-for="entry in additional"
+
+									:entry="entry"
+									:mode="mode"
+									:boundingRect="computedRect"
+
+									v-on:chaosDown="chaosDown"
+									v-on:showItem="showItem"
+								></app-item>
+							</div>
+						</section>
 					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							PROJECT
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in project"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							MAKING OF
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in makingOf"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="research-centric">
-						<h2 class="section-title">
-							RESEARCH
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in research"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							LIBRARY
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item book"
-								v-for="entry in library"
-
-								:entry="entry"
-								:mode="mode"
-								isBook
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							EVENTS
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in events"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							CORONA OFFICE
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in coronaOffice"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							LOCKDOWN TASK
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in lockdownTask"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							STUDIO MOMENT
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in studioMoment"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-
-					<section class="media-centric">
-						<h2 class="section-title">
-							ADDITIONAL
-						</h2>
-						<div class="order-items">
-							<app-item class="app-item"
-								v-for="entry in additional"
-
-								:entry="entry"
-								:mode="mode"
-								:boundingRect="computedRect"
-
-								v-on:chaosDown="chaosDown"
-								v-on:showItem="showItem"
-							></app-item>
-						</div>
-					</section>
-				</section>
+				</template>
 
 			</div>
 		</template>
@@ -286,6 +312,10 @@ export default{
 		showingStudent: {
 			type: [Object, null],
 			default: null
+		},
+		isMobile: {
+			type: Boolean,
+			required: true
 		}
 	},
 	data: function(){
@@ -502,6 +532,63 @@ export default{
 			top: 0;
 			left: 0;
 			transform: translateY(-1px);
+		}
+
+		#mobile-container{
+			padding: 2rem;
+			z-index: 10;
+			position: relative;
+
+			#computer-container{
+				text-align: center;
+				margin: 1rem 0;
+
+				#computer-image{
+					display: inline-block;
+					width: 60vw;
+				}
+			}
+
+			#warning-box{
+				.light-theme();
+
+				border: 3px solid;
+				padding: 1rem;
+				margin-bottom: 1.5rem;
+				box-shadow: 9px 10px 0px 0px rgba(0,0,0,1);
+
+				p:first-child{
+					margin-top: 0;
+				}
+
+				p:last-child{
+					margin-bottom: 0;
+				}
+			}
+
+			#links{
+				display: flex;
+				flex-direction: column;
+
+				a{
+					.light-theme();
+
+					text-decoration: none;
+					margin: 0.5rem 0;
+					font-weight: 800;
+					font-size: 1.5rem;
+					border: 1px solid;
+					background: white;
+					padding: 0.5rem;
+
+					.arrow{
+						background-image: url("./arrow-black.svg");
+						display: inline-block;
+						width: ~"calc(30px - 0.7rem)";
+						height: ~"calc(30px - 0.7rem)";
+					}
+				}
+			}
 		}
 	}
 }

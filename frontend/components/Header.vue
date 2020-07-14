@@ -16,11 +16,11 @@
 		<div id="socials"
 			v-on:click.prevent="toggleHeader"
 		>
-			<a href="https://www.instagram.com/rcaied/" target="_blank"
+			<a href="https://www.instagram.com/rcaied/" target="_blank" class="external-links"
 				v-if="!collapsed"
 				v-on:click.stop=""
 			>INSTAGRAM <span class="arrow"></span></a>
-			<a href="https://2020.rca.ac.uk/programmes/information-experience-design-ma" target="_blank"
+			<a href="https://2020.rca.ac.uk/programmes/information-experience-design-ma" target="_blank" class="external-links"
 				v-if="!collapsed"
 				v-on:click.stop=""
 			>RCA SHOW 2020 <span class="arrow"></span></a>
@@ -204,18 +204,18 @@ export default {
 		}
 	}
 
-	@media (max-width: 450px) {
+	@media (max-width: 750px) {
 		#info{
+			#title{
+				font-size: 3.5rem;
+			}
+
 			#course-description{
 				font-size: 1rem;
 			}
 		}
 
 		#socials{
-			display: flex;
-			flex-direction: column;
-			height: 6rem;
-
 			a{
 				font-size: 1rem;
 				margin: 0;
@@ -223,11 +223,7 @@ export default {
 				width: 50%;
 			}
 
-			.about{
-				transform: translateY(2rem);
-			}
-
-			#header-collapse{
+			.external-links{
 				display: none;
 			}
 		}

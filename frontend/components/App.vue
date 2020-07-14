@@ -7,6 +7,7 @@
 		></app-header>
 		<app-switch class="app-switch"
 			:mode="mode"
+			:isMobile="isMobile"
 			v-on:switchMode="switchMode"
 		></app-switch>
 
@@ -15,6 +16,7 @@
 			:entries="entries"
 			:students="students"
 			:showingStudent="showingStudent"
+			:isMobile="isMobile"
 
 			v-on:chaosDown="chaosDown"
 			v-on:showItem="showItem"
@@ -59,6 +61,10 @@ export default {
 			default: function(){
 				return [];
 			}
+		},
+		isMobile: {
+			type: Boolean,
+			required: true
 		}
 	},
 	data: function(){

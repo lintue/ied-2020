@@ -1,5 +1,5 @@
 <template>
-	<div id="switch-btn"
+	<div id="switch-btn" v-if="!isMobile"
 		v-on:click="switchMode"
 	>
 		<img :src="[mode === 'chaos' ? './switch-chaos.svg' : './switch-order.svg']">
@@ -12,6 +12,10 @@ export default{
 	props: {
 		mode: {
 			type: String,
+			required: true
+		},
+		isMobile: {
+			type: Boolean,
 			required: true
 		}
 	},
