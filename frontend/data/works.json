@@ -1440,12 +1440,6 @@
 	},
 	{
 		"category": "lockdown",
-		"student": "Yi Tian",
-		"workTitle": "Yi's mind",
-		"media": "TBC"
-	},
-	{
-		"category": "lockdown",
 		"student": "Christian Pecher",
 		"workTitle": "Sourdough Bread",
 		"media": "./christian-lockdown.jpg",
