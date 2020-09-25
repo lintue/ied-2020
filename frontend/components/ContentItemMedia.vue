@@ -38,7 +38,10 @@ export default{
 				return `https://img.youtube.com/vi/${youtubeID}/mqdefault.jpg`;
 			}else if(this.mediaType === "vimeo"){
 				const vimeoID = vimeoRE.exec(this.entry.media)[1];
-				return `/api/vimeo_thumbnail/${vimeoID}`;
+				const route = process.env.DEPLOY_TARGET === "static" ?
+					`https://vimeo-api.limzykenneth.workers.dev/vimeo_thumbnail/${vimeoID}` :
+					`/api/vimeo_thumbnail/${vimeoID}`;
+				return route;
 			}else{
 				return "";
 			}
